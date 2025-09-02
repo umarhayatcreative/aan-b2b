@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar Right Side Toggle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/theme-variables.css">
+    <link rel="stylesheet" href="css/hotel-detail.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Flatpickr CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+
+<body class="min-vh-100 d-flex flex-column">
+    <section class="header-login">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg text-white">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand text-white me-5 fw-bold" href="#">
+                        Logo
+                    </a>
+
+                    <!-- Right side elements -->
+                    <div class="d-flex align-items-center order-lg-2">
+                        <!-- Profile Dropdown -->
+                        <a class="text-white me-3 text-decoration-none" href="/home-login.html">
+                            Logout
+                        </a>
+
+                        <!-- Cart -->
+                        <a class="text-white me-3" href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+
+                        <!-- Toggle button -->
+                        <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <i class="bi bi-list text-white"></i>
+                        </button>
+                    </div>
+
+                    <!-- Offcanvas Menu -->
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="/home.html">Home</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="visasDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Credit Limit
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="visasDropdown">
+                                        <li class="p-3 text-nowrap"><span>Credit Limit:&nbsp;&nbsp;&nbsp;&nbsp;PKR
+                                                75,000.00 <br>
+                                                Available Limit:&nbsp;&nbsp;&nbsp;&nbsp;PKR 22,190.00</span></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/visas.html">Visas</a>
+                                </li>
+
+
+                                <!-- Dropdown 2: Reports -->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="reportsDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Reports
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="reportsDropdown">
+                                        <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                                        <li><a class="dropdown-item" href="/report-booking.html">Bookings</a></li>
+                                        <li><a class="dropdown-item" href="/report-ledger.html">Ledger</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="reportsDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Sub Agents
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="reportsDropdown">
+                                        <li><a class="dropdown-item" href="/sub-agents.html">Manage Sub Agents</a></li>
+                                        <li><a class="dropdown-item" href="/add-credit.html">Add Credit</a></li>
+                                        <li><a class="dropdown-item" href="/sub-agents-booking.html">Bookings</a></li>
+                                        <li><a class="dropdown-item" href="/sub-agent-visas.html">Visas</a></li>
+                                        <li><a class="dropdown-item" href="/sub-agent-ledger.html">Ledger</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/user.html">User</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="reportsDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        ATE-167000316
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="reportsDropdown">
+                                        <li><a class="dropdown-item" href="/markups.html">Markups</a></li>
+                                        <li><a class="dropdown-item" href="/my-profile.html">Profile</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!-- header section end -->
+
+    <!-- hotel detail sec start -->
+    <section class="hotel-detail py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div
+                        class="hotel-detail-header d-flex justify-content-between align-items-start flex-wrap align-items-center">
+                        <div class="flex-grow-1">
+                            <h3 class="fw-bold mb-2">Pearl Marina Hotel Apartment</h3>
+                            <div class="d-flex align-items-center mb-2">
+                                <div class="hotel-rating me-2 small">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="text-muted mb-0">
+                                <i class="bi bi-geo-alt me-2"></i>
+                                Marina Waterfront Dubai Marina, P.O.Box 125179, United Arab Emirates
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#mapModal "
+                                    class="text-danger ms-2">View on
+                                    Map</a>
+                            <div class="modal fade" id="mapModal" tabindex="-1" aria-labelledby="mapModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-xl">
+                                    <div class="modal-content p-0">
+                                        <div class="modal-header border-0">
+                                            <span>Location</span>
+                                            <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body p-0">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19840.733719661526!2d-0.127758!3d51.507351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDMwJzI2LjUiTiAwwrAwNyc0Ny41Ilc!5e0!3m2!1sen!2s!4v1638454356781!5m2!1sen!2s"
+                                                allowfullscreen="" loading="lazy">
+                                            </iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </p>
+                        </div>
+                        <div class="text-end mt-3 mt-md-0 ms-auto mb-3">
+                            <p class="text-muted mb-1">6 Rooms</p>
+                            <a class="btn px-4 text-white" href="#hotel-Rooms">Select Room</a>
+                        </div>
+
+                        <div id="Hotel-Gallery" class="container hotel-details-tab mb-2 px-0">
+                            <!-- <h4 class="fw-semibold mb-3">Hotel Gallery:</h4> -->
+                            <div class="hs-slider" id="hsSlider">
+                                <div class="hs-slide is-active"><img src="img/hotel-1.jpg" alt="Hotel 1" /></div>
+                                <div class="hs-slide"><img src="img/hotel-2.jpg" alt="Hotel 2" /></div>
+                                <div class="hs-slide"><img src="img/hotel-3.jpg" alt="Hotel 3" /></div>
+                                <div class="hs-slide"><img src="img/hotel-4.jpg" alt="Hotel 4" /></div>
+                                <div class="hs-slide"><img src="img/hotel-5.jpg" alt="Hotel 5" /></div>
+                                <div class="hs-slide"><img src="img/hotel-6.jpg" alt="Hotel 6" /></div>
+
+                                <!-- arrows -->
+                                <button class="hs-arrow hs-arrow--prev" type="button" aria-label="Previous">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                                    </svg>
+                                </button>
+                                <button class="hs-arrow hs-arrow--next" type="button" aria-label="Next">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6z" />
+                                    </svg>
+                                </button>
+
+                                <!-- optional caption -->
+                                <div class="hs-caption text-white d-none" id="hsCaption">Hotel 1</div>
+                            </div>
+
+                            <!-- ===== Thumbnails ===== -->
+                            <div class="hs-thumbs d-none" id="hsThumbs">
+                                <div class="hs-thumb is-active"><img src="img/hotel-1.jpg" alt="Hotel 1" /></div>
+                                <div class="hs-thumb"><img src="img/hotel-2.jpg" alt="Hotel 2" /></div>
+                                <div class="hs-thumb"><img src="img/hotel-3.jpg" alt="Hotel 3" /></div>
+                                <div class="hs-thumb"><img src="img/hotel-4.jpg" alt="Hotel 4" /></div>
+                                <div class="hs-thumb"><img src="img/hotel-5.jpg" alt="Hotel 5" /></div>
+                                <div class="hs-thumb"><img src="img/hotel-6.jpg" alt="Hotel 6" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hotel-detail-tabs">
+            <div class="container">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs hotel-detail-tabs p-3 mt-2 overflow-auto flex-nowrap hotel-detail-tabs-bg "
+                    role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold text-nowrap" href="#hotel-Rooms">Hotel
+                            Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold text-nowrap" href="#Hotel-Details">Hotel
+                            Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold text-nowrap" href="#Hotel-Facilities">Hotel
+                            Facilities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold text-nowrap" href="#Hotel-Gallery">Rooms Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold text-nowrap" href="#Attractions">Attractions</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                            <a class="nav-link fw-semibold text-nowrap" href="#LocaTion">Location</a>
+                        </li> -->
+                </ul>
+            </div>
+
+            <!-- Tab panes -->
+            <div class="tab-content mt-3">
+                <div id="hotel-Rooms" class="container">
+                    <div class="hotel-detail-card">
+                        <div class="row g-2">
+                            <div class="col-lg-12 p-0">
+                                <h4 class="room-card-heading">Rooms</h4>
+                                <div class="room-card">
+                                    <div class="room-body">
+                                        <div class="row">
+                                            <!-- Room Information -->
+                                            <div class="col-lg-3 mb-3">
+                                                <div class="section-header text-white">
+                                                    <i class="fas fa-bed me-1"></i>
+                                                    Room Details
+                                                </div>
+                                                <div class="white-content">
+                                                    <div class="room-list-professional bg-white">
+                                                        <div class="room-item">
+                                                            <span class="room-number text-muted">#01</span>
+                                                            <span class="room-type">Superior Room,1 King
+                                                                Bed</span>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="room-summary">
+                                                        <div class="summary-text">
+                                                            <i class="fas fa-check-circle me-1"></i>
+                                                            6 Room Available
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Room Inclusions -->
+                                            <div class="col-lg-3 mb-3">
+                                                <div class="section-header text-white">
+                                                    <i class="fas fa-check-circle me-1"></i>
+                                                    Room Inclusions
+                                                </div>
+                                                <div class="white-content">
+                                                    <div class="inclusion-item">
+                                                        <i class="fas fa-coffee"></i>
+                                                        Coffee & Tea
+                                                    </div>
+                                                    <div class="inclusion-item">
+                                                        <i class="fas fa-wifi"></i>
+                                                        Free WiFi
+                                                    </div>
+
+                                                    <span class="cancellation-badge" data-bs-toggle="tooltip"
+                                                        data-bs-placement="top"
+                                                        title="This booking cannot be cancelled or modified once confirmed. No refund will be provided for early check-out or no-shows.">
+                                                        <i class="fas fa-info-circle me-1"></i>
+                                                        Non Refundable
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <!-- Supplements -->
+                                            <div class="col-lg-3 mb-3">
+                                                <div class="section-header text-white supplements-header"
+                                                    data-bs-toggle="collapse" data-bs-target="#supplementsContent"
+                                                    aria-expanded="true">
+                                                    <span>
+                                                        <i class="fas fa-plus-circle me-1"></i>
+                                                        Supplements
+                                                    </span>
+                                                    <i class="fas fa-chevron-down collapse-arrow"></i>
+                                                </div>
+                                                <div class="collapse show" id="supplementsContent">
+                                                    <div class="white-content">
+                                                        <div class="supplement-item">
+                                                            <span class="supplement-type">Room #01: Tourism
+                                                                Fee</span>
+                                                            <span class="supplement-price">USD 196.2</span>
+                                                            <div class="small text-muted mt-1">Charges need to
+                                                                be paid at the hotel</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Pricing and Booking -->
+                                            <div class="col-lg-3">
+                                                <div class="section-header text-end text-white">
+                                                    <i class="fas fa-tag me-1"></i>
+                                                    Price (6 nights)
+                                                </div>
+                                                <div class="white-content">
+                                                    <div class="price-section">
+                                                        <div class="mb-3">
+                                                            <p class="price-amount">
+                                                                1,426,690.00
+                                                                <span class="price-currency">PKR</span>
+                                                            </p>
+                                                            <small class="text-muted">Total for all
+                                                                rooms</small>
+                                                        </div>
+
+                                                        <a href="/hotel-checkout.html"
+                                                            class="book-btn text-white text-decoration-none mt-2">
+                                                            <i class="fas fa-calendar-check me-2"></i>
+                                                            Book Room
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-12 p-0">
+                                <h4 class="room-card-heading">Rooms</h4>
+                                <div class="room-card">
+                                    <div class="room-body">
+                                        <div class="row">
+                                            <!-- Room Information -->
+                                            <div class="col-lg-3 mb-3">
+                                                <div class="section-header text-white">
+                                                    <i class="fas fa-bed me-1"></i>
+                                                    Room Details
+                                                </div>
+                                                <div class="white-content">
+                                                    <div class="room-list-professional bg-white">
+                                                        <div class="room-item">
+                                                            <span class="room-number text-muted">#01</span>
+                                                            <span class="room-type">Superior Room,1 King
+                                                                Bed</span>
+
+                                                        </div>
+                                                        <div class="room-item">
+                                                            <span class="room-number text-muted">#02</span>
+                                                            <span class="room-type">Deluxe Apartment</span>
+
+                                                        </div>
+                                                        <div class="room-item">
+                                                            <span class="room-number text-muted">#03</span>
+                                                            <span class="room-type">Premium Suite</span>
+
+                                                        </div>
+                                                        <div class="room-item">
+                                                            <span class="room-number text-muted">#04</span>
+                                                            <span class="room-type">Superior Room,1 King
+                                                                Bed</span>
+
+                                                        </div>
+                                                        <div class="room-item">
+                                                            <span class="room-number text-muted">#05</span>
+                                                            <span class="room-type">Sky Terrace Suite</span>
+
+                                                        </div>
+                                                        <div class="room-item">
+                                                            <span class="room-number text-muted">#06</span>
+                                                            <span class="room-type">Superior Room,1 King
+                                                                Bed</span>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="room-summary">
+                                                        <div class="summary-text">
+                                                            <i class="fas fa-check-circle me-1"></i>
+                                                            6 Room Available
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Room Inclusions -->
+                                            <div class="col-lg-3 mb-3">
+                                                <div class="section-header text-white">
+                                                    <i class="fas fa-check-circle me-1"></i>
+                                                    Room Inclusions
+                                                </div>
+                                                <div class="white-content">
+                                                    <div class="inclusion-item">
+                                                        <i class="fas fa-coffee"></i>
+                                                        Coffee & Tea
+                                                    </div>
+                                                    <div class="inclusion-item">
+                                                        <i class="fas fa-wifi"></i>
+                                                        Free WiFi
+                                                    </div>
+                                                    <div class="inclusion-item">
+                                                        <i class="fas fa-tint"></i>
+                                                        Drinking Water
+                                                    </div>
+                                                    <div class="inclusion-item">
+                                                        <i class="fas fa-dumbbell"></i>
+                                                        Indoor Gym Access
+                                                    </div>
+                                                    <div class="inclusion-item">
+                                                        <i class="fas fa-swimming-pool"></i>
+                                                        Free Pool Access
+                                                    </div>
+                                                    <span class="cancellation-badge" data-bs-toggle="tooltip"
+                                                        data-bs-placement="top"
+                                                        title="This booking cannot be cancelled or modified once confirmed. No refund will be provided for early check-out or no-shows.">
+                                                        <i class="fas fa-info-circle me-1"></i>
+                                                        Non Refundable
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <!-- Supplements -->
+                                            <div class="col-lg-3 mb-3">
+                                                <div class="section-header text-white supplements-header"
+                                                    data-bs-toggle="collapse" data-bs-target="#supplementsContent"
+                                                    aria-expanded="true">
+                                                    <span>
+                                                        <i class="fas fa-plus-circle me-1"></i>
+                                                        Supplements
+                                                    </span>
+                                                    <i class="fas fa-chevron-down collapse-arrow"></i>
+                                                </div>
+                                                <div class="collapse show" id="supplementsContent">
+                                                    <div class="white-content">
+                                                        <div class="supplement-item">
+                                                            <span class="supplement-type">Room #01: Tourism
+                                                                Fee</span>
+                                                            <span class="supplement-price">USD 196.2</span>
+                                                            <div class="small text-muted mt-1">Charges need to
+                                                                be paid at the hotel</div>
+                                                        </div>
+                                                        <div class="supplement-item">
+                                                            <span class="supplement-type">Room #02: Tourism
+                                                                Fee</span>
+                                                            <span class="supplement-price">USD 196.2</span>
+                                                            <div class="small text-muted mt-1">Charges need to
+                                                                be paid at the hotel</div>
+                                                        </div>
+                                                        <div class="supplement-item">
+                                                            <span class="supplement-type">Room #03: Tourism
+                                                                Fee</span>
+                                                            <span class="supplement-price">USD 196.2</span>
+                                                            <div class="small text-muted mt-1">Charges need to
+                                                                be paid at the hotel</div>
+                                                        </div>
+                                                        <div class="supplement-item">
+                                                            <span class="supplement-type">Room #04: Tourism
+                                                                Fee</span>
+                                                            <span class="supplement-price">USD 196.2</span>
+                                                            <div class="small text-muted mt-1">Per room, per
+                                                                stay</div>
+                                                        </div>
+                                                        <div class="supplement-item">
+                                                            <span class="supplement-type">Room #05: Service
+                                                                Tax</span>
+                                                            <span class="supplement-price">USD 50.0</span>
+                                                            <div class="small text-muted mt-1">Per room, per
+                                                                stay</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Pricing and Booking -->
+                                            <div class="col-lg-3">
+                                                <div class="section-header text-end text-white">
+                                                    <i class="fas fa-tag me-1"></i>
+                                                    Price (6 nights)
+                                                </div>
+                                                <div class="white-content">
+                                                    <div class="price-section">
+                                                        <div class="mb-3">
+                                                            <p class="price-amount">
+                                                                1,426,690.00
+                                                                <span class="price-currency">PKR</span>
+                                                            </p>
+                                                            <small class="text-muted">Total for all
+                                                                rooms</small>
+                                                        </div>
+
+                                                        <a href="/hotel-checkout.html"
+                                                            class="book-btn text-white text-decoration-none mt-2">
+                                                            <i class="fas fa-calendar-check me-2"></i>
+                                                            Book Room
+                                                        </a>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 p-0">
+                                <h4 class="room-card-heading">Rooms</h4>
+                                <div class="room-card">
+                                    <div class="room-body">
+                                        <div class="row">
+                                            <!-- Room Information -->
+                                            <div class="col-lg-3 mb-3">
+                                                <div class="section-header text-white">
+                                                    <i class="fas fa-bed me-1"></i>
+                                                    Room Details
+                                                </div>
+                                                <div class="white-content">
+                                                    <div class="room-list-professional bg-white">
+                                                        <div class="room-item">
+                                                            <span class="room-number text-muted">#01</span>
+                                                            <span class="room-type">Superior Room,1 King
+                                                                Bed</span>
+
+                                                        </div>
+                                                        <div class="room-item">
+                                                            <span class="room-number text-muted">#02</span>
+                                                            <span class="room-type">Deluxe Apartment</span>
+
+                                                        </div>
+                                                        <div class="room-item">
+                                                            <span class="room-number text-muted">#03</span>
+                                                            <span class="room-type">Premium Suite</span>
+
+                                                        </div>
+                                                        <div class="room-item">
+                                                            <span class="room-number text-muted">#04</span>
+                                                            <span class="room-type">Superior Room,1 King
+                                                                Bed</span>
+
+                                                        </div>
+                                                        <div class="room-item">
+                                                            <span class="room-number text-muted">#05</span>
+                                                            <span class="room-type">Sky Terrace Suite</span>
+
+                                                        </div>
+                                                        <div class="room-item">
+                                                            <span class="room-number text-muted">#06</span>
+                                                            <span class="room-type">Superior Room,1 King
+                                                                Bed</span>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="room-summary">
+                                                        <div class="summary-text">
+                                                            <i class="fas fa-check-circle me-1"></i>
+                                                            6 Room Available
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Room Inclusions -->
+                                            <div class="col-lg-3 mb-3">
+                                                <div class="section-header text-white">
+                                                    <i class="fas fa-check-circle me-1"></i>
+                                                    Room Inclusions
+                                                </div>
+                                                <div class="white-content">
+                                                    <div class="inclusion-item">
+                                                        <i class="fas fa-coffee"></i>
+                                                        Coffee & Tea
+                                                    </div>
+                                                    <div class="inclusion-item">
+                                                        <i class="fas fa-wifi"></i>
+                                                        Free WiFi
+                                                    </div>
+                                                    <div class="inclusion-item">
+                                                        <i class="fas fa-tint"></i>
+                                                        Drinking Water
+                                                    </div>
+                                                    <div class="inclusion-item">
+                                                        <i class="fas fa-dumbbell"></i>
+                                                        Indoor Gym Access
+                                                    </div>
+                                                    <div class="inclusion-item">
+                                                        <i class="fas fa-swimming-pool"></i>
+                                                        Free Pool Access
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Supplements -->
+                                            <div class="col-lg-3 mb-3">
+                                                <div class="section-header text-white supplements-header"
+                                                    data-bs-toggle="collapse" data-bs-target="#supplementsContent2"
+                                                    aria-expanded="true">
+                                                    <span>
+                                                        <i class="fas fa-plus-circle me-1"></i>
+                                                        Supplements
+                                                    </span>
+                                                    <i class="fas fa-chevron-down collapse-arrow"></i>
+                                                </div>
+                                                <div class="collapse show" id="supplementsContent2">
+                                                    <div class="white-content">
+                                                        <div class="supplement-item">
+                                                            <span class="supplement-type">Room #01: Tourism
+                                                                Fee</span>
+                                                            <span class="supplement-price">USD 196.2</span>
+                                                            <div class="small text-muted mt-1">Charges need to
+                                                                be paid at the hotel</div>
+                                                        </div>
+                                                        <div class="supplement-item">
+                                                            <span class="supplement-type">Room #02: Tourism
+                                                                Fee</span>
+                                                            <span class="supplement-price">USD 196.2</span>
+                                                            <div class="small text-muted mt-1">Charges need to
+                                                                be paid at the hotel</div>
+                                                        </div>
+                                                        <div class="supplement-item">
+                                                            <span class="supplement-type">Room #03: Tourism
+                                                                Fee</span>
+                                                            <span class="supplement-price">USD 196.2</span>
+                                                            <div class="small text-muted mt-1">Charges need to
+                                                                be paid at the hotel</div>
+                                                        </div>
+                                                        <div class="supplement-item">
+                                                            <span class="supplement-type">Room #04: Tourism
+                                                                Fee</span>
+                                                            <span class="supplement-price">USD 196.2</span>
+                                                            <div class="small text-muted mt-1">Per room, per
+                                                                stay</div>
+                                                        </div>
+                                                        <div class="supplement-item">
+                                                            <span class="supplement-type">Room #05: Service
+                                                                Tax</span>
+                                                            <span class="supplement-price">USD 50.0</span>
+                                                            <div class="small text-muted mt-1">Per room, per
+                                                                stay</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Pricing and Booking -->
+                                            <div class="col-lg-3">
+                                                <div class="section-header text-end text-white">
+                                                    <i class="fas fa-tag me-1"></i>
+                                                    Price (6 nights)
+                                                </div>
+                                                <div class="white-content">
+                                                    <div class="price-section">
+                                                        <div class="mb-3">
+                                                            <p class="price-amount">
+                                                                1,426,690.00
+                                                                <span class="price-currency">PKR</span>
+                                                            </p>
+                                                            <small class="text-muted">Total for all
+                                                                rooms</small>
+                                                        </div>
+
+                                                        <a href="/hotel-checkout.html"
+                                                            class="book-btn text-white text-decoration-none mt-2">
+                                                            <i class="fas fa-calendar-check me-2"></i>
+                                                            Book Room
+                                                        </a>
+
+                                                        <div class="mt-3 text-end">
+                                                            <small class="text-muted">
+                                                                <i class="fas fa-shield-alt me-1 text-success"></i>
+                                                                Secure booking process
+                                                            </small>
+                                                        </div>
+
+                                                        <span class="cancellation-badge" data-bs-toggle="tooltip"
+                                                            data-bs-placement="top"
+                                                            title="This booking cannot be cancelled or modified once confirmed. No refund will be provided for early check-out or no-shows.">
+                                                            <i class="fas fa-info-circle me-1"></i>
+                                                            Non Refundable
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Hotel-Details" class="container hotel-details-tab mb-4">
+                    <h4 class="fw-semibold mb-3">Hotel Details:</h4>
+                    <p class="d-inline text-muted">The Apartments, Dubai World Trade Centre are located on
+                        Dubai’s Sheikh
+                        Zayed Road, next
+                        to Dubai International Convention & Exhibition Centre (DICEC). Spacious apartments in
+                        Block A offers free WiFi and free parking for the serviced apartments guests. Choose
+                        from a selection of one, 2 and 3-bedroom apartments in BLOCK A, all of which have an
+                        open-plan living and dining area. There is also a well-equipped kitchen with all
+                        necessary utensils. All guests can enjoy free access to ‘The Club ’ located in Block – C
+                        which offers many leisure facilities, including swimming pool , tennis court , a fitness
+                        center and an outdoor climbing wall. For children, there is a separate kids’ pool and
+                        play area. There is an international restaurant and pool bar located at The Apartments,
+                        Dubai World Trade Centre, Block C where the Continental breakfast will be served. Within
+                        walking distance of the property, guests will find a choice of restaurants, banks, and
+                        supermarket. Dubai’s Metro is right next to The Apartments. Guests are required to show
+                        a photo identification and credit card upon check-in. Please note that all Special
+                        Requests are subject to availability and additional charges may apply. This property
+                        will not accommodate hen, stag or similar parties. Guests under the age of 18 can only
+                        check in with a parent or official guardian. Please inform The Apartments, Dubai World
+                        Trade Centre in advance of your expected arrival time.</p>
+                    <span class="fw-semibold">License Number: 229599</span>
+                    <p class="fw-semibold">Disclaimer notification: Amenities are subject to availability and
+                        may be chargeable as
+                        per the hotel policy.</p>
+                </div>
+
+                <div id="Hotel-Facilities" class="hotel-details-tab hotel-details-tab-bg mb-4 py-4">
+
+                    <div class="container">
+                        <h4 class="">Facilities:</h4>
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                            <div class="col">
+                                <ul class="list-unstyled mb-0 facilities-style">
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Safety Deposit Box
+                                    </li>
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Hot tub/jacuzzi</li>
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Fax/photocopying</li>
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Air conditioning</li>
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Concierge service</li>
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Lockers</li>
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Grocery deliveries
+                                    </li>
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Kids' outdoor play
+                                        equipment</li>
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Accessible parking
+                                    </li>
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Lower bathroom sink
+                                    </li>
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Coffee house on site
+                                    </li>
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Beauty Services</li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <ul class="list-unstyled mb-0 facilities-style">
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Currency exchange</li>
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Car hire</li>
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Wifi</li>
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Designated smoking
+                                        area</li>
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Trouser press</li>
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Minimarket on site
+                                    </li>
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Parking on site</li>
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Kid meals</li>
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Wheelchair accessible
+                                    </li>
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Emergency cord in
+                                        bathroom</li>
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Sun loungers or beach
+                                        chairs</li>
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Facial treatments</li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <ul class="list-unstyled mb-0 facilities-style">
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Children's playground
+                                    </li>
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Tour desk</li>
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Outdoor pool</li>
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Outdoor pool (all
+                                        year)</li>
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Shared kitchen</li>
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Daily housekeeping
+                                    </li>
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Wifi available in all
+                                        areas</li>
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Street parking</li>
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Toilet with grab rails
+                                    </li>
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Tennis equipment</li>
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Picnic area</li>
+                                    <li class="text-muted"><i class="bi bi-tag me-2"></i> Waxing services</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Attractions" class="container hotel-details-tab mb-4">
+                    <h4 class="fw-semibold mb-3">Attractions:</h4>
+                    <p class="text-muted mb-3">Distances are displayed to the nearest 0.1 mile and
+                        kilometer.
+                    </p>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled hotel-attrations">
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="fas fa-map-marker-alt me-2"></i>
+                                    <span class="text-muted">Dubai Opera - 1.7 km / 1.1 mi</span>
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="fas fa-map-marker-alt me-2"></i>
+                                    <span class="text-muted">Dubai Water Canal Waterfall - 2 km / 1.3
+                                        mi</span>
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="fas fa-map-marker-alt me-2"></i>
+                                    <span class="text-muted">Souk al Bahar - 2.1 km / 1.3 mi</span>
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="fas fa-map-marker-alt me-2"></i>
+                                    <span class="text-muted">Safa Park - 2.1 km / 1.3 mi</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled hotel-attrations">
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="fas fa-map-marker-alt me-2"></i>
+
+                                    <span class="text-muted">Dubai Fountain - 2.2 km / 1.4 mi</span>
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="fas fa-map-marker-alt me-2"></i>
+
+                                    <span class="text-muted">Dubai Water Canal - 2.3 km / 1.4 mi</span>
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="fas fa-map-marker-alt me-2"></i>
+
+                                    <span class="text-muted"> Burj Khalifa - 2.3 km / 1.4 mi</span>
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="fas fa-map-marker-alt me-2"></i>
+
+                                    <span class="text-muted">KidZania - 2.4 km / 1.5 mi</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="text-muted mt-3">The preferred airport for Anantara Downtown Dubai Hotel is
+                        Dubai
+                        Intl. Airport (DXB).</p>
+
+                </div>
+                <!-- <div id="LocaTion" class="container hotel-details-tab mb-4">
+                            <h4 class="fw-semibold mb-3">Location:</h4>
+                            <section">
+                                <iframe class="hotel-location rounded-4"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093764!2d144.95373531590404!3d-37.81627974202198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1f1f1f1%3A0xf5773e33f8c0a!2sVictoria%2C%20Australia!5e0!3m2!1sen!2s!4v1616000000000!5m2!1sen!2s"
+                                    width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy">
+                                </iframe>
+                            </section>
+                        </div> -->
+
+            </div>
+        </div>
+
+
+
+
+        </div>
+    </section>
+    <!-- hotel detail sec end -->
+    <!-- footer section start -->
+    <footer class="footer-sec pt-5 mt-auto">
+        <div class="container py-3">
+            <div class="row gy-4">
+                <!-- Logo and Description -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-semibold mb-4 fs-5 text-white">Download Mobile App</h6>
+                        <div class=" my-3 play-button">
+                            <a class="d-flex text-decoration-none mb-2" href="https://play.google.com/store"
+                                target="_blank">
+                                <img src="img/Google-Play.png" alt="Get it on Google Play" class="google-play-btn">
+                            </a>
+                            <a href="" class=""><img class="bar-code" src="img/svgexport-2.svg" alt="">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Business -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-semibold text-white mb-4 fs-5">Links:</h6>
+                        <ul class="list-unstyled small">
+                            <li><a href="/index.html" class="text-white text-decoration-none">About Us</a></li>
+                            <li><a href="/blog.html" class="text-white text-decoration-none">Contact Us</a></li>
+                            <li><a href="/about-us.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Term & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-semibold text-white mb-4 fs-5">Need Help?</h6>
+                        <ul class="list-unstyled small text-white social-icons">
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-telephone-fill me-2"></i> <a href=""
+                                    class="text-decoration-none text-white">+971 42 65
+                                    5264</a>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-envelope-fill me-2"></i> <a href="mailto:support@aantorism.com"
+                                    class="text-decoration-none text-white">
+                                    support@aantorism.com
+                                </a>
+                            </li>
+                            <li class="d-flex align-items-center social-icons">
+                                <ul class="list-unstyled d-inline-flex">
+                                    <li>
+                                        <a href="" class="text-decoration-none"><i
+                                                class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="text-decoration-none"><i class="fa-brands fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="text-decoration-none"><i
+                                                class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <div>
+                                <button id="orangeModeBtn"></button>
+                                <button id="lightModeBtn"></button>
+                                <button id="pinkModeBtn"></button>
+                                <!-- <button id="darkModeBtn"></button> -->
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="privacy-policy text-center py-2 mt-4">
+            <small class="text-white">© Copyright 2024 Tourism. All rights reserved</small>
+        </div>
+    </footer>
+    <!-- footer section end -->
+    <!-- Bootstrap JS Bundle (with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Flatpickr JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="js/hotel-detail.js"></script>
+    <script src="js/theme-change.js"></script>
+</body>
+
+</html>

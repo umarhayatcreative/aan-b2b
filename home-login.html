@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar Right Side Toggle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/theme-variables.css">
+    <link rel="stylesheet" href="css/home-login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <section class="header-login">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand text-white me-5 fw-bold" href="/home-login.html">
+                        Logo
+                    </a>
+
+                    <!-- Right side elements -->
+                    <div class="d-flex align-items-center order-lg-2">
+
+                        <!-- Cart -->
+                        <a class="text-white me-3" href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                        <!-- Notifications -->
+                        <div class="dropdown me-3">
+                            <a class="text-white dropdown-toggle hidden-arrow" href="#" id="notifDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-translate"></i>
+                                <!-- <span class="badge rounded-pill bg-danger">1</span> -->
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="notifDropdown">
+                                <li><a class="dropdown-item" href="#">English</a></li>
+                            </ul>
+                        </div>
+                        <!-- Toggle button -->
+                        <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <i class="bi bi-list text-white"></i>
+                        </button>
+                    </div>
+
+                    <!-- Offcanvas Menu -->
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="/signup-form.html">Register With Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/supplier-registration.html">Supplier
+                                        Registration</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="tel:+923001234567">(+971) 4265-5264</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="mailto:support@aantorism.com">support@aantorism.com</a>
+                                </li>
+
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!-- Header sec end -->
+
+    <!-- home-banner sec start -->
+    <section class="home-banner py-5 d-flex align-items-center">
+        <div class="container">
+            <div class="inputforms">
+                <div class="row justify-content-center">
+                    <div class="col-11 col-md-8 col-lg-6 col-xl-5">
+                        <form id="loginForm" class="bg-white p-4 rounded-3">
+                            <h4 class="text-center mb-4 fw-semibold">Login</h4>
+                            <!-- Email Input -->
+                            <div class="mb-3 position-relative">
+                                <i class="fas fa-user position-absolute text-white input-icon"></i>
+                                <input type="email" class="form-control login-input ps-5 text-white"
+                                    placeholder="Email Address Or Login ID" required>
+                            </div>
+
+                            <!-- Password Input -->
+                            <div class="mb-4 position-relative">
+                                <i class="fas fa-lock position-absolute text-white input-icon"></i>
+                                <input type="password" class="form-control login-input ps-5 text-white"
+                                    placeholder="Password" required>
+                            </div>
+
+                            <!-- Remember Me & Forgot Password -->
+                            <div class="d-flex justify-content-between align-items-center mb-4 remember-me flex-wrap">
+                                <div class="form-check">
+                                    <input class="form-check-input remember-checkbox" type="checkbox" id="rememberMe">
+                                    <label class="form-check-label text-muted" for="rememberMe">
+                                        Remember Me
+                                    </label>
+                                </div>
+                                <a href="#" class="forgot-link ms-auto text-muted" id="forgotPassword">Forgot your
+                                    password?</a>
+                            </div>
+
+                            <!-- Sign In Button -->
+                            <div class="d-grid mb-4">
+                                <a href="/home.html" type="submit" class="btn sign-in-btn text-white fw-medium">
+                                    Sign In
+                                </a>
+                            </div>
+
+                            <!-- Protection Link -->
+                            <div class="text-center">
+                                <a href="/signup-form.html" class="protection-link">
+                                    Do not have an account? <u>Sign Up</u>
+                                </a>
+                            </div>
+                        </form>
+
+                        <!-- Forgot Password Form (Hidden by default) -->
+                        <form id="forgotPasswordForm" class="d-none bg-white p-4 rounded-3">
+                            <div class="mb-4">
+                                <h5 class="text-center mb-4">Reset Your Password</h5>
+                                <div class="position-relative">
+                                    <i class="fas fa-envelope position-absolute text-white input-icon"></i>
+                                    <input type="email" class="form-control login-input ps-5 text-white"
+                                        placeholder="Enter your email address" required>
+                                </div>
+                            </div>
+
+                            <div class="d-grid mb-4">
+                                <button type="submit" class="btn sign-in-btn text-white">
+                                    Send Rest Code
+                                </button>
+                            </div>
+
+                            <div class="text-center">
+                                <a href="#" class="forgot-link" id="backToLogin">Remember your password?<u> Log
+                                        In</u></a>
+                            </div>
+                        </form>
+
+                        <!-- OTP Verification Form (Hidden by default) -->
+                        <form id="otpForm" class="d-none bg-white p-4 rounded-3">
+                            <div class="mb-4">
+                                <h5 class="text-center mb-3 reset-title">Enter Verification Code</h5>
+                                <p class="text-center text-muted mb-4">We've sent a 6-digit code to your email</p>
+
+                                <div class="d-flex justify-content-center gap-2 mb-4">
+                                    <input type="text" class="form-control text-center fw-bold otp-input" maxlength="1">
+                                    <input type="text" class="form-control text-center fw-bold otp-input" maxlength="1">
+                                    <input type="text" class="form-control text-center fw-bold otp-input" maxlength="1">
+                                    <input type="text" class="form-control text-center fw-bold otp-input" maxlength="1">
+                                    <input type="text" class="form-control text-center fw-bold otp-input" maxlength="1">
+                                    <input type="text" class="form-control text-center fw-bold otp-input" maxlength="1">
+                                </div>
+                            </div>
+
+                            <div class="d-grid mb-4">
+                                <button type="submit" class="btn sign-in-btn text-white">
+                                    Verify Code
+                                </button>
+                            </div>
+
+                            <div class="text-center mb-3">
+                                <a href="#" class="forgot-link text-muted" id="resendCode">Resend Code</a>
+                            </div>
+
+                            <div class="text-center">
+                                <a href="#" class="forgot-link" id="backToLoginFromOtp">Back to <u>Login</u></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- home-banner sec end -->
+
+    <!-- our services start -->
+    <section class="home-services py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="home-service-card d-flex align-items-center justify-content-center flex-column p-3">
+                        <div class="icons d-flex align-items-center justify-content-center mb-2"><i
+                                class="fas fa-user-plus fs-4"></i></div>
+                        <h5 class="fw-semibold text-center">Free & Quick Registration</h5>
+                        <p class="text-center text-muted">Unlock the door to seamless convenience with our
+                            lightning-fast registration process! Sign up
+                            for our platform effortlessly. Register for free today and unlock a world of possibilities!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="home-service-card d-flex align-items-center justify-content-center flex-column p-3">
+                        <div class="icons d-flex align-items-center justify-content-center mb-2"><i
+                                class="fas fa-tags fs-4"></i>
+                        </div>
+                        <h5 class="fw-semibold text-center">Best Price Guarantee</h5>
+                        <p class="text-center text-muted">Unlock the door to seamless convenience with our
+                            lightning-fast registration process! Sign up
+                            for our platform effortlessly. Register for free today and unlock a world of possibilities!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="home-service-card d-flex align-items-center justify-content-center flex-column p-3">
+                        <div class="icons d-flex align-items-center justify-content-center mb-2"><i
+                                class="fas fa-credit-card fs-4"></i></div>
+                        <h5 class="fw-semibold text-center">Easy Online Transaction</h5>
+                        <p class="text-center text-muted">Unlock the door to seamless convenience with our
+                            lightning-fast registration process! Sign up
+                            for our platform effortlessly. Register for free today and unlock a world of possibilities!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="home-service-card d-flex align-items-center justify-content-center flex-column p-3">
+                        <div class="icons d-flex align-items-center justify-content-center mb-2"><i
+                                class="fas fa-lock fs-4"></i>
+                        </div>
+                        <h5 class="fw-semibold text-center">Secure Online Transaction</h5>
+                        <p class="text-center text-muted">Unlock the door to seamless convenience with our
+                            lightning-fast registration process! Sign up
+                            for our platform effortlessly. Register for free today and unlock a world of possibilities!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="home-service-card d-flex align-items-center justify-content-center flex-column p-3">
+                        <div class="icons d-flex align-items-center justify-content-center mb-2"><i
+                                class="fas fa-headset fs-4"></i>
+                        </div>
+                        <h5 class="fw-semibold text-center">24X7 Live Chat Support</h5>
+                        <p class="text-center text-muted">Unlock the door to seamless convenience with our
+                            lightning-fast registration process! Sign up
+                            for our platform effortlessly. Register for free today and unlock a world of possibilities!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="home-service-card d-flex align-items-center justify-content-center flex-column p-3">
+                        <div class="icons d-flex align-items-center justify-content-center mb-2"><i
+                                class="fas fa-star fs-4"></i>
+
+                        </div>
+                        <h5 class="fw-semibold text-center">Guest Reviews & Ratings</h5>
+                        <p class="text-center text-muted">Unlock the door to seamless convenience with our
+                            lightning-fast registration process! Sign up
+                            for our platform effortlessly. Register for free today and unlock a world of possibilities!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- our services end -->
+
+
+
+
+
+    <!-- Footer sec start -->
+    <footer class="footer-sec pt-5 mt-auto">
+        <div class="container py-3">
+            <div class="row gy-4">
+                <!-- Logo and Description -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-semibold mb-4 fs-5 text-white">Download Mobile App</h6>
+                        <div class=" my-3 play-button">
+                            <a class="d-flex text-decoration-none mb-2" href="https://play.google.com/store"
+                                target="_blank">
+                                <img src="img/Google-Play.png" alt="Get it on Google Play" class="google-play-btn">
+                            </a>
+                            <a href="" class=""><img class="bar-code" src="img/svgexport-2.svg" alt="">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Business -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-semibold text-white mb-4 fs-5">Links:</h6>
+                        <ul class="list-unstyled small">
+                            <li><a href="/index.html" class="text-white text-decoration-none">About Us</a></li>
+                            <li><a href="/blog.html" class="text-white text-decoration-none">Contact Us</a></li>
+                            <li><a href="/about-us.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Term & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-semibold text-white mb-4 fs-5">Need Help?</h6>
+                        <ul class="list-unstyled small text-white social-icons">
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-telephone-fill me-2"></i> <a href=""
+                                    class="text-decoration-none text-white">+971 42 65
+                                    5264</a>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-envelope-fill me-2"></i> <a href="mailto:support@aantorism.com"
+                                    class="text-decoration-none text-white">
+                                    support@aantorism.com
+                                </a>
+                            </li>
+                            <li class="d-flex align-items-center social-icons">
+                                <ul class="list-unstyled d-inline-flex">
+                                    <li>
+                                        <a href="" class="text-decoration-none"><i
+                                                class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="text-decoration-none"><i class="fa-brands fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="text-decoration-none"><i
+                                                class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <div>
+                                <button id="orangeModeBtn"></button>
+                                <button id="lightModeBtn"></button>
+                                <button id="pinkModeBtn"></button>
+                                <button id="hotPurpleModeBtn"></button>
+
+                                <!-- <button id="darkModeBtn"></button> -->
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="privacy-policy text-center py-2 mt-4">
+            <small class="text-white">© Copyright 2024 Tourism. All rights reserved</small>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap JS Bundle (with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/home-login.js"></script>
+    <script src="/js/theme-change.js"></script>
+
+</body>
+
+</html>

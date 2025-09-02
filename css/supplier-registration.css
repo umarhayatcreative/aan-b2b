@@ -1,0 +1,161 @@
+
+.header-login {
+    background-color: var(--primary-colors);
+    height: 72px;
+}
+
+.header-login .navbar {
+    height: 72px;
+}
+
+.header-login .navbar-nav .nav-item {
+    margin-right: 25px;
+    /* jitna gap chahiye */
+}
+
+.header-login .navbar-nav .nav-item:last-child {
+    margin-right: 0;
+}
+
+.header-login .navbar-nav .nav-item .nav-link {
+    color: var(--color-white);
+}
+
+@media (max-width: 991px) {
+    .header-login .navbar-nav .nav-item .nav-link {
+        color: var(--primary-colors);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .header-login .navbar-nav .nav-item {
+        margin-right: 10px;
+    }
+}
+
+.header-login .navbar-nav>.nav-item>.nav-link:hover {
+    color: var(--secondary-colors);
+}
+
+.header-login .navbar-nav>.nav-item>.nav-link.active {
+    color: var(--secondary-colors);
+}
+
+/* Dropdown items hover color */
+.header-login .dropdown-menu .dropdown-item:hover {
+    background-color: var(--primary-lights);
+    color: var(--secondary-colors);
+}
+
+.header-login .navbar-toggler:focus {
+    box-shadow: none;
+    border: none;
+}
+
+/* header css end */
+.sign-up-form .signup-form-card h2 {
+    color: var(--primary-colors);
+}
+
+.sign-up-form .signup-form-card .section-heading {
+    color: var(--primary-colors);
+}
+
+.sign-up-form .signup-form-card .form-control {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 1px solid var(--all-border);
+}
+
+.sign-up-form .signup-form-card .form-control:focus {
+    box-shadow: none;
+    border-color: var(--secondary-colors);
+}
+
+.sign-up-form .signup-form-card .form-select:focus {
+    box-shadow: none;
+    border-color: var(--secondary-colors);
+}
+
+.sign-up-form .signup-form-card .form-select {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.sign-up-form .signup-form-card ::placeholder {
+    color: var(--primary-colors-low-opacity);
+}
+
+.sign-up-form .signup-form-card .register-now-btn {
+    background-color: var(--secondary-colors);
+}
+
+.sign-up-form .signup-form-card .terms-condition a {
+    color: var(--primary-colors);
+}
+
+.signup-form-card {
+    border-radius: 15px;
+}
+
+/* B2B background for supplier registration */
+.sign-up-form {
+    /* Replace with your own image if available */
+    background-image: linear-gradient(rgba(0, 0, 38, 0.6), rgba(0, 0, 38, 0.6)), url('../img/photo-1542744173-8e7e53415bb0.avif');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Ensure comfortable top/bottom spacing on small screens too */
+.sign-up-form {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* footer sec start */
+.footer-sec {
+    background-color: var(--primary-colors);
+}
+
+.footer-sec .privacy-policy {
+    background-color: var(--secondary-colors);
+}
+
+.footer-sec .footer-custom ul li i {
+    color: var(--secondary-colors);
+}
+
+.footer-sec .footer-custom ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer-sec .footer-custom ul a:hover {
+    color: var(--secondary-colors) !important;
+}
+
+.footer-sec .footer-custom .social-icons li i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 102, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-sec .play-button a img {
+    width: 112px;
+}
+
+.footer-sec .play-button .bar-code {
+    width: 110px;
+}
+
+.footer-sec .social-icons ul li {
+    margin-left: 10px;
+}
+
+.footer-sec .social-icons ul li:first-child {
+    margin-left: 0px;
+}

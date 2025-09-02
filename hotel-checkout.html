@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar Right Side Toggle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/theme-variables.css">
+    <link rel="stylesheet" href="css/hotel-checkout.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Flatpickr CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <!-- header section start -->
+    <section class="header-login">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg text-white">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand text-white me-5 fw-bold" href="#">
+                        Logo
+                    </a>
+
+                    <!-- Right side elements -->
+                    <div class="d-flex align-items-center order-lg-2">
+                        <!-- Profile Dropdown -->
+                        <a class="text-white me-3 text-decoration-none" href="/home-login.html">
+                            Logout
+                        </a>
+
+                        <!-- Cart -->
+                        <a class="text-white me-3" href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+
+                        <!-- Toggle button -->
+                        <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <i class="bi bi-list text-white"></i>
+                        </button>
+                    </div>
+
+                    <!-- Offcanvas Menu -->
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="/home.html">Home</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="visasDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Credit Limit
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="visasDropdown">
+                                        <li class="p-3 text-nowrap"><span>Credit Limit:&nbsp;&nbsp;&nbsp;&nbsp;PKR
+                                                75,000.00 <br>
+                                                Available Limit:&nbsp;&nbsp;&nbsp;&nbsp;PKR 22,190.00</span></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/visas.html">Visas</a>
+                                </li>
+
+
+                                <!-- Dropdown 2: Reports -->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="reportsDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Reports
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="reportsDropdown">
+                                        <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                                        <li><a class="dropdown-item" href="/report-booking.html">Bookings</a></li>
+                                        <li><a class="dropdown-item" href="/report-ledger.html">Ledger</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="reportsDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Sub Agents
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="reportsDropdown">
+                                        <li><a class="dropdown-item" href="/sub-agents.html">Manage Sub Agents</a></li>
+                                        <li><a class="dropdown-item" href="/add-credit.html">Add Credit</a></li>
+                                        <li><a class="dropdown-item" href="/sub-agents-booking.html">Bookings</a></li>
+                                        <li><a class="dropdown-item" href="/sub-agent-visas.html">Visas</a></li>
+                                        <li><a class="dropdown-item" href="/sub-agent-ledger.html">Ledger</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/user.html">User</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="reportsDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        ATE-167000316
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="reportsDropdown">
+                                        <li><a class="dropdown-item" href="/markups.html">Markups</a></li>
+                                        <li><a class="dropdown-item" href="/my-profile.html">Profile</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!-- header section end -->
+
+    <!-- hotel checkout input section start -->
+    <section class="hotel-checkout">
+        <div class="container my-4">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card hotel-checkout-card mb-4">
+                        <div class="card-header hotel-checkout-header py-3 border-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0 fw-bold"><i class="fas fa-users me-2 fs-6"></i>Guest(s) Information</h5>
+
+                            </div>
+                        </div>
+
+                        <div class="card-body p-4">
+                            <!-- Room 1 -->
+                            <div class="mb-4">
+
+                                <!-- Lead Guest -->
+                                <div class="card mb-3 lead-guest">
+                                    <div class="card-body p-3">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <i class="fas fa-crown text-warning me-2"></i>
+                                            <h6 class="mb-0 me-2">Guest 1 (Adult) - Lead Guest</h6>
+                                            <span class="text-danger">*</span>
+                                        </div>
+                                        <div class="row g-2 mb-3">
+                                            <div class="col-md-2">
+                                                <select class="form-select py-2">
+                                                    <option>Mr</option>
+                                                    <option>Mrs</option>
+                                                    <option>Ms</option>
+                                                    <option>Dr</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <input type="text" class="form-control py-2" placeholder="First Name">
+                                            </div>
+                                            <div class="col-md-5">
+                                                <input type="text" class="form-control py-2" placeholder="Last Name">
+                                            </div>
+                                        </div>
+                                        <div class="row g-2">
+                                            <div class="col-md-6">
+                                                <input type="email" class="form-control py-2"
+                                                    placeholder="Email Address">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="tel" class="form-control py-2" placeholder="Phone Number">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Rooms 3-6 Compact Layout -->
+                                <div class="row g-3">
+                                    <!-- Room 3 -->
+                                    <div class="col-lg-12">
+                                        <div class="card room-guests">
+                                            <div class="card-header room-header border-0 py-2">
+                                                <small class="fw-semibold">Room 3 - 2 Guests</small>
+                                            </div>
+                                            <div class="card-body p-3">
+                                                <div class="mb-3">
+                                                    <div class="d-flex align-items-center mb-1">
+                                                        <i class="fas fa-user user-icons me-1"></i>
+                                                        <small class="text-muted">Guest 1 (Adult) *</small>
+                                                    </div>
+                                                    <div class="row g-2">
+                                                        <div class="col-md-3">
+                                                            <select class="form-select py-2">
+                                                                <option>Mr</option>
+                                                                <option>Mrs</option>
+                                                                <option>Ms</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <input class="form-control py-2" placeholder="First">
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <input class="form-control py-2" placeholder="Last">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="d-flex align-items-center mb-1">
+                                                        <i class="fas fa-user user-icons me-1"></i>
+                                                        <small class="text-muted">Guest 2 (Adult) *</small>
+                                                    </div>
+                                                    <div class="row g-2">
+                                                        <div class="col-md-3">
+                                                            <select class="form-select py-2">
+                                                                <option>Mr</option>
+                                                                <option>Mrs</option>
+                                                                <option>Ms</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <input class="form-control py-2 " placeholder="First">
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <input class="form-control py-2 " placeholder="Last">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Room 4 -->
+                                    <div class="col-lg-12">
+                                        <div class="card room-guests">
+                                            <div class="card-header room-header border-0 py-2">
+                                                <small class="fw-semibold">Room 4 - 2 Guests</small>
+                                            </div>
+                                            <div class="card-body p-3">
+                                                <div class="mb-3">
+                                                    <div class="d-flex align-items-center mb-1">
+                                                        <i class="fas fa-user user-icons me-1"></i>
+                                                        <small class="text-muted">Guest 1 (Adult) *</small>
+                                                    </div>
+                                                    <div class="row g-2">
+                                                        <div class="col-md-3">
+                                                            <select class="form-select py-2">
+                                                                <option>Mr</option>
+                                                                <option>Mrs</option>
+                                                                <option>Ms</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <input class="form-control py-2" placeholder="First">
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <input class="form-control py-2" placeholder="Last">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="d-flex align-items-center mb-1">
+                                                        <i class="fas fa-user user-icons me-1"></i>
+                                                        <small class="text-muted">Guest 2 (Adult) *</small>
+                                                    </div>
+                                                    <div class="row g-2">
+                                                        <div class="col-md-3">
+                                                            <select class="form-select py-2">
+                                                                <option>Mr</option>
+                                                                <option>Mrs</option>
+                                                                <option>Ms</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <input class="form-control py-2" placeholder="First">
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <input class="form-control py-2" placeholder="Last">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Room 5 -->
+                                    <div class="col-lg-12">
+                                        <div class="card room-guests">
+                                            <div class="card-header room-header border-0 border-0 py-2">
+                                                <small class="fw-semibold">Room 5 - 2 Guests</small>
+                                            </div>
+                                            <div class="card-body p-3">
+                                                <div class="mb-3">
+                                                    <div class="d-flex align-items-center mb-1">
+                                                        <i class="fas fa-user user-icons me-1"></i>
+                                                        <small class="text-muted">Guest 1 (Adult) *</small>
+                                                    </div>
+                                                    <div class="row g-2">
+                                                        <div class="col-md-3">
+                                                            <select class="form-select py-2">
+                                                                <option>Mr</option>
+                                                                <option>Mrs</option>
+                                                                <option>Ms</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <input class="form-control py-2" placeholder="First">
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <input class="form-control py-2" placeholder="Last">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="d-flex align-items-center mb-1">
+                                                        <i class="fas fa-user user-icons me-1"></i>
+                                                        <small class="text-muted">Guest 2 (Adult) *</small>
+                                                    </div>
+                                                    <div class="row g-2">
+                                                        <div class="col-md-3">
+                                                            <select class="form-select py-2">
+                                                                <option>Mr</option>
+                                                                <option>Mrs</option>
+                                                                <option>Ms</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <input class="form-control py-2" placeholder="First">
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <input class="form-control py-2" placeholder="Last">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Room 6 -->
+                                    <div class="col-lg-12">
+                                        <div class="card room-guests">
+                                            <div class="card-header room-header border-0 border-0 py-2">
+                                                <small class="fw-semibold">Room 6 - 2 Guests</small>
+                                            </div>
+                                            <div class="card-body p-3">
+                                                <div class="mb-3">
+                                                    <div class="d-flex align-items-center mb-1">
+                                                        <i class="fas fa-user user-icons me-1"></i>
+                                                        <small class="text-muted">Guest 1 (Adult) *</small>
+                                                    </div>
+                                                    <div class="row g-2">
+                                                        <div class="col-md-3">
+                                                            <select class="form-select py-2">
+                                                                <option>Mr</option>
+                                                                <option>Mrs</option>
+                                                                <option>Ms</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <input class="form-control py-2" placeholder="First">
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <input class="form-control py-2" placeholder="Last">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="d-flex align-items-center mb-1">
+                                                        <i class="fas fa-user user-icons me-1"></i>
+                                                        <small class="text-muted">Guest 2 (Adult) *</small>
+                                                    </div>
+                                                    <div class="row g-2">
+                                                        <div class="col-md-3">
+                                                            <select class="form-select py-2">
+                                                                <option>Mr</option>
+                                                                <option>Mrs</option>
+                                                                <option>Ms</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <input class="form-control py-2" placeholder="First">
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <input class="form-control py-2" placeholder="Last">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card  payment-method-card mb-4">
+                                <div class="card-body">
+                                    <h5 class="fw-bold mb-4">💳 Payment Information</h5>
+
+                                    <div class="row g-3">
+                                        <!-- Credit Limit -->
+                                        <div class="col-md-6">
+                                            <label class="w-100">
+                                                <input type="radio" name="paymentMethod" class="btn-check" checked>
+                                                <div class="card h-100">
+                                                    <div class="card-body text-center">
+                                                        <h6 class="fw-bold mb-2">
+                                                            Available Limit: PKR 22,190.00
+                                                        </h6>
+                                                        <p class="small text-muted mb-0">
+                                                            Payment with Credit Limit
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+
+                                        <!-- Credit Card -->
+                                        <div class="col-md-6">
+                                            <label class="w-100">
+                                                <input type="radio" name="paymentMethod" class="btn-check">
+                                                <div class="card h-100">
+                                                    <div class="card-body text-center">
+                                                        <div class="mb-2">
+                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png"
+                                                                alt="Visa" height="25" class="me-1">
+                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png"
+                                                                alt="MasterCard" height="25" class="me-1">
+                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg"
+                                                                alt="Amex" height="25">
+                                                        </div>
+                                                        <p class="small text-muted mb-0">
+                                                            Payment with Credit Card
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Confirm Button -->
+                                    <div class="mt-4 text-center confirm-btn">
+                                        <a class="btn w-100 ">
+                                            <i class="fas fa-arrow-right me-2"></i>
+                                            Submit and Confirm Booking for <strong>PKR 612,060.00</strong>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="cancellation-card p-4">
+                                <h5 class="fw-bold">Cancellation Policy</h5>
+                                <div class="table-responsive policy-table mb-3">
+                                    <table class="table table-bordered align-middle">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Room</th>
+                                                <th scope="col">From</th>
+                                                <th scope="col">Type</th>
+                                                <th scope="col">Cancellation Charge</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td></td>
+                                                <td>21/08/2025</td>
+                                                <td>Fixed</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>13/10/2025</td>
+                                                <td>Percentage</td>
+                                                <td>100</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <h5 class="fw-bold">Read Conditions</h5>
+                                <div class="policy-section">
+                                    <ul>
+                                        <li>Early check out will attract full cancellation charge unless otherwise
+                                            specified</li>
+                                        <li><strong>CheckIn Time–Begin:</strong> 2:00 PM</li>
+                                        <li><strong>CheckIn Time–End:</strong> anytime</li>
+                                        <li><strong>CheckOut Time:</strong> 12:00 PM</li>
+                                    </ul>
+
+                                    <h6>CheckIn Instructions:</h6>
+                                    <ul>
+                                        <li>Extra-person charges may apply and vary depending on property policy</li>
+                                        <li>Government-issued photo identification and a credit card, debit card, or
+                                            cash deposit may be required at check-in for incidental charges</li>
+                                        <li>Special requests are subject to availability upon check-in and may incur
+                                            additional charges; special requests cannot be guaranteed</li>
+                                        <li>This property accepts credit cards, debit cards, and cash</li>
+                                        <li>Long-term renters welcome</li>
+                                    </ul>
+
+                                    <h6>Special Instructions:</h6>
+                                    <p>This property offers transfers from the airport (surcharges may apply). Guests
+                                        must contact the property with arrival details before travel, using the contact
+                                        information on the booking confirmation. Front desk staff will greet guests on
+                                        arrival at the property.</p>
+
+                                    <h6>Mandatory Fees:</h6>
+                                    <p>You'll be asked to pay the following charges at the property. Fees may include
+                                        applicable taxes:</p>
+                                    <ul>
+                                        <li>A tax is imposed by the city: AZN 1.10 per person, per night</li>
+                                    </ul>
+                                    <p class="mb-2">We have included all charges provided to us by the property.</p>
+
+                                    <h6>Optional Fees:</h6>
+                                    <ul>
+                                        <li>Fee for buffet breakfast: approximately AZN 7 for adults and AZN 5 for
+                                            children</li>
+                                        <li>Airport shuttle fee: AZN 34 per vehicle (one-way, maximum occupancy 4)</li>
+                                        <li>Airport shuttle fee per child: AZN 8.50 (one-way), (up to 12 years old)</li>
+                                    </ul>
+                                    <p class="mb-2">The above list may not be comprehensive. Fees and deposits may not
+                                        include tax and are subject to change.</p>
+
+                                    <h6>Cards Accepted:</h6>
+                                    <p>Visa, Debit cards, Cash, JCB International, Mastercard</p>
+
+                                    <ul>
+                                        <li>If you require a visa to enter the country, your property may be able to
+                                            help with the supporting documents needed to obtain one. To learn more, you
+                                            can reach out to the property via the contact details included on your
+                                            booking confirmation. The property may charge for this assistance, even if
+                                            you end up cancelling your reservation. All arrangements are solely between
+                                            the property and yourself.</li>
+                                        <li>Up to 2 children 5 years old and younger stay free when occupying the parent
+                                            or guardian's room, using existing bedding.</li>
+                                        <li>Only dogs and cats are allowed, Pets allowed (no fees), Service animals are
+                                            allowed, Service animals are exempt from fees/restrictions, Pets allowed,
+                                            Professional property host/manager</li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card booking-summary-card">
+                        <div class="card-body">
+                            <!-- Hotel Info -->
+                            <h5 class="card-title mb-1">Modern Hotel</h5>
+                            <p class="text-muted small mb-3">
+                                <i class="fas fa-map-marker-alt me-1"></i>
+                                188 Mirali Qasqay, Baku
+                            </p>
+
+                            <!-- Booking Summary -->
+                            <h6 class="fw-bold mb-3">Booking Summary</h6>
+                            <p class="fw-semibold mb-2">16/10/2025 - 23/10/2025</p>
+                            <ul class="list-unstyled small mb-3 text-muted">
+                                <li>Room 1: Superior Quadruple Room, City View, 4 Twin Beds</li>
+                                <li>Room 2: Superior Quadruple Room, City View, 4 Twin Beds</li>
+                                <li>Room 3: Superior Quadruple Room, City View, 4 Twin Beds</li>
+                                <li>Room 4: Superior Quadruple Room, City View, 4 Twin Beds</li>
+                                <li>Room 5: Superior Quadruple Room, City View, 4 Twin Beds</li>
+                                <li>Room 6: Superior Quadruple Room, City View, 4 Twin Beds</li>
+                            </ul>
+
+                            <!-- Stay Details -->
+                            <div class="d-flex justify-content-between small mb-1">
+                                <span>Stay</span>
+                                <span class="text-muted">7 Nights</span>
+                            </div>
+                            <div class="d-flex justify-content-between small mb-1">
+                                <span>Rooms</span>
+                                <span class="text-muted">6 Rooms</span>
+                            </div>
+                            <div class="d-flex justify-content-between small mb-1">
+                                <span>Adults</span>
+                                <span class="text-muted">12 Adults</span>
+                            </div>
+                            <div class="d-flex justify-content-between small mb-3">
+                                <span>Children</span>
+                                <span class="text-muted">0 Child</span>
+                            </div>
+
+                            <!-- Payment -->
+                            <h6 class="fw-bold mt-3">Payment</h6>
+                            <div class="d-flex justify-content-between small">
+                                <span>Subtotal</span>
+                                <span class="text-muted">PKR 612,060.00</span>
+                            </div>
+                            <div class="d-flex justify-content-between small">
+                                <span>VAT</span>
+                                <span class="text-muted">PKR 0.00</span>
+                            </div>
+                            <div class="d-flex justify-content-between fw-bold mt-2">
+                                <span>Total Amount</span>
+                                <span>PKR 612,060.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hotel checkout input section start -->
+
+    <!-- footer section start -->
+    <footer class="footer-sec pt-5 mt-auto">
+        <div class="container py-3">
+            <div class="row gy-4">
+                <!-- Logo and Description -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-semibold mb-4 fs-5 text-white">Download Mobile App</h6>
+                        <div class=" my-3 play-button">
+                            <a class="d-flex text-decoration-none mb-2" href="https://play.google.com/store"
+                                target="_blank">
+                                <img src="img/Google-Play.png" alt="Get it on Google Play" class="google-play-btn">
+                            </a>
+                            <a href="" class=""><img class="bar-code" src="img/svgexport-2.svg" alt="">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Business -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-semibold text-white mb-4 fs-5">Links:</h6>
+                        <ul class="list-unstyled small">
+                            <li><a href="/index.html" class="text-white text-decoration-none">About Us</a></li>
+                            <li><a href="/blog.html" class="text-white text-decoration-none">Contact Us</a></li>
+                            <li><a href="/about-us.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Term & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-semibold text-white mb-4 fs-5">Need Help?</h6>
+                        <ul class="list-unstyled small text-white social-icons">
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-telephone-fill me-2"></i> <a href=""
+                                    class="text-decoration-none text-white">+971 42 65
+                                    5264</a>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-envelope-fill me-2"></i> <a href="mailto:support@aantorism.com"
+                                    class="text-decoration-none text-white">
+                                    support@aantorism.com
+                                </a>
+                            </li>
+                            <li class="d-flex align-items-center social-icons">
+                                <ul class="list-unstyled d-inline-flex">
+                                    <li>
+                                        <a href="" class="text-decoration-none"><i
+                                                class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="text-decoration-none"><i class="fa-brands fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="text-decoration-none"><i
+                                                class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </li>
+                              <div>
+                                <button id="orangeModeBtn"></button>
+                                <button id="lightModeBtn"></button>
+                                <button id="pinkModeBtn"></button>
+                                <!-- <button id="darkModeBtn"></button> -->
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="privacy-policy text-center py-2 mt-4">
+            <small class="text-white">© Copyright 2024 Tourism. All rights reserved</small>
+        </div>
+    </footer>
+    <!-- footer section end -->
+    <!-- Bootstrap JS Bundle (with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Flatpickr JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="js/hotel-checkout.js"></script>
+    <script src="js/theme-change.js"></script>
+</body>
+
+</html>

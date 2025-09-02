@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar Right Side Toggle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/theme-variables.css">
+    <link rel="stylesheet" href="css/report-booking-detail.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Flatpickr CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <!-- header section start -->
+    <section class="header-login">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg text-white">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand text-white me-5 fw-bold" href="/home.html">
+                        Logo
+                    </a>
+
+                    <!-- Right side elements -->
+                    <div class="d-flex align-items-center order-lg-2">
+                        <!-- Profile Dropdown -->
+                        <a class="text-white me-3 text-decoration-none" href="/home-login.html">
+                            Logout
+                        </a>
+
+                        <!-- Cart -->
+                        <a class="text-white" href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+
+                        <!-- Toggle button -->
+                        <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <i class="bi bi-list text-white"></i>
+                        </button>
+                    </div>
+
+                    <!-- Offcanvas Menu -->
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/home.html">Home</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="visasDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Credit Limit
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="visasDropdown">
+                                        <li class="p-3 text-nowrap"><span>Credit Limit:&nbsp;&nbsp;&nbsp;&nbsp;PKR
+                                                75,000.00 <br>
+                                                Available Limit:&nbsp;&nbsp;&nbsp;&nbsp;PKR 22,190.00</span></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/visas.html">Visas</a>
+                                </li>
+
+
+                                <!-- Dropdown 2: Reports -->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle active" href="#" id="reportsDropdown"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Reports
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="reportsDropdown">
+                                        <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                                        <li><a class="dropdown-item" href="/report-booking.html">Bookings</a></li>
+                                        <li><a class="dropdown-item" href="/report-ledger.html">Ledger</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="reportsDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Sub Agents
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="reportsDropdown">
+                                        <li><a class="dropdown-item" href="/sub-agents.html">Manage Sub Agents</a></li>
+                                        <li><a class="dropdown-item" href="/add-credit.html">Add Credit</a></li>
+                                        <li><a class="dropdown-item" href="/sub-agents-booking.html">Bookings</a></li>
+                                        <li><a class="dropdown-item" href="/sub-agent-visas.html">Visas</a></li>
+                                        <li><a class="dropdown-item" href="/sub-agent-ledger.html">Ledger</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/user.html">User</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="reportsDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        ATE-167000316
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="reportsDropdown">
+                                        <li><a class="dropdown-item" href="/markups.html">Markups</a></li>
+                                        <li><a class="dropdown-item" href="/my-profile.html">Profile</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!-- header section end -->
+
+    <!-- report booking detail section start -->
+    <section class="report-booking-detail py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Header -->
+                    <div class="text-center mb-5">
+                        <h3 class="fw-bold mb-2">Booking Confirmed</h3>
+                        <p class="text-muted">Your reservation has been successfully processed</p>
+                    </div>
+
+                    <!-- Main Booking Card -->
+                    <div class="card border-0 booking-detail-card mb-4">
+                        <div class="row g-4">
+                            <!-- Hotel Image -->
+                            <div class="col-md-4">
+                                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    class="img-fluid w-100 hotel-image rounded" alt="Sun & Sands Downtown Hotel">
+                            </div>
+
+                            <!-- Hotel Details -->
+                            <div class="col-md-8">
+                                <div class="card-body px-4 pb-4 pt-0 booking-detail-card border-3">
+                                    <div class="d-flex justify-content-between align-items-start mb-3">
+                                        <div>
+                                            <h5 class="card-title fw-bold mb-1">Sun & Sands Downtown Hotel</h5>
+                                            <p class="text-muted small mb-2">
+                                                <i class="bi bi-geo-alt-fill me-1"></i>
+                                                Downtown Location
+                                            </p>
+                                        </div>
+                                        <span class="badge bg-success status-badge px-3 py-2">
+                                            <i class="bi bi-check-circle me-1"></i>Vouchered
+                                        </span>
+                                    </div>
+
+                                    <!-- Room Information -->
+                                    <div class="row mb-3">
+                                        <div class="col-sm-6">
+                                            <div class="d-flex mb-2 card-info flex-column ">
+                                                <span class=""><i class="bi bi-house-door me-2"></i> Twin Rooms</span>
+                                                <span class=""><i class="bi bi-house-door me-2"></i> Twin Rooms</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="d-flex align-items-center mb-2 card-info">
+                                                <i class="bi bi-people me-2"></i>
+                                                <span class="">4 Adults</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Price -->
+                                    <div class="rounded py-2 px-3 mb-3 price-section">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="fw-medium">Total Amount</span>
+                                            <span class="fs-5 mb-0 fw-bold">PKR 46,540.00</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Download Button -->
+                                    <a class="btn btn-lg w-100 download-ticket-btn" type="button">
+                                        <i class="bi bi-download me-2"></i>Download Ticket
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Booking Details Grid -->
+                    <div class="row g-4 mb-4">
+                        <!-- Check-in/Check-out -->
+                        <div class="col-md-6">
+                            <div class="card booking-detail h-100">
+                                <div class="card-body p-4 text-center">
+                                    <i class="bi bi-calendar-check fs-1"></i>
+                                    <h5 class="card-title mb-3">Stay Duration</h5>
+                                    <div class="row">
+                                        <div class="col-6 border-end">
+                                            <p class="text-muted small mb-1">Check-in</p>
+                                            <p class="fw-bold mb-0">11/06/2025</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <p class="text-muted small mb-1">Check-out</p>
+                                            <p class="fw-bold mb-0">13/06/2025</p>
+                                        </div>
+                                    </div>
+                                    <small class="text-muted d-block mt-2">2 Nights Stay</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Booking Information -->
+                        <div class="col-md-6">
+                            <div class="card h-100 booking-detail">
+                                <div class="card-body p-4 text-center">
+                                    <i class="bi bi-receipt fs-1"></i>
+                                    <h5 class="card-title text-center mb-3">Booking Details</h5>
+                                    <div class="space-y-2">
+                                        <div class="d-flex justify-content-between py-1">
+                                            <span class="text-muted small">Booking Date:</span>
+                                            <span class="fw-medium small">06/05/2025</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between py-1">
+                                            <span class="text-muted small">Order Number:</span>
+                                            <span class="fw-medium small">AT-6819DDA9A47CD</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between py-1">
+                                            <span class="text-muted small">Confirmation:</span>
+                                            <span class="fw-medium small">Z8YZ1NAHQ8</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Guest Information -->
+                    <div class="card border-0 guest-info-card mb-4">
+                        <div class="card-header border-bottom-0 py-3 rounded-2">
+                            <h5 class="mb-0 fw-semibold">
+                                <i class="bi bi-person-circle me-2"></i>
+                                Guest Information
+                            </h5>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center">
+                                <div
+                                    class="rounded-circle user-icon d-flex align-items-center justify-content-center me-3">
+                                    <i class="bi bi-person text-white fs-4"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1 fw-bold">Mr Test Adult1</h6>
+                                    <p class="text-muted mb-0 small">Primary Guest</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking-cancellation-policy">
+        <div class="container my-5">
+            <div class="card border-0">
+                <div class="card-body">
+                    <h4 class="fw-bold mb-4">📌 Cancellation Policy</h4>
+
+                    <!-- Table -->
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle">
+                            <thead class="">
+                                <tr>
+                                    <th scope="col">From</th>
+                                    <th scope="col">Type</th>
+                                    <th scope="col">Cancellation Charge</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Room 1: 05/05/2025</td>
+                                    <td>Fixed</td>
+                                    <td><span class="badge bg-success">0%</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Room 1: 05/06/2025</td>
+                                    <td>Percentage</td>
+                                    <td><span class="badge bg-warning text-dark">50%</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Room 1: 10/06/2025</td>
+                                    <td>Percentage</td>
+                                    <td><span class="badge bg-danger">100%</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Room 2: 05/05/2025</td>
+                                    <td>Fixed</td>
+                                    <td><span class="badge bg-success">0%</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Room 2: 05/06/2025</td>
+                                    <td>Percentage</td>
+                                    <td><span class="badge bg-warning text-dark">50%</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Room 2: 10/06/2025</td>
+                                    <td>Percentage</td>
+                                    <td><span class="badge bg-danger">100%</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Notes -->
+                    <div class="mt-4">
+                        <p class="mb-1"><strong>⚠️ No Show Charges:</strong> 100% of Booking Amount.</p>
+                        <p class="mb-1"><strong>⏳ Early Checkout:</strong> Will be charged in full unless otherwise
+                            specified.</p>
+                    </div>
+
+                    <!-- Important Notice -->
+                    <div class="alert  mt-3 fw-medium" role="alert">
+                        Booking is non-cancelable and non-refundable after it has been Vouchered.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-3">
+        <div class="container">
+            <div class="card booking-status-info border-0">
+                <div class="card-body">
+                    <h4 class="fw-bold mb-4">📋 Status Information</h4>
+
+                    <!-- Reserved -->
+                    <div class="p-2 mb-2">
+                        <h6 class="fw-bold fs-5"><i class="bi bi-bookmark-check-fill me-2"></i>Reserved</h6>
+                        <p class="text-muted mb-0">
+                            If your booking status is Reserved, you can voucher the booking within the Cancellation
+                            Deadline.
+                            If you fail, it will be Released Automatically. Rates & availability are blocked but
+                            exchange rate isn’t.
+                        </p>
+                    </div>
+
+                    <!-- Vouchered -->
+                    <div class="p-2 mb-2">
+                        <h6 class="fw-bold"><i class="bi bi-check-circle-fill me-2"></i>Vouchered</h6>
+                        <p class="text-muted mb-0">Paid & Ticket Issued.</p>
+                    </div>
+
+                    <!-- Completed -->
+                    <div class="p-2 mb-2">
+                        <h6 class="fw-bold"><i class="bi bi-clipboard-check-fill me-2"></i>Completed</h6>
+                        <p class="text-muted mb-0">Ticket date passed without cancellation.</p>
+                    </div>
+
+                    <!-- Cancelled -->
+                    <div class="p-2 mb-2">
+                        <h6 class="fw-bold"><i class="bi bi-x-circle-fill me-2"></i>Cancelled</h6>
+                        <p class="text-muted mb-0">
+                            If your booking is Vouchered, you can download Voucher & Proforma from the Admin Panel.
+                            Includes passenger details, prices, and charges.
+                        </p>
+                    </div>
+
+                    <!-- Auto Released -->
+                    <div class="p-2 mb-2">
+                        <h6 class="fw-bold"><i class="bi bi-arrow-clockwise me-2"></i>Auto Released</h6>
+                        <p class="text-muted mb-0">
+                            If not vouchered within deadline, booking is auto released and cannot be reinstated.
+                        </p>
+                    </div>
+
+                    <!-- InQueue -->
+                    <div class="p-2 mb-2">
+                        <h6 class="fw-bold"><i class="bi bi-hourglass-split me-2"></i>InQueue</h6>
+                        <p class="text-muted mb-0">
+                            Booking confirmed/vouchered after 30 days. Voucher downloadable 30 days prior.
+                        </p>
+                    </div>
+
+                    <!-- Rejected -->
+                    <div class="p-2 mb-2">
+                        <h6 class="fw-bold"><i class="bi bi-slash-circle-fill me-2"></i>Rejected</h6>
+                        <p class="text-muted mb-0">
+                            Booking rejected due to price change, no allocation, stop sale, inventory sold out, or
+                            timeout.
+                        </p>
+                    </div>
+
+                    <!-- On Request -->
+                    <div class="p-2 mb-2">
+                        <h6 class="fw-bold"><i class="bi bi-question-circle-fill me-2"></i>On Request</h6>
+                        <p class="text-muted mb-0">Subject to supplier confirmation. Once confirmed, will be
+                            vouchered.</p>
+                    </div>
+
+                    <!-- Fail -->
+                    <div class="p-2 mb-2">
+                        <h6 class=" fw-bold"><i class="bi bi-exclamation-triangle-fill me-2"></i>Fail</h6>
+                        <p class="text-muted mb-0">Reservation failed.</p>
+                    </div>
+
+                    <!-- Confirmation Required -->
+                    <div class="p-2 mb-2">
+                        <h6 class="fw-bold"><i class="bi bi-shield-lock-fill me-2"></i>Confirmation Required</h6>
+                        <p class="text-muted mb-0">Manual booking confirmation required.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- report booking detail section end -->
+
+    <!-- footer section start -->
+    <footer class="footer-sec pt-5 mt-auto">
+        <div class="container py-3">
+            <div class="row gy-4">
+                <!-- Logo and Description -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-semibold mb-4 fs-5 text-white">Download Mobile App</h6>
+                        <div class=" my-3 play-button">
+                            <a class="d-flex text-decoration-none mb-2" href="https://play.google.com/store"
+                                target="_blank">
+                                <img src="img/Google-Play.png" alt="Get it on Google Play" class="google-play-btn">
+                            </a>
+                            <a href="" class=""><img class="bar-code" src="img/svgexport-2.svg" alt="">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Business -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-semibold text-white mb-4 fs-5">Links:</h6>
+                        <ul class="list-unstyled small">
+                            <li><a href="/index.html" class="text-white text-decoration-none">About Us</a></li>
+                            <li><a href="/blog.html" class="text-white text-decoration-none">Contact Us</a></li>
+                            <li><a href="/about-us.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Term & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-semibold text-white mb-4 fs-5">Need Help?</h6>
+                        <ul class="list-unstyled small text-white social-icons">
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-telephone-fill me-2"></i> <a href=""
+                                    class="text-decoration-none text-white">+971 42 65
+                                    5264</a>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-envelope-fill me-2"></i> <a href="mailto:support@aantorism.com"
+                                    class="text-decoration-none text-white">
+                                    support@aantorism.com
+                                </a>
+                            </li>
+                            <li class="d-flex align-items-center social-icons">
+                                <ul class="list-unstyled d-inline-flex">
+                                    <li>
+                                        <a href="" class="text-decoration-none"><i
+                                                class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="text-decoration-none"><i class="fa-brands fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="text-decoration-none"><i
+                                                class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <div>
+                                <button id="orangeModeBtn"></button>
+                                <button id="lightModeBtn"></button>
+                                <button id="pinkModeBtn"></button>
+                                <!-- <button id="darkModeBtn"></button> -->
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="privacy-policy text-center py-2 mt-4">
+            <small class="text-white">© Copyright 2024 Tourism. All rights reserved</small>
+        </div>
+    </footer>
+    <!-- footer section end -->
+    <!-- Bootstrap JS Bundle (with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Flatpickr JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="js/theme-change.js"></script>
+    <!-- <script src="js/report-agents-booking.js"></script> -->
+</body>
+
+</html>

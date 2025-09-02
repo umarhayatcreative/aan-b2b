@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aan B2b</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/theme-variables.css">
+    <link rel="stylesheet" href="css/signup-form.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <section class="header-login">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg text-white">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand text-white me-5 fw-bold" href="/home-login.html">
+                        Logo
+                    </a>
+
+                    <!-- Right side elements -->
+                    <div class="d-flex align-items-center order-lg-2">
+
+                        <!-- Cart -->
+                        <a class="text-white me-3" href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                        <!-- Notifications -->
+                        <div class="dropdown me-3">
+                            <a class="text-white dropdown-toggle hidden-arrow" href="#" id="notifDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-translate"></i>
+                                <!-- <span class="badge rounded-pill bg-danger">1</span> -->
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="notifDropdown">
+                                <li><a class="dropdown-item" href="#">English</a></li>
+                            </ul>
+                        </div>
+                        <!-- Toggle button -->
+                        <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <i class="bi bi-list text-white"></i>
+                        </button>
+                    </div>
+
+                    <!-- Offcanvas Menu -->
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="/signup-form.html">Register With Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/supplier-registration.html">Supplier
+                                        Registration</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">(+971) 4265-5264</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">support@aantorism.com</a>
+                                </li>
+
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!-- Header sec end -->
+
+    <!-- sign-up form start -->
+    <section class="sign-up-form py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-xl-8">
+                    <div class="card shadow-lg border-0 rounded-4">
+                        <div class="card-body signup-form-card p-4 p-md-5">
+                            <h2 class="card-title text-center mb-2 fw-bold mb-3">Register Now</h2>
+                            <p class="text-center text-muted mb-4">Create your company account in minutes.</p>
+                            <form id="registerForm">
+                                <div class="company-details-section mb-4">
+                                    <h4 class="section-heading fw-semibold mb-3 border-bottom pb-2">
+                                        <i class="fas fa-building me-2 fs-5"></i>Company Details:
+                                    </h4>
+
+                                    <div class="row g-3">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="companyName" class="form-label text-muted">Company Name</label>
+                                            <input type="text" id="companyName" class="form-control"
+                                                placeholder="Enter company name" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="website" class="form-label text-muted">Website</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="bi bi-globe2"></i></span>
+                                                <input type="url" id="website" class="form-control"
+                                                    placeholder="https://example.com">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="companyAddress" class="form-label text-muted">Company
+                                            Address</label>
+                                        <input type="text" id="companyAddress" class="form-control"
+                                            placeholder="Enter complete address" required>
+                                    </div>
+
+                                    <div class="row g-3">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="city" class="form-label text-muted">City</label>
+                                            <input type="text" id="city" class="form-control" placeholder="Enter city"
+                                                required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="state" class="form-label text-muted">State / Province</label>
+                                            <input type="text" id="state" class="form-control"
+                                                placeholder="Enter state/province" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="row g-3">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="zipCode" class="form-label text-muted">Zip / Postal
+                                                Code</label>
+                                            <input type="text" id="zipCode" class="form-control"
+                                                placeholder="Enter zip code" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="country" class="form-label text-muted">Country</label>
+                                            <select id="country" class="form-select" required>
+                                                <option value="">Select Country</option>
+                                                <option value="US">United States</option>
+                                                <option value="CA">Canada</option>
+                                                <option value="UK">United Kingdom</option>
+                                                <option value="AU">Australia</option>
+                                                <option value="PK">Pakistan</option>
+                                                <option value="IN">India</option>
+                                                <option value="BD">Bangladesh</option>
+                                                <option value="AE">UAE</option>
+                                                <option value="SA">Saudi Arabia</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="personal-details-section mb-4">
+                                    <h4 class="section-heading fw-semibold mb-3 border-bottom pb-2">
+                                        <i class="fas fa-user me-2 fs-5"></i>Personal Details:
+                                    </h4>
+
+                                    <div class="mb-3">
+                                        <label for="designation" class="form-label text-muted">Designation</label>
+                                        <select id="designation" class="form-select" required>
+                                            <option value="">Select Designation</option>
+                                            <option value="CEO">CEO</option>
+                                            <option value="CTO">CTO</option>
+                                            <option value="Manager">Manager</option>
+                                            <option value="Developer">Developer</option>
+                                            <option value="Designer">Designer</option>
+                                            <option value="Marketing">Marketing</option>
+                                            <option value="Sales">Sales</option>
+                                            <option value="HR">HR</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="row g-3">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="firstName" class="form-label text-muted">First Name</label>
+                                            <input type="text" id="firstName" class="form-control"
+                                                placeholder="Enter first name" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="lastName" class="form-label text-muted">Last Name</label>
+                                            <input type="text" id="lastName" class="form-control"
+                                                placeholder="Enter last name" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="row g-3">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="phoneNumber" class="form-label text-muted">Phone Number</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="bi bi-telephone"></i></span>
+                                                <input type="tel" id="phoneNumber" class="form-control"
+                                                    placeholder="Enter phone number" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="whatsappNumber" class="form-label text-muted">WhatsApp
+                                                Number</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="bi bi-whatsapp"></i></span>
+                                                <input type="tel" id="whatsappNumber" class="form-control"
+                                                    placeholder="Enter WhatsApp number">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row g-3">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="emailAddress" class="form-label text-muted">Email
+                                                Address</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                                <input type="email" id="emailAddress" class="form-control"
+                                                    placeholder="Enter email address" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="confirmEmail" class="form-label text-muted">Confirm Email
+                                                Address</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i
+                                                        class="bi bi-envelope-check"></i></span>
+                                                <input type="email" id="confirmEmail" class="form-control"
+                                                    placeholder="Confirm email address" required>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="currency" class="form-label text-muted">Preferred Currency</label>
+                                        <select id="currency" class="form-select" required>
+                                            <option value="">Select Preferred Currency</option>
+                                            <option value="USD">USD - US Dollar</option>
+                                            <option value="EUR">EUR - Euro</option>
+                                            <option value="GBP">GBP - British Pound</option>
+                                            <option value="PKR">PKR - Pakistani Rupee</option>
+                                            <option value="INR">INR - Indian Rupee</option>
+                                            <option value="AED">AED - UAE Dirham</option>
+                                            <option value="SAR">SAR - Saudi Riyal</option>
+                                            <option value="BDT">BDT - Bangladeshi Taka</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="terms-section mb-4 terms-condition">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="termsCheck" required>
+                                        <label class="form-check-label text-muted" for="termsCheck">
+                                            By continuing to register, you are agreeing to our
+                                            <a href="#" class="text-decoration-none">Terms and Conditions</a>
+                                            and
+                                            <a href="#" class="text-decoration-none">Privacy Policy</a>.
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="d-grid mb-3">
+                                    <button type="submit" class="btn text-white register-now-btn btn-lg fs-6">
+                                        <i class="fas fa-user-plus me-2"></i>Register Now
+                                    </button>
+                                </div>
+
+                                <p class="text-center mb-0 terms-condition">
+                                    Already have an account?
+                                    <a href="home-login.html" class="text-decoration-none fw-semibold">Log In</a>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer sec start -->
+    <footer class="footer-sec pt-5 mt-auto">
+        <div class="container py-3">
+            <div class="row gy-4">
+                <!-- Logo and Description -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-semibold mb-4 fs-5 text-white">Download Mobile App</h6>
+                        <div class=" my-3 play-button">
+                            <a class="d-flex text-decoration-none mb-2" href="https://play.google.com/store"
+                                target="_blank">
+                                <img src="img/Google-Play.png" alt="Get it on Google Play" class="google-play-btn">
+                            </a>
+                            <a href="" class=""><img class="bar-code" src="img/svgexport-2.svg" alt="">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Business -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-semibold text-white mb-4 fs-5">Links:</h6>
+                        <ul class="list-unstyled small">
+                            <li><a href="/index.html" class="text-white text-decoration-none">About Us</a></li>
+                            <li><a href="/blog.html" class="text-white text-decoration-none">Contact Us</a></li>
+                            <li><a href="/about-us.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Term & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-semibold text-white mb-4 fs-5">Need Help?</h6>
+                        <ul class="list-unstyled small text-white social-icons">
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-telephone-fill me-2"></i> <a href=""
+                                    class="text-decoration-none text-white">+971 42 65
+                                    5264</a>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-envelope-fill me-2"></i> <a href="mailto:support@aantorism.com"
+                                    class="text-decoration-none text-white">
+                                    support@aantorism.com
+                                </a>
+                            </li>
+                            <li class="d-flex align-items-center social-icons">
+                                <ul class="list-unstyled d-inline-flex">
+                                    <li>
+                                        <a href="" class="text-decoration-none"><i
+                                                class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="text-decoration-none"><i class="fa-brands fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="text-decoration-none"><i
+                                                class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <div>
+                                <button id="orangeModeBtn"></button>
+                                <button id="lightModeBtn"></button>
+                                <button id="pinkModeBtn"></button>
+                                <!-- <button id="darkModeBtn"></button> -->
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="privacy-policy text-center py-2 mt-4">
+            <small class="text-white">© Copyright 2024 Tourism. All rights reserved</small>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap JS Bundle (with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/supplier-registration.js"></script>
+    <script src="js/theme-change.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aan B2b</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/theme-variables.css">
+    <link rel="stylesheet" href="css/activity-list.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Flatpickr CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <section class="header-login">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg text-white">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand text-white me-5 fw-bold" href="/home.html">
+                        Logo
+                    </a>
+
+                    <!-- Right side elements -->
+                    <div class="d-flex align-items-center order-lg-2">
+                        <!-- Profile Dropdown -->
+                        <a class="text-white me-3 text-decoration-none" href="/home-login.html">
+                            Logout
+                        </a>
+
+                        <!-- Cart -->
+                        <a class="text-white me-3" href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+
+                        <!-- Toggle button -->
+                        <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <i class="bi bi-list text-white"></i>
+                        </button>
+                    </div>
+
+                    <!-- Offcanvas Menu -->
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="/home.html">Home</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="visasDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Credit Limit
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="visasDropdown">
+                                        <li class="p-3 text-nowrap"><span>Credit Limit:&nbsp;&nbsp;&nbsp;&nbsp;PKR
+                                                75,000.00 <br>
+                                                Available Limit:&nbsp;&nbsp;&nbsp;&nbsp;PKR 22,190.00</span></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/visas.html">Visas</a>
+                                </li>
+
+                                <!-- Dropdown 2: Reports -->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="reportsDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Reports
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="reportsDropdown">
+                                        <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                                        <li><a class="dropdown-item" href="/report-booking.html">Bookings</a></li>
+                                        <li><a class="dropdown-item" href="/report-ledger.html">Ledger</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="reportsDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Sub Agents
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="reportsDropdown">
+                                        <li><a class="dropdown-item" href="/sub-agents.html">Manage Sub Agents</a></li>
+                                        <li><a class="dropdown-item" href="/add-credit.html">Add Credit</a></li>
+                                        <li><a class="dropdown-item" href="/sub-agents-booking.html">Bookings</a></li>
+                                        <li><a class="dropdown-item" href="/sub-agent-visas.html">Visas</a></li>
+                                        <li><a class="dropdown-item" href="/sub-agent-ledger.html">Ledger</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/user.html">User</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="reportsDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        ATE-167000316
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="reportsDropdown">
+                                        <li><a class="dropdown-item" href="/markups.html">Markups</a></li>
+                                        <li><a class="dropdown-item" href="/my-profile.html">Profile</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!-- header section end -->
+    <div class="container d-block d-lg-none">
+        <div class="py-3 d-flex align-items-center justify-content-between gap-2 modify-search-btn">
+            <a class="btn " data-bs-toggle="modal" data-bs-target="#activitySearchModal">Modify Search</a>
+            <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#filtersOffcanvas" aria-controls="filtersOffcanvas">
+                <i class="bi bi-sliders me-1"></i> Filters
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile/Tablet Filters Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="filtersOffcanvas" aria-labelledby="filtersOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="filtersOffcanvasLabel">Filters</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="activity-filter-card-custom p-3 mb-3">
+                <h6>Sort By:</h6>
+                <select class="form-select" aria-label="Sort options mobile">
+                    <option selected>Price - Low to High</option>
+                    <option value="1">Price - High to Low</option>
+                    <option value="2">Rating - Low to High</option>
+                    <option value="3">Rating - High to Low</option>
+                </select>
+            </div>
+
+            <div class="activity-filter-card-custom p-3 mb-3">
+                <h6 class="filter-title">Price Range:</h6>
+                <div class="d-flex justify-content-between mt-2">
+                    <span>Min: <span id="minValueMobile">0</span></span>
+                    <span>Max: <span id="maxValueMobile">50000</span></span>
+                </div>
+                <div class="range-slider">
+                    <div class="range-track">
+                        <div class="range-fill" id="rangeFillMobile"></div>
+                    </div>
+                    <input type="range" class="range-input" id="minRangeMobile" min="0" max="50000" value="0"
+                        step="1000">
+                    <input type="range" class="range-input" id="maxRangeMobile" min="0" max="50000" value="50000"
+                        step="1000">
+                </div>
+            </div>
+
+            <div class="activity-filter-card-custom p-3 mb-3">
+                <h6 class="filter-title">Room Options:</h6>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="refundableMobile">
+                    <label class="form-check-label" for="refundableMobile">Refundable</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="breakfastMobile">
+                    <label class="form-check-label" for="breakfastMobile">Breakfast</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="wifiMobile">
+                    <label class="form-check-label" for="wifiMobile">Free Wifi</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hotel Search Modal -->
+    <div class="modal fade" id="activitySearchModal" tabindex="-1" aria-labelledby="activitySearchModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="activitySearchModalLabel">Hotel Search</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Your exact HTML code starts here -->
+                    <section class="activities-input-sec px-2 py-4 bg-white">
+                        <div class="container">
+                            <div class="row g-3">
+
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="activities-input-group">
+                                        <div class="form-floating">
+                                            <select class="form-select fw-semibold" id="floatingSelect"
+                                                aria-label="Floating label select example">
+                                                <option selected>Pakistan</option>
+                                                <option value="1">India</option>
+                                                <option value="2">Bangladesh</option>
+                                                <option value="3">Sri Lanka</option>
+                                            </select>
+                                            <label for="floatingSelect">Destination City</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="activities-input-group">
+                                        <form class="form-floating flotingg w-100 activitie-date-picker">
+                                            <input class="form-control fw-semibold checkInDateInput" type="text"
+                                                placeholder="Check In" readonly="readonly">
+                                            <label for="checkInDate">Select Date</label>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="activities-input-group h-100 d-flex justify-content-end">
+                                        <a href=""
+                                            class="btn activities-search-btn px-5 w-100 d-flex align-items-center justify-content-center">Search</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Your exact HTML code ends here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- hotel modify sec start -->
+    <section class="activities-input-sec px-2 py-4 d-none d-lg-block">
+        <div class="container">
+            <div class="row g-3">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="activities-input-group">
+                        <div class="form-floating">
+                            <select class="form-select fw-semibold" id="floatingSelect"
+                                aria-label="Floating label select example">
+                                <option selected>Pakistan</option>
+                                <option value="1">India</option>
+                                <option value="2">Bangladesh</option>
+                                <option value="3">Sri Lanka</option>
+                            </select>
+                            <label for="floatingSelect">Destination City</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="activities-input-group">
+                        <form class="form-floating flotingg w-100 activitie-date-picker">
+                            <input class="form-control fw-semibold checkInDateInput" type="text" placeholder="Check In"
+                                readonly="readonly">
+                            <label for="checkInDate">Select Date</label>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="activities-input-group h-100 d-flex justify-content-end">
+                        <a href=""
+                            class="btn activities-search-btn px-5 w-100 d-flex align-items-center justify-content-center">Search</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hotel modify sec end -->
+
+    <!-- hotel list section start -->
+    <section class="activity-list">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 d-none d-lg-block">
+                    <div class="activity-list-filter">
+                        <div class="activity-filter-card-custom mb-3 p-3">
+                            <div class="">
+                                <div class="collapsed" data-bs-toggle="collapse" data-bs-target="#cartItem1">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="mb-0">Cart Items:</h6>
+                                        <span class="arrow-icon"><i class="bi bi-caret-down-fill"></i></span>
+                                    </div>
+                                </div>
+                                <div id="cartItem1" class="collapse mt-2">
+                                    <div class="card-body d-flex img-cart">
+                                        <!-- Left image -->
+                                        <img src="https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=1200&auto=format&fit=crop"
+                                            alt="Item" class="me-3 rounded">
+
+                                        <!-- Item details -->
+                                        <div class="flex-grow-1">
+                                            <p class="mb-1 fw-bold">6 Emirates in A Day Tour – Explore UAE’s Top
+                                                Attractions</p>
+                                            <p class="text-muted small">6 Emirates in a Day Tour</p>
+                                            <p>Private Transfers</p>
+                                            <span class="mb-0 price fw-bold">PKR 61,590.00</span>
+                                        </div>
+
+                                        <!-- Delete icon -->
+                                        <button class="btn btn-link text-danger p-0 ms-2">
+                                            <i class="bi bi-trash-fill"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activity-filter-card-custom p-3 mb-3">
+                            <input type="text" class="form-control" placeholder="Search Activities">
+                        </div>
+
+                        <div class="activity-filter-card-custom p-3 mb-3">
+                            <h6>Sort By:</h6>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Price - Low to High</option>
+                                <option value="1">Price - High to Low</option>
+                                <option value="2">Rating - Low to High</option>
+                                <option value="3">Rating - High to Low</option>
+                            </select>
+                        </div>
+
+                        <div class="activity-filter-card-custom p-3 mb-3">
+                            <h6 class="filter-title">Price Range:</h6>
+                            <div class="d-flex justify-content-between mt-2">
+                                <span>Min: <span id="minValue">0</span></span>
+                                <span>Max: <span id="maxValue">50000</span></span>
+                            </div>
+                            <div class="range-slider">
+                                <div class="range-track">
+                                    <div class="range-fill" id="rangeFill"></div>
+                                </div>
+                                <input type="range" class="range-input" id="minRange" min="0" max="50000" value="0"
+                                    step="1000">
+                                <input type="range" class="range-input" id="maxRange" min="0" max="50000" value="50000"
+                                    step="1000">
+                            </div>
+                        </div>
+
+                        <div class="activity-filter-card-custom p-3 mb-3">
+                            <h6 class="filter-title">Categories:</h6>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="duration1">
+                                <label class="form-check-label" for="duration1">Adventure Tours</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="duration2">
+                                <label class="form-check-label" for="duration2">Airport Transfers</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="duration1">
+                                <label class="form-check-label" for="duration1">Atlantis Hotel Tours</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="duration1">
+                                <label class="form-check-label" for="duration1">Burj Al Arab Tours</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="duration1">
+                                <label class="form-check-label" for="duration1">Burj Khalifa Tickets</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="duration1">
+                                <label class="form-check-label" for="duration1">City Tours</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="duration1">
+                                <label class="form-check-label" for="duration1">Cruise and Boat Tours</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="duration1">
+                                <label class="form-check-label" for="duration1">Cruises Sailing and Water Tours</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="duration1">
+                                <label class="form-check-label" for="duration1">Culture and Attractions</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="duration1">
+                                <label class="form-check-label" for="duration1">Desert Safari Tours</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="duration1">
+                                <label class="form-check-label" for="duration1">Dhow Cruise</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="duration1">
+                                <label class="form-check-label" for="duration1">Events and Occasions</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="duration1">
+                                <label class="form-check-label" for="duration1">Fun and Games</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="duration1">
+                                <label class="form-check-label" for="duration1">Helicopter Tours</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="duration1">
+                                <label class="form-check-label" for="duration1">Hop on Hop off Bus Dubai</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="duration1">
+                                <label class="form-check-label" for="duration1">Hot Air Balloon</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="duration1">
+                                <label class="form-check-label" for="duration1">Nature and Wildlife</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="duration1">
+                                <label class="form-check-label" for="duration1">Premium Tours</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="duration1">
+                                <label class="form-check-label" for="duration1">Restaurants and Meals</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="duration1">
+                                <label class="form-check-label" for="duration1">Sightseeing Tours</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="duration1">
+                                <label class="form-check-label" for="duration1">Sim Card and Wifi Router</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="duration1">
+                                <label class="form-check-label" for="duration1">Theme Parks</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="duration1">
+                                <label class="form-check-label" for="duration1">Transfers</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="duration1">
+                                <label class="form-check-label" for="duration1">Walking Tour - Old Dubai</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="duration1">
+                                <label class="form-check-label" for="duration1">Water Activities</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="duration1">
+                                <label class="form-check-label" for="duration1">Water Parks</label>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-9">
+                    <div class="activity-list-detail"><!-- Cards will be injected here by JS -->
+                  
+                    </div>
+                    <nav class="activity-pagination d-flex justify-content-center">
+                        <ul class="pagination activity-pagination-list mt-3 mb-3">
+                            <!-- Pagination will be injected here by JS -->
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hotel list section end -->
+
+
+
+    <!-- footer section start -->
+    <footer class="footer-sec pt-5 mt-auto">
+        <div class="container py-3">
+            <div class="row gy-4">
+                <!-- Logo and Description -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-semibold mb-4 fs-5 text-white">Download Mobile App</h6>
+                        <div class=" my-3 play-button">
+                            <a class="d-flex text-decoration-none mb-2" href="https://play.google.com/store"
+                                target="_blank">
+                                <img src="img/Google-Play.png" alt="Get it on Google Play" class="google-play-btn">
+                            </a>
+                            <a href="" class=""><img class="bar-code" src="img/svgexport-2.svg" alt="">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Business -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-semibold text-white mb-4 fs-5">Links:</h6>
+                        <ul class="list-unstyled small">
+                            <li><a href="/index.html" class="text-white text-decoration-none">About Us</a></li>
+                            <li><a href="/blog.html" class="text-white text-decoration-none">Contact Us</a></li>
+                            <li><a href="/about-us.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Term & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-semibold text-white mb-4 fs-5">Need Help?</h6>
+                        <ul class="list-unstyled small text-white social-icons">
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-telephone-fill me-2"></i> <a href=""
+                                    class="text-decoration-none text-white">+971 42 65
+                                    5264</a>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-envelope-fill me-2"></i> <a href="mailto:support@aantorism.com"
+                                    class="text-decoration-none text-white">
+                                    support@aantorism.com
+                                </a>
+                            </li>
+                            <li class="d-flex align-items-center social-icons">
+                                <ul class="list-unstyled d-inline-flex">
+                                    <li>
+                                        <a href="" class="text-decoration-none"><i
+                                                class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="text-decoration-none"><i class="fa-brands fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="text-decoration-none"><i
+                                                class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </li>
+                              <div>
+                                <button id="orangeModeBtn"></button>
+                                <button id="lightModeBtn"></button>
+                                <button id="pinkModeBtn"></button>
+                                <!-- <button id="darkModeBtn"></button> -->
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="privacy-policy text-center py-2 mt-4">
+            <small class="text-white">© Copyright 2024 Tourism. All rights reserved</small>
+        </div>
+    </footer>
+    <!-- footer section end -->
+    <!-- Bootstrap JS Bundle (with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Flatpickr JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="js/activity-list.js"></script>
+    <script src="js/theme-change.js"></script>
+</body>
+
+</html>

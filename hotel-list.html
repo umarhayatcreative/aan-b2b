@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aan B2b</title>
+     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/theme-variables.css">
+    <link rel="stylesheet" href="css/hotel-list.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Flatpickr CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <section class="header-login">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg text-white">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand text-white me-5 fw-bold" href="/home.html">
+                        Logo
+                    </a>
+
+                    <!-- Right side elements -->
+                    <div class="d-flex align-items-center order-lg-2">
+                        <!-- Profile Dropdown -->
+                        <a class="text-white me-3 text-decoration-none" href="/home-login.html">
+                            Logout
+                        </a>
+
+                        <!-- Cart -->
+                        <a class="text-white me-3" href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+
+                        <!-- Toggle button -->
+                        <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <i class="bi bi-list text-white"></i>
+                        </button>
+                    </div>
+
+                    <!-- Offcanvas Menu -->
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="/home.html">Home</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="visasDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Credit Limit
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="visasDropdown">
+                                        <li class="p-3 text-nowrap"><span>Credit Limit:&nbsp;&nbsp;&nbsp;&nbsp;PKR
+                                                75,000.00 <br>
+                                                Available Limit:&nbsp;&nbsp;&nbsp;&nbsp;PKR 22,190.00</span></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/visas.html">Visas</a>
+                                </li>
+
+
+                                <!-- Dropdown 2: Reports -->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="reportsDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Reports
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="reportsDropdown">
+                                        <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                                        <li><a class="dropdown-item" href="/report-booking.html">Bookings</a></li>
+                                        <li><a class="dropdown-item" href="/report-ledger.html">Ledger</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="reportsDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Sub Agents
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="reportsDropdown">
+                                        <li><a class="dropdown-item" href="/sub-agents.html">Manage Sub Agents</a></li>
+                                        <li><a class="dropdown-item" href="/add-credit.html">Add Credit</a></li>
+                                        <li><a class="dropdown-item" href="/sub-agents-booking.html">Bookings</a></li>
+                                        <li><a class="dropdown-item" href="/sub-agent-visas.html">Visas</a></li>
+                                        <li><a class="dropdown-item" href="/sub-agent-ledger.html">Ledger</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/user.html">User</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="reportsDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        ATE-167000316
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="reportsDropdown">
+                                        <li><a class="dropdown-item" href="/markups.html">Markups</a></li>
+                                        <li><a class="dropdown-item" href="/my-profile.html">Profile</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!-- header section end -->
+    <div class="container d-block d-lg-none">
+        <div class="py-3 d-flex align-items-center justify-content-between gap-2 modify-search-btn">
+            <a class="btn " data-bs-toggle="modal" data-bs-target="#hotelSearchModal">Modify Search</a>
+            <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#filtersOffcanvas" aria-controls="filtersOffcanvas">
+                <i class="bi bi-sliders me-1"></i> Filters
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile/Tablet Filters Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="filtersOffcanvas" aria-labelledby="filtersOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="filtersOffcanvasLabel">Filters</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="hotel-filter-card-custom p-3 mb-3">
+                <h6>Sort By:</h6>
+                <select class="form-select" aria-label="Sort options mobile">
+                    <option selected>Price - Low to High</option>
+                    <option value="1">Price - High to Low</option>
+                    <option value="2">Rating - Low to High</option>
+                    <option value="3">Rating - High to Low</option>
+                </select>
+            </div>
+
+            <div class="hotel-filter-card-custom p-3 mb-3">
+                <h6 class="filter-title">Price Range:</h6>
+                <div class="d-flex justify-content-between mt-2">
+                    <span>Min: <span id="minValueMobile">0</span></span>
+                    <span>Max: <span id="maxValueMobile">50000</span></span>
+                </div>
+                <div class="range-slider">
+                    <div class="range-track">
+                        <div class="range-fill" id="rangeFillMobile"></div>
+                    </div>
+                    <input type="range" class="range-input" id="minRangeMobile" min="0" max="50000" value="0"
+                        step="1000">
+                    <input type="range" class="range-input" id="maxRangeMobile" min="0" max="50000" value="50000"
+                        step="1000">
+                </div>
+            </div>
+
+            <div class="hotel-filter-card-custom p-3 mb-3">
+                <h6 class="filter-title">Room Options:</h6>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="refundableMobile">
+                    <label class="form-check-label" for="refundableMobile">Refundable</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="breakfastMobile">
+                    <label class="form-check-label" for="breakfastMobile">Breakfast</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="wifiMobile">
+                    <label class="form-check-label" for="wifiMobile">Free Wifi</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hotel Search Modal -->
+    <div class="modal fade" id="hotelSearchModal" tabindex="-1" aria-labelledby="hotelSearchModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="hotelSearchModalLabel">Hotel Search</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Your exact HTML code starts here -->
+                    <section class="hotel-input-sec px-2 py-4 bg-white">
+                        <div class="container">
+                            <div class="row g-3">
+
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                    <div class="hotel-input-group">
+                                        <div class="form-floating">
+                                            <select class="form-select fw-semibold" id="floatingSelect"
+                                                aria-label="Floating label select example">
+                                                <option selected>Pakistan</option>
+                                                <option value="1">Malaysia</option>
+                                                <option value="2">Azerbaijan</option>
+                                                <option value="3">Turkey</option>
+                                            </select>
+                                            <label for="floatingSelect">Destination or Hotel Name</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                    <div class="hotel-input-group">
+                                        <div class="form-floating">
+                                            <select class="form-select fw-semibold" id="floatingSelect"
+                                                aria-label="Floating label select example">
+                                                <option selected>Pakistan</option>
+                                                <option value="1">India</option>
+                                                <option value="2">Bangladesh</option>
+                                                <option value="3">Sri Lanka</option>
+                                            </select>
+                                            <label for="floatingSelect">Select Nationality</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                    <div class="hotel-input-group">
+                                        <div class="form-floating ">
+                                            <input type="text" class="form-control fw-semibold date-range-input"
+                                                id="dateRangeInput" placeholder="Select Date Range" readonly>
+                                            <label for="dateRangeInput">Select Date Range</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                    <div class="hotel-input-group">
+                                        <div class="form-floating">
+                                            <button type="button"
+                                                class="guest-room-toggle form-select border-light-subtle d-flex align-items-center gap-2 fw-semibold"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="guest-room-summary">2 Adults, 0 Children - 1
+                                                    Room</span>
+                                            </button>
+                                            <label for="" class="text-secondary">Guests & Rooms</label>
+                                            <div class="guest-room-dropdown dropdown-menu w-100 shadow-sm border-light px-3 pt-3 pb-0 text-nowrap"
+                                                data-bs-auto-close="outside">
+                                                <div class="rooms-container">
+                                                    <div class="room mb-3">
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center mb-2 room-header">
+                                                            <h6 class="mb-0 fw-medium">Room 1</h6>
+                                                            <button type="button"
+                                                                class="btn btn-outline-danger btn-sm btn-remove-room d-none">Remove</button>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <div
+                                                                class="d-flex justify-content-between align-items-center">
+                                                                <span class="text-secondary">Adults</span>
+                                                                <div class="d-flex align-items-center">
+                                                                    <button type="button"
+                                                                        class="btn btn-outline-secondary rounded-circle btn-sm px-0 btn-counter btn-decrease"
+                                                                        aria-label="Decrease adults">-</button>
+                                                                    <span
+                                                                        class="mx-3 fw-medium count adults-count">2</span>
+                                                                    <button type="button"
+                                                                        class="btn btn-outline-secondary rounded-circle btn-sm px-0 btn-counter btn-increase"
+                                                                        aria-label="Increase adults">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <div
+                                                                class="d-flex justify-content-between align-items-center">
+                                                                <span class="text-secondary">Children</span>
+                                                                <div class="d-flex align-items-center">
+                                                                    <button type="button"
+                                                                        class="btn btn-outline-secondary rounded-circle btn-sm px-0 btn-counter btn-decrease"
+                                                                        aria-label="Decrease children">-</button>
+                                                                    <span
+                                                                        class="mx-3 fw-medium count children-count">0</span>
+                                                                    <button type="button"
+                                                                        class="btn btn-outline-secondary rounded-circle btn-sm px-0 btn-counter btn-increase"
+                                                                        aria-label="Increase children">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="children-ages d-none">
+                                                            <div class="mb-2 d-flex align-items-center">
+                                                                <span class="text-secondary">Age of Children</span>
+                                                                <i class="fas fa-info-circle ms-1 text-secondary"
+                                                                    data-bs-toggle="tooltip"
+                                                                    title="Please select the age of each child"></i>
+                                                            </div>
+                                                            <div class="row g-2 children-ages-list"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between mt-3 room-controls p-2">
+                                                    <button type="button" class="btn btn-add-room">+ Add
+                                                        Room</button>
+                                                    <button type="button" class="btn  btn-apply-guests">Done</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Star Rating Dropdown -->
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                    <div class="hotel-input-group">
+                                        <div class="form-floating">
+                                            <select class="form-select fw-semibold" id="ratingSelect"
+                                                aria-label="Star rating">
+                                                <option value="" selected>⭐⭐⭐⭐⭐ 5</option>
+                                                <option value="1">⭐ 1+</option>
+                                                <option value="2">⭐⭐ 2+</option>
+                                                <option value="3">⭐⭐⭐ 3+</option>
+                                                <option value="4">⭐⭐⭐⭐ 4+</option>
+                                                <option value="5">⭐⭐⭐⭐⭐ 5</option>
+                                            </select>
+                                            <label for="ratingSelect">Star Rating</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                    <div class="hotel-input-group h-100 d-flex justify-content-end">
+                                        <a href="#"
+                                            class="btn hotel-search-btn px-5 w-100 d-flex align-items-center justify-content-center">Search</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <!-- Your exact HTML code ends here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- hotel modify sec start -->
+    <section class="hotel-input-sec px-2 py-4 d-none d-lg-block mb-3">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-lg-12">
+                    <div class="hotel-list-header d-flex flex-wrap">
+                        <h5>Modify Search</h5>
+                        <div class="hotel-rating ms-auto d-flex align-items-center">
+                            <span class="text-muted">Hotel Rating:</span>
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle custom-dropdown-toggle border-0" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    ⭐⭐⭐⭐⭐ 5
+                                </button>
+                                <ul class="dropdown-menu custom-dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">⭐ 1+</a></li>
+                                    <li><a class="dropdown-item" href="#">⭐⭐ 2+</a></li>
+                                    <li><a class="dropdown-item" href="#">⭐⭐⭐ 3+</a></li>
+                                    <li><a class="dropdown-item" href="#">⭐⭐⭐⭐ 4+</a></li>
+                                    <li><a class="dropdown-item" href="#">⭐⭐⭐⭐⭐ 5</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="hotel-input-group">
+                        <div class="form-floating">
+                            <select class="form-select fw-semibold" id="floatingSelect"
+                                aria-label="Floating label select example">
+                                <option selected>Pakistan</option>
+                                <option value="1">Malaysia</option>
+                                <option value="2">Azerbaijan</option>
+                                <option value="3">Turkey</option>
+                            </select>
+                            <label for="floatingSelect">Destination or Hotel Name</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-4 col-md-6">
+                    <div class="hotel-input-group">
+                        <div class="form-floating">
+                            <select class="form-select fw-semibold" id="floatingSelect"
+                                aria-label="Floating label select example">
+                                <option selected>Pakistan</option>
+                                <option value="1">India</option>
+                                <option value="2">Bangladesh</option>
+                                <option value="3">Sri Lanka</option>
+                            </select>
+                            <label for="floatingSelect">Select Nationality</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="hotel-input-group">
+                        <div class="form-floating ">
+                            <input type="text" class="form-control fw-semibold date-range-input" id="dateRangeInput"
+                                placeholder="Select Date Range" readonly>
+                            <label for="dateRangeInput">Select Date Range</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="hotel-input-group">
+                        <div class="form-floating">
+                            <button type="button"
+                                class="guest-room-toggle form-select border-light-subtle d-flex align-items-center gap-2 fw-semibold"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="guest-room-summary">2 Adults, 0 Children - 1
+                                    Room</span>
+                            </button>
+                            <label for="" class="text-secondary">Guests & Rooms</label>
+                            <div class="guest-room-dropdown dropdown-menu w-100 shadow-sm border-light px-3 pt-3 pb-0 text-nowrap"
+                                data-bs-auto-close="outside">
+                                <div class="rooms-container">
+                                    <div class="room mb-3">
+                                        <div class="d-flex justify-content-between align-items-center mb-2 room-header">
+                                            <h6 class="mb-0 fw-medium">Room 1</h6>
+                                            <button type="button"
+                                                class="btn btn-outline-danger btn-sm btn-remove-room d-none">Remove</button>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="text-secondary">Adults</span>
+                                                <div class="d-flex align-items-center">
+                                                    <button type="button"
+                                                        class="btn btn-outline-secondary rounded-circle btn-sm px-0 btn-counter btn-decrease"
+                                                        aria-label="Decrease adults">-</button>
+                                                    <span class="mx-3 fw-medium count adults-count">2</span>
+                                                    <button type="button"
+                                                        class="btn btn-outline-secondary rounded-circle btn-sm px-0 btn-counter btn-increase"
+                                                        aria-label="Increase adults">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="text-secondary">Children</span>
+                                                <div class="d-flex align-items-center">
+                                                    <button type="button"
+                                                        class="btn btn-outline-secondary rounded-circle btn-sm px-0 btn-counter btn-decrease"
+                                                        aria-label="Decrease children">-</button>
+                                                    <span class="mx-3 fw-medium count children-count">0</span>
+                                                    <button type="button"
+                                                        class="btn btn-outline-secondary rounded-circle btn-sm px-0 btn-counter btn-increase"
+                                                        aria-label="Increase children">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="children-ages d-none">
+                                            <div class="mb-2 d-flex align-items-center">
+                                                <span class="text-secondary">Age of Children</span>
+                                                <i class="fas fa-info-circle ms-1 text-secondary"
+                                                    data-bs-toggle="tooltip"
+                                                    title="Please select the age of each child"></i>
+                                            </div>
+                                            <div class="row g-2 children-ages-list"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between mt-3 room-controls p-2">
+                                    <button type="button" class="btn btn-add-room">+ Add
+                                        Room</button>
+                                    <button type="button" class="btn  btn-apply-guests">Done</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-1 col-lg-4 col-md-6">
+                    <div class="hotel-input-group h-100 d-flex justify-content-end">
+                        <a href=""
+                            class="btn hotel-search-btn w-100 d-flex align-items-center justify-content-center">Search</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hotel modify sec end -->
+
+    <!-- hotel list section start -->
+    <section class="hotel-list">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 d-none d-lg-block">
+                    <div class="hotel-list-filter">
+                        <div class="hotel-filter-card-custom p-3 mb-3">
+                            <input type="text" class="form-control" placeholder="Search hotel">
+                        </div>
+
+                        <div class="hotel-filter-card-custom p-3 mb-3">
+                            <h6>Sort By:</h6>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Price - Low to High</option>
+                                <option value="1">Price - High to Low</option>
+                                <option value="2">Rating - Low to High</option>
+                                <option value="3">Rating - High to Low</option>
+                            </select>
+                        </div>
+
+                        <div class="hotel-filter-card-custom p-3 mb-3">
+                            <h6 class="filter-title">Price Range:</h6>
+                            <div class="d-flex justify-content-between mt-2">
+                                <span>Min: <span id="minValue">0</span></span>
+                                <span>Max: <span id="maxValue">50000</span></span>
+                            </div>
+                            <div class="range-slider">
+                                <div class="range-track">
+                                    <div class="range-fill" id="rangeFill"></div>
+                                </div>
+                                <input type="range" class="range-input" id="minRange" min="0" max="50000" value="0"
+                                    step="1000">
+                                <input type="range" class="range-input" id="maxRange" min="0" max="50000" value="50000"
+                                    step="1000">
+                            </div>
+                        </div>
+
+                        <div class="hotel-filter-card-custom p-3 mb-3">
+                            <h6 class="filter-title">Room Options:</h6>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="duration1">
+                                <label class="form-check-label" for="duration1">Refundable</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="duration2">
+                                <label class="form-check-label" for="duration2">Breakfast</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="duration1">
+                                <label class="form-check-label" for="duration1">Free Wifi</label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-9">
+                    <div class="hotel-list-detail">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="hotel-list-card" id="hotelList"></div>
+                                <div class="hotel-pagination-container mt-4 d-flex justify-content-center mb-4"
+                                    id="hotelPagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hotel list section end -->
+
+
+
+    <!-- footer section start -->
+    <footer class="footer-sec pt-5 mt-auto">
+        <div class="container py-3">
+            <div class="row gy-4">
+                <!-- Logo and Description -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-semibold mb-4 fs-5 text-white">Download Mobile App</h6>
+                        <div class=" my-3 play-button">
+                            <a class="d-flex text-decoration-none mb-2" href="https://play.google.com/store"
+                                target="_blank">
+                                <img src="img/Google-Play.png" alt="Get it on Google Play" class="google-play-btn">
+                            </a>
+                            <a href="" class=""><img class="bar-code" src="img/svgexport-2.svg" alt="">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Business -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-semibold text-white mb-4 fs-5">Links:</h6>
+                        <ul class="list-unstyled small">
+                            <li><a href="/index.html" class="text-white text-decoration-none">About Us</a></li>
+                            <li><a href="/blog.html" class="text-white text-decoration-none">Contact Us</a></li>
+                            <li><a href="/about-us.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Term & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-semibold text-white mb-4 fs-5">Need Help?</h6>
+                        <ul class="list-unstyled small text-white social-icons">
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-telephone-fill me-2"></i> <a href=""
+                                    class="text-decoration-none text-white">+971 42 65
+                                    5264</a>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-envelope-fill me-2"></i> <a href="mailto:support@aantorism.com"
+                                    class="text-decoration-none text-white">
+                                    support@aantorism.com
+                                </a>
+                            </li>
+                            <li class="d-flex align-items-center social-icons">
+                                <ul class="list-unstyled d-inline-flex">
+                                    <li>
+                                        <a href="" class="text-decoration-none"><i
+                                                class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="text-decoration-none"><i class="fa-brands fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="text-decoration-none"><i
+                                                class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </li>
+                              <div>
+                                <button id="orangeModeBtn"></button>
+                                <button id="lightModeBtn"></button>
+                                <button id="pinkModeBtn"></button>
+                                <!-- <button id="darkModeBtn"></button> -->
+                            </div>s
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="privacy-policy text-center py-2 mt-4">
+            <small class="text-white">© Copyright 2024 Tourism. All rights reserved</small>
+        </div>
+    </footer>
+    <!-- footer section end -->
+    <!-- Bootstrap JS Bundle (with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Flatpickr JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="js/hotel-list.js"></script>
+    <script src="js/theme-change.js"></script>
+</body>
+
+</html>

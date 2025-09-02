@@ -1,0 +1,409 @@
+
+.header-login {
+    background-color: var(--primary-colors);
+    height: 72px;
+}
+
+.header-login .navbar {
+    height: 72px;
+}
+
+.header-login .navbar-nav .nav-item {
+    margin-right: 25px;
+    /* jitna gap chahiye */
+}
+
+.header-login .navbar-nav .nav-item .nav-link {
+    color: var(--color-white);
+}
+
+.header-login .navbar-nav .nav-item:last-child {
+    margin-right: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .header-login .navbar-nav .nav-item {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 991px) {
+    .header-login .navbar-nav .nav-item .nav-link {
+        color: var(--primary-colors);
+    }
+}
+
+.header-login .navbar-nav .nav-item .nav-link:hover {
+    color: var(--secondary-colors);
+}
+
+.header-login .navbar-nav .nav-item .nav-link.active {
+    color: var(--secondary-colors);
+}
+
+/* Header nav links base color (desktop/default) */
+.header-login .navbar .nav-link {
+    color: var(--color-white);
+    transition: color 0.2s ease-in-out;
+}
+
+/* Dropdown items hover color */
+.header-login .dropdown-menu .dropdown-item:hover {
+    background-color: var(--primary-lights);
+    color: var(--secondary-colors);
+}
+
+.header-login .navbar-toggler:focus {
+    box-shadow: none;
+    border: none;
+}
+
+
+.header-login .dropdown-menu {
+    min-width: 250px;
+    /* box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075); */
+    border-bottom: 2px solid var(--secondary-colors);
+    /* border: none; */
+    border-radius: 10px;
+
+}
+
+.header-login .dropdown-item {
+    transition: all 0.3s ease;
+    font-size: 15px;
+    padding: 8px 15px;
+
+}
+
+.header-login .dropdown-item:hover {
+    transform: translateX(4px);
+    font-weight: 500;
+}
+
+/* header sec end */
+
+
+.activity-filter-card-custom .form-check-input:checked {
+    background-color: var(--secondary-colors);
+    border: var(--secondary-colors);
+    box-shadow: none;
+}
+
+
+
+/* activities input search end */
+
+/* activities list section start */
+
+.activity-filter-card-custom .arrow-icon {
+    transition: transform 0.3s ease;
+}
+
+
+.activity-filter-card-custom .collapsed .arrow-icon {
+    transform: rotate(-90deg);
+}
+
+.activity-filter-card-custom .img-cart img{
+    width: 60px;
+    height: 60px;
+}
+
+.activity-list .activity-list-filter .activity-filter-card-custom {
+    background-color: var(--primary-lights);
+    border-radius: 15px;
+}
+
+.activity-filter-card-custom .price{
+    color: var(--secondary-colors);
+}
+
+.activity-filter-card-custom .range-slider {
+    position: relative;
+    /* height: 40px; */
+    margin: 2rem 0;
+}
+
+.activity-filter-card-custom .range-input {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 4px;
+    background: transparent;
+    pointer-events: none;
+    -webkit-appearance: none;
+    appearance: none;
+    z-index: 2;
+}
+
+.activity-filter-card-custom .range-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--secondary-colors);
+    cursor: pointer;
+    pointer-events: auto;
+    border: none;
+    z-index: 3;
+}
+
+.activity-filter-card-custom .range-input::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--secondary-colors);
+    cursor: pointer;
+    pointer-events: auto;
+    border: none;
+    z-index: 3;
+}
+
+.activity-filter-card-custom .range-input::-webkit-slider-track {
+    background: transparent;
+}
+
+.activity-filter-card-custom .range-input::-moz-range-track {
+    background: transparent;
+}
+
+.activity-filter-card-custom .range-track {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 4px;
+    background: var(--primary-colors);
+    border-radius: 2px;
+    z-index: 1;
+}
+
+.activity-filter-card-custom .range-fill {
+    position: absolute;
+    height: 100%;
+    background: var(--primary-colors);
+    border-radius: 2px;
+    z-index: 1;
+}
+
+.activity-filter-card-custom #maxRange {
+    z-index: 2;
+}
+
+.activity-filter-card-custom #minRange {
+    z-index: 3;
+}
+
+.activity-filter-card-custom h6 {
+    color: var(--primary-colors);
+}
+
+
+
+.modify-search-btn .btn {
+    border: 1px solid var(--secondary-colors);
+    color: var(--primary-colors);
+}
+
+/* activites  list section end */
+
+
+.activities-input-group .activities-search-btn {
+    background-color: var(--secondary-colors);
+    border: 1px solid var(--secondary-colors);
+    color: var(--color-white);
+}
+
+.activities-input-group .activities-search-btn:hover {
+    background-color: transparent;
+    color: var(--primary-colors);
+    border: 1px solid var(--secondary-colors);
+}
+
+
+
+
+/* activities list card style start */
+.activity-list-detail .activity-card {
+    border-radius: 15px;
+    border: 1px solid var(--all-border);
+}
+
+.activity-list-detail .activity-card .rating-stars {
+    font-size: 14px;
+    color: var(--secondary-colors);
+}
+
+.activity-list-detail .activity-card .activity-book-btn {
+    background-color: var(--secondary-colors);
+}
+
+.activity-list-detail .activity-card .activity-book-btn:hover {
+    background-color: var(--btn-hover-color);
+    border: 1px solid var(--btn-hover-color);
+}
+
+.activity-list-detail .activity-card .activity-price {
+    color: var(--primary-colors);
+}
+
+.activity-list-detail .activity-card .activity-price-start {
+    margin-bottom: -5px;
+}
+
+.activity-list-detail .activity-card .card-title {
+    font-size: clamp(18px, 2vw, 20px);
+    color: var(--primary-colors);
+}
+
+
+/* Activity card image responsiveness */
+.activity-list-detail .activity-card .card-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    /* On desktop/tablet, make the image fill the card height */
+
+    .activity-list-detail .activity-card .activity-image-box {
+        height: 280px;
+        width: 100%;
+        display: flex;
+        align-items: stretch;
+    }
+
+    .activity-list-detail .activity-card .activity-image-box .card-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+    }
+}
+
+
+.activity-booking-slidebar .offcanvas-body .package-box{
+    padding: 20px;
+    background-color: var(--color-white);
+    border: 1px solid var(--all-border);
+    border-radius: var(--border-radius-boxes)
+    
+}
+
+.activity-booking-slidebar .offcanvas-body  .form-check-input:checked{
+    border-color: var(--secondary-colors);
+    background-color: var(--secondary-colors);
+}
+
+.activity-booking-slidebar .proceed-check-btn{
+    background-color: var(--secondary-colors);
+    border: 1px solid var(--secondary-colors);
+    color: var(--color-white);
+}
+
+.activity-booking-slidebar .proceed-check-btn:hover{
+    background-color: transparent;
+    color: var(--primary-colors);
+    border: 1px solid var(--secondary-colors);
+}
+
+.activity-booking-slidebar .price{
+    color: var(--primary-colors);
+}
+/* activities list card style end */
+
+
+
+
+/* pagination style start */
+.activity-pagination .pagination {
+    gap: 8px;
+}
+
+.activity-pagination .page-item .page-link {
+    border-radius: 8px;
+    padding: 8px 14px;
+    min-width: 42px;
+    border: 1px solid var(--all-border);
+    background-color: var(--color-white);
+    color: var(--primary-colors);
+}
+
+.activity-pagination .page-item.active .page-link {
+    background-color: var(--secondary-colors);
+    border-color: var(--secondary-colors);
+    color: var(--color-white);
+}
+
+.activity-pagination .page-item.disabled .page-link {
+
+    border-color: var(--all-border);
+
+    cursor: not-allowed;
+}
+
+.activity-pagination .page-item .page-link:focus {
+    box-shadow: none;
+}
+
+.activity-pagination .page-item:not(.disabled):not(.active) .page-link:hover {
+    border-color: var(--secondary-colors);
+    color: var(--secondary-colors);
+}
+
+/* pagination style end */
+
+
+
+/* footer sec start */
+.footer-sec {
+    background-color: var(--primary-colors);
+}
+
+.footer-sec .privacy-policy {
+    background-color: var(--secondary-colors);
+}
+
+.footer-sec .footer-custom ul li i {
+    color: var(--secondary-colors);
+}
+
+.footer-sec .footer-custom ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer-sec .footer-custom ul a:hover {
+    color: var(--secondary-colors) !important;
+}
+
+.footer-sec .footer-custom .social-icons li i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 102, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-sec .play-button a img {
+    width: 112px;
+}
+
+.footer-sec .play-button .bar-code {
+    width: 110px;
+}
+
+.footer-sec .social-icons ul li {
+    margin-left: 10px;
+}
+
+.footer-sec .social-icons ul li:first-child {
+    margin-left: 0px;
+}

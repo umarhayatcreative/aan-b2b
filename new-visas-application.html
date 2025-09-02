@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar Right Side Toggle</title>
+     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/theme-variables.css">
+    <link rel="stylesheet" href="css/new-visas-application.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Flatpickr CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <!-- header section start -->
+    <section class="header-login">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg text-white">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand text-white me-5 fw-bold" href="/home.html">
+                        Logo
+                    </a>
+
+                    <!-- Right side elements -->
+                    <div class="d-flex align-items-center order-lg-2">
+                        <!-- Profile Dropdown -->
+                        <a class="text-white me-3 text-decoration-none" href="/home-login.html">
+                            Logout
+                        </a>
+
+                        <!-- Cart -->
+                        <a class="text-white" href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+
+                        <!-- Toggle button -->
+                        <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <i class="bi bi-list text-white"></i>
+                        </button>
+                    </div>
+
+                    <!-- Offcanvas Menu -->
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/home.html">Home</a>
+                                </li>
+                                <!-- Dropdown 1: Visas -->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="visasDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Credit Limit
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="visasDropdown">
+                                        <li class="p-3 text-nowrap"><span>Credit Limit:&nbsp;&nbsp;&nbsp;&nbsp;PKR
+                                                75,000.00 <br>
+                                                Available Limit:&nbsp;&nbsp;&nbsp;&nbsp;PKR 22,190.00</span></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/visas.html">Visas</a>
+                                </li>
+
+                                <!-- Dropdown 2: Reports -->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="reportsDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Reports
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="reportsDropdown">
+                                        <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                                        <li><a class="dropdown-item" href="/report-booking.html">Bookings</a></li>
+                                        <li><a class="dropdown-item" href="/report-ledger.html">Ledger</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="reportsDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Sub Agents
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="reportsDropdown">
+                                        <li><a class="dropdown-item" href="/sub-agents.html">Manage Sub Agents</a></li>
+                                        <li><a class="dropdown-item" href="/add-credit.html">Add Credit</a></li>
+                                        <li><a class="dropdown-item" href="/sub-agents-booking.html">Bookings</a></li>
+                                        <li><a class="dropdown-item" href="/sub-agent-visas.html">Visas</a></li>
+                                        <li><a class="dropdown-item" href="/sub-agent-ledger.html">Ledger</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/user.html">User</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="reportsDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        ATE-167000316
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="reportsDropdown">
+                                        <li><a class="dropdown-item" href="/markups.html">Markups</a></li>
+                                        <li><a class="dropdown-item" href="/my-profile.html">Profile</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!-- header section end -->
+
+    <!-- my profile section start -->
+    <section class="new-visas py-3">
+        <div class="container">
+            <div class="banner mb-3 d-flex justify-content-between align-items-center flex-wrap">
+                <h2 class="fs-4 m-0">New Visa Application</h2>
+                <nav aria-label="breadcrumb fs-6">
+                    <ul class="breadcrumb mb-0">
+                        <li class="breadcrumb-item fs-5">Price: PKR
+                            0.00
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="new-visas-card">
+                <div class="card-body">
+                    <!-- Guest 1 -->
+                    <div class="mb-3">
+                        <div class="row g-4">
+                            <!-- <div class="col-md-3">
+                                <label for="" class="mb-1">Title</label>
+                                <select class="form-select py-2">
+                                    <option>Mr</option>
+                                    <option>Mrs</option>
+                                    <option>Ms</option>
+                                </select>
+                            </div> -->
+                            <div class="col-lg-3 col-md-6">
+                                <label for="" class="mb-1">Date Range:</label>
+                                <input type="text" class="form-control p-2 date-visass" placeholder="dd-mm-yyyy">
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <label for="" class="mb-1">Entry Type *</label>
+                                <select class="form-select py-2">
+                                    <option>30 Days Single</option>
+                                    <option>30 Days Double</option>
+                                    <option>15 Days Double</option>
+
+                                </select>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <label for="" class="mb-1">Adult/Child *</label>
+                                <select class="form-select py-2">
+                                    <option>Adult</option>
+                                    <option>Child</option>
+
+                                </select>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <label for="" class="mb-1">Reference Number:*</label>
+                                <input class="form-control py-2" placeholder="Reference Number">
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <label for="" class="mb-1">Passport Number:*</label>
+                                <input class="form-control py-2" placeholder="Passport Number">
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <label for="" class="mb-1">Expiry Date:</label>
+                                <input type="text" class="form-control p-2 date-visass" placeholder="dd-mm-yyyy">
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <label for="" class="mb-1">Group Application Relation *</label>
+                                <select class="form-select py-2">
+                                    <option>None</option>
+                                    <option>Alone</option>
+                                    <option>Family</option>
+
+                                </select>
+                            </div>
+                            <div class="col-lg-3 col-md-6"></div>
+
+
+                            <div class="col-lg-3 col-md-6">
+                                <label class="mb-1">First Name:*</label>
+                                <input class="form-control py-2 mb-1" placeholder="First Name">
+                                <input class="form-control py-2 urdufield" placeholder="پہلا نام" dir="rtl">
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <label class="mb-1">Middle Name:*</label>
+                                <input class="form-control py-2 mb-1" placeholder="Middle Name">
+                                <input class="form-control py-2 urdufield" placeholder="درمیانی نام" dir="rtl">
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <label class="mb-1">Last Name:*</label>
+                                <input class="form-control py-2 mb-1" placeholder="Last Name">
+                                <input class="form-control py-2 urdufield" placeholder="آخری نام" dir="rtl">
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <label class="mb-1">Birth Place:*</label>
+                                <input class="form-control py-2 mb-1" placeholder="Birth Place">
+                                <input class="form-control py-2 urdufield" placeholder="پیدائش کی جگہ" dir="rtl">
+                            </div>
+
+
+
+
+
+                            <div class="col-lg-3 col-md-6">
+                                <label for="" class="mb-1">Gender:*</label>
+                                <select class="form-select py-2">
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <label for="" class="mb-1">Marital Status *</label>
+                                <select class="form-select py-2">
+                                    <option>Single</option>
+                                    <option>Married</option>
+                                    <option>Divorced</option>
+                                    <option>Widowed</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <label for="" class="mb-1">Birth Date:*</label>
+                                <input type="text" class="form-control p-2 date-visass" placeholder="dd-mm-yyyy">
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <label for="" class="mb-1">Birth Country:*</label>
+                                <select class="form-select py-2">
+                                    <option>Pakistan</option>
+                                    <option>India</option>
+                                    <option>Bangladesh</option>
+                                    <option>Iran</option>
+                                    <option>Turkey</option>
+                                    <option>Australia</option>
+                                    <option>Japan</option>
+                                    <option>Dubai</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <label for="" class="mb-1">Passport Issue Country:</label>
+                                <select class="form-select py-2">
+                                    <option>Pakistan</option>
+                                    <option>India</option>
+                                    <option>Bangladesh</option>
+                                    <option>Iran</option>
+                                    <option>Turkey</option>
+                                    <option>Australia</option>
+                                    <option>Japan</option>
+                                    <option>Dubai</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <label for="" class="mb-1">Issue Date:*</label>
+                                <input type="text" class="form-control p-2 date-visass" placeholder="dd-mm-yyyy">
+                            </div>
+
+
+                            <div class="col-lg-3 col-md-6">
+                                <label for="" class="mb-1">Present Nationality:*</label>
+                                <select class="form-select py-2">
+                                    <option>Pakistan</option>
+                                    <option>India</option>
+                                    <option>Bangladesh</option>
+                                    <option>Iran</option>
+                                    <option>Turkey</option>
+                                    <option>Australia</option>
+                                    <option>Japan</option>
+                                    <option>Dubai</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <label for="" class="mb-1">Coming From:*</label>
+                                <select class="form-select py-2">
+                                    <option>Pakistan</option>
+                                    <option>India</option>
+                                    <option>Bangladesh</option>
+                                    <option>Iran</option>
+                                    <option>Turkey</option>
+                                    <option>Australia</option>
+                                    <option>Japan</option>
+                                    <option>Dubai</option>
+                                </select>
+                            </div>
+
+
+
+                            <div class="col-lg-3 col-md-6">
+                                <label class="mb-1">Passport Issue Place:</label>
+                                <input class="form-control py-2 mb-1" placeholder="Passport Issue Place">
+                                <input class="form-control py-2 urdufield" placeholder="پاسپورٹ جاری کرنے کی جگہ"
+                                    dir="rtl">
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <label class="mb-1">Father Name:</label>
+                                <input class="form-control py-2 mb-1" placeholder="Father Name">
+                                <input class="form-control py-2 urdufield" placeholder="والد کا نام" dir="rtl">
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <label class="mb-1">Mother Name:</label>
+                                <input class="form-control py-2 mb-1" placeholder="Mother Name">
+                                <input class="form-control py-2 urdufield" placeholder="والدہ کا نام" dir="rtl">
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <label class="mb-1">Husband Name:</label>
+                                <input class="form-control py-2 mb-1" placeholder="Husband Name">
+                                <input class="form-control py-2 urdufield" placeholder="شوہر کا نام" dir="rtl">
+                            </div>
+
+
+                            <div class="col-lg-3 col-md-6">
+                                <label for="" class="mb-1">Visit Reason:</label>
+                                <select class="form-select py-2">
+                                    <option>Tourism</option>
+                                    <option>Business</option>
+                                    <option>Study</option>
+                                    <option>Family Visit</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <label for="" class="mb-1">
+                                    Profession:</label>
+                                <select class="form-select py-2">
+                                    <option>Tourism</option>
+                                    <option>Business</option>
+                                    <option>Study</option>
+                                    <option>Family Visit</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+
+
+                            <div class="col-lg-3 col-md-6">
+                                <label for="" class="mb-1">
+                                    Language:</label>
+                                <select class="form-select py-2">
+                                    <option>English</option>
+                                    <option>Urdu</option>
+                                    <option>Arabic</option>
+                                    <option>Chinese</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <label for="" class="mb-1">
+                                    Education:</label>
+                                <select class="form-select py-2">
+                                    <option>Primary</option>
+                                    <option>Secondary</option>
+                                    <option>Higher Secondary</option>
+                                    <option>Bachelor's</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <label for="" class="mb-1">
+                                    Religion:</label>
+                                <select class="form-select py-2">
+                                    <option>Islam</option>
+                                    <option>Christianity</option>
+                                    <option>Hinduism</option>
+                                    <option>Buddhism</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <label for="" class="mb-1">Applicant Mobile:*</label>
+                                <input class="form-control py-2" placeholder="Applicant Mobile">
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 mb-3">
+                                <label for="comments" class="form-label">Comments:</label>
+                                <textarea class="form-control" id="comments" name="comments" rows="1"
+                                    placeholder="Enter your comments here..."></textarea>
+                            </div>
+
+                            <div class="mt-2">
+                                <h4>Upload Documents:</h4>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <label for="idCard" class="form-label">Passport Main Page*</label>
+                                <input class="form-control" type="file" id="idCard1" accept=".jpg,.jpeg,.png,.pdf">
+                                <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size: 2MB)</small>
+                            </div>
+
+
+                            <div class="col-lg-4 col-md-6">
+                                <label for="idCard" class="form-label">Passport Page 2*</label>
+                                <input class="form-control" type="file" id="idCard2" accept=".jpg,.jpeg,.png,.pdf">
+                                <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size: 2MB)</small>
+                            </div>
+
+
+                            <div class="col-lg-4 col-md-6">
+                                <label for="idCard" class="form-label">Applicant Photo*</label>
+                                <input class="form-control" type="file" id="idCard3" accept=".jpg,.jpeg,.png,.pdf">
+                                <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size: 2MB)</small>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <label for="idCard" class="form-label">Air Ticket*</label>
+                                <input class="form-control" type="file" id="idCard4" accept=".jpg,.jpeg,.png,.pdf">
+                                <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size: 2MB)</small>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <label for="idCard" class="form-label">Applicant Id Front*</label>
+                                <input class="form-control" type="file" id="idCard5" accept=".jpg,.jpeg,.png,.pdf">
+                                <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size: 2MB)</small>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <label for="idCard" class="form-label">Applicant Id Back*</label>
+                                <input class="form-control" type="file" id="idCard6" accept=".jpg,.jpeg,.png,.pdf">
+                                <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size: 2MB)</small>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <label for="idCard" class="form-label">Bank Statement 1*</label>
+                                <input class="form-control" type="file" id="idCard7" accept=".jpg,.jpeg,.png,.pdf">
+                                <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size: 2MB)</small>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <label for="idCard" class="form-label">Bank Statement 2*</label>
+                                <input class="form-control" type="file" id="idCard8" accept=".jpg,.jpeg,.png,.pdf">
+                                <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size: 2MB)</small>
+                            </div>
+
+
+                            <div class="col-lg-4 col-md-6">
+                                <label for="idCard" class="form-label">Parent Passport Main Page*</label>
+                                <input class="form-control" type="file" id="idCard9" accept=".jpg,.jpeg,.png,.pdf">
+                                <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size: 2MB)</small>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <label for="idCard" class="form-label">Parent Passport 2*</label>
+                                <input class="form-control" type="file" id="idCard10" accept=".jpg,.jpeg,.png,.pdf">
+                                <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size: 2MB)</small>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <label for="idCard" class="form-label">Hotel Reservation*</label>
+                                <input class="form-control" type="file" id="idCard11" accept=".jpg,.jpeg,.png,.pdf">
+                                <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size: 2MB)</small>
+                            </div>
+
+
+
+
+                            <div class="col-lg-6 col-md-6 mb-3">
+                                <label class="form-label d-block">Application Status:</label>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="applicationStatus" id="draft"
+                                        value="draft" checked>
+                                    <label class="form-check-label" for="draft">Save as Draft</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="applicationStatus" id="apply"
+                                        value="apply">
+                                    <label class="form-check-label" for="apply">Direct Apply</label>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-6 d-flex align-items-end justify-content-end">
+                                <button type="button" class="btn submit-btn py-2">
+                                    <i class="fa-solid fa-user-check me-2"></i>Submit
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- my profile section end -->
+
+    <!-- footer section start -->
+    <footer class="footer-sec pt-5 mt-auto">
+        <div class="container py-3">
+            <div class="row gy-4">
+                <!-- Logo and Description -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-semibold mb-4 fs-5 text-white">Download Mobile App</h6>
+                        <div class=" my-3 play-button">
+                            <a class="d-flex text-decoration-none mb-2" href="https://play.google.com/store"
+                                target="_blank">
+                                <img src="img/Google-Play.png" alt="Get it on Google Play" class="google-play-btn">
+                            </a>
+                            <a href="" class=""><img class="bar-code" src="img/svgexport-2.svg" alt="">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Business -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-semibold text-white mb-4 fs-5">Links:</h6>
+                        <ul class="list-unstyled small">
+                            <li><a href="/index.html" class="text-white text-decoration-none">About Us</a></li>
+                            <li><a href="/blog.html" class="text-white text-decoration-none">Contact Us</a></li>
+                            <li><a href="/about-us.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Term & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-custom">
+                        <h6 class="fw-semibold text-white mb-4 fs-5">Need Help?</h6>
+                        <ul class="list-unstyled small text-white social-icons">
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-telephone-fill me-2"></i> <a href=""
+                                    class="text-decoration-none text-white">+971 42 65
+                                    5264</a>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-envelope-fill me-2"></i> <a href="mailto:support@aantorism.com"
+                                    class="text-decoration-none text-white">
+                                    support@aantorism.com
+                                </a>
+                            </li>
+                            <li class="d-flex align-items-center social-icons">
+                                <ul class="list-unstyled d-inline-flex">
+                                    <li>
+                                        <a href="" class="text-decoration-none"><i
+                                                class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="text-decoration-none"><i class="fa-brands fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="text-decoration-none"><i
+                                                class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <div>
+                                <button id="orangeModeBtn"></button>
+                                <button id="lightModeBtn"></button>
+                                <button id="pinkModeBtn"></button>
+                                <!-- <button id="darkModeBtn"></button> -->
+                            </div>s
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="privacy-policy text-center py-2 mt-4">
+            <small class="text-white">© Copyright 2024 Tourism. All rights reserved</small>
+        </div>
+    </footer>
+    <!-- footer section end -->
+    <!-- Bootstrap JS Bundle (with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Flatpickr JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="js/new-visas-application.js"></script>
+    <script src="js/theme-change.js"></script>
+</body>
+
+</html>
