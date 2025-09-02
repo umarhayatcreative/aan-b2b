@@ -52,6 +52,9 @@
       color: var(--secondary-colors);
   }
 
+    .header-login .navbar-toggler{
+        border: 1px solid var(--color-white);
+    }
   .header-login .navbar-toggler:focus {
       box-shadow: none;
       border: none;
