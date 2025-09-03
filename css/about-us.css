@@ -53,99 +53,134 @@
 }
 
 
-.contact-form H3 {
-    color: var(--primary-colors);
-}
-
-.contact-form .submit-btn {
-    background-color: var(--secondary-colors);
-    border: none;
-    border-radius: 5px;
-    padding: 12px 50px;
-    font-size: 16px;
-    color: var(--color-white);
-}
 
 
-.contact-form .submit-btn:hover {
-    background-color: var(--primary-colors);
-    color: var(--color-white);
-}
-
-.contact-form .submit-btn:focus {
-    background-color: var(--primary-colors);
-    color: var(--color-white);
-}
-
-
-
-.contact-banner {
+.about-us-banner {
     background-image: url('../img/signup-bg.jpg');
-    /* height: 540px; */
+    height: 400px;
     background-position: center;
 }
 
-.contact-banner .inputforms .sign-in-btn {
-    background-color: var(--secondary-colors);
-    border: none;
-    border-radius: 50px;
-    padding: 12px 50px;
-    font-size: 16px;
-    transition: .3s ease;
-}
 
-.contact-banner .inputforms .sign-in-btn:hover {
-    background-color: var(--secondary-colors);
-}
+.about-us-banner .about-us-form h2 {
+    color: var(--color-white);
 
-.contact-banner .inputforms .form-control:focus {
-    box-shadow: none;
-    border-color: var(--secondary-colors);
 }
 
 
-.contact-banner .form-check-label {
+.about-us-form ul li a {
+    color: var(--secondary-colors);
+    font-size: 18px;
+}
+
+
+.contact-info .section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
     color: var(--primary-colors);
-    font-size: clamp(14px, 2vw, 16px);
+
 }
 
-.contact-info .contact-info-card {
+.contact-info .section-title::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    margin: 12px auto 30px;
+    border-radius: 2px;
+    color: var(--secondary-colors);
+    background-color: var(--secondary-colors);
+}
+
+.contact-info .service-box {
     background-color: var(--primary-lights);
-    padding: 40px 0;
     border-radius: var(--border-radius-boxes);
+    padding: 30px 20px;
+    text-align: center;
     height: 100%;
 }
 
-.contact-info .contact-info-card h5 {
-    color: var(--primary-colors);
-}
 
-.contact-info-card a {
+.contact-info .service-box i {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
     color: var(--secondary-colors);
 }
 
-.home-service-card {
+.contact-info .service-box h5 {
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+    color: var(--primary-colors);
+
+}
+
+.contact-info .service-box p {
+    font-size: 0.95rem;
+}
+
+
+.why-choose-us {
     background-color: var(--primary-lights);
-    border-radius: 15px;
-    height: 100%;
 }
 
-.home-service-card .icons {
-    background-color: var(--secondary-lights);
-    height: 80px;
-    width: 80px;
+.why-choose-us .section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--primary-colors);
+
+}
+
+.why-choose-us .section-title::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    margin: 12px auto 30px;
+    border-radius: 2px;
     color: var(--secondary-colors);
-    border-radius: 50%;
+    background-color: var(--secondary-colors);
 }
 
-.home-service-card h5 {
+.why-choose-us .highlight-box {
+    background: var(--color-white);
+    border-radius: 12px;
+    padding: 25px 20px;
+    text-align: center;
+    height: 100%;
+
+}
+
+.why-choose-us .highlight-box i {
+    font-size: 2rem;
+    color: var(--secondary-colors);
+    margin-bottom: 10px;
+}
+
+.why-choose-us .highlight-box h5 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 5px;
     color: var(--primary-colors);
 }
 
+.why-choose-us .highlight-box p {
+    font-size: 0.95rem;
 
+}
 
+.why-choose-us .content-text {
+    margin: auto;
+    font-size: 1rem;
+    line-height: 1.7;
 
+}
 
+.why-choose-us .content-text strong {
+    color: var(--primary-colors);
+}
 
 /* footer sec start */
 .footer-sec {

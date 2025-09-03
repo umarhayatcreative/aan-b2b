@@ -212,6 +212,17 @@ body {
     border-radius: 50%;
 }
 
+#hotPurpleModeBtn{
+    background-color: #a915ff;
+    border-radius: 5px;
+    border: 1px solid #a915ff;
+    /* padding: 3px 20px; */
+    width: 15px;
+    height: 15px;
+    color: white;
+    border-radius: 50%;
+}
+
 .text-muted {
     color: var(--bs-text-muted) !important;
     
