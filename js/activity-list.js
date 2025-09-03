@@ -273,7 +273,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
       `).join('');
             return `
-        <div class="package-box mb-4">
+        <div class="package-box mb-3">
           <div class="form-check mb-2">
             <input class="form-check-input" type="checkbox" ${pkg.checked ? 'checked' : ''}>
             <label class="form-check-label fw-semibold">${pkg.title}</label>

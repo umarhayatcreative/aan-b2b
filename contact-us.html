@@ -10,41 +10,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/theme-variables.css">
-    <link rel="stylesheet" href="css/markups.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Flatpickr CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="css/contact-us.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Bootstrap Icons CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
-
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-    <!-- header section start -->
     <section class="header-login">
         <div class="container">
-            <nav class="navbar navbar-expand-lg text-white">
+            <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <!-- Logo -->
-                    <a class="navbar-brand text-white me-5 fw-bold" href="/home.html">
+                    <a class="navbar-brand text-white me-5 fw-bold" href="/home-login.html">
                         Logo
                     </a>
 
                     <!-- Right side elements -->
                     <div class="d-flex align-items-center order-lg-2">
-                        <!-- Profile Dropdown -->
-                        <a class="text-white me-3 text-decoration-none" href="/home-login.html">
-                            Logout
-                        </a>
 
                         <!-- Cart -->
-                        <a class="text-white" href="#">
+                        <a class="text-white me-3" href="#">
                             <i class="fas fa-shopping-cart"></i>
                         </a>
-
+                        <!-- Notifications -->
+                        <div class="dropdown me-3">
+                            <a class="text-white dropdown-toggle hidden-arrow" href="#" id="notifDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-translate"></i>
+                                <!-- <span class="badge rounded-pill bg-danger">1</span> -->
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="notifDropdown">
+                                <li><a class="dropdown-item" href="#">English</a></li>
+                            </ul>
+                        </div>
                         <!-- Toggle button -->
                         <button class="navbar-toggler text-white border-white" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -63,67 +65,20 @@
                         <div class="offcanvas-body">
                             <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/home.html">Home</a>
+                                    <a class="nav-link active" href="/signup-form.html">Register With Us</a>
                                 </li>
-
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="visasDropdown" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Credit Limit
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="visasDropdown">
-                                        <li class="p-3 text-nowrap"><span>Credit Limit:&nbsp;&nbsp;&nbsp;&nbsp;PKR
-                                                75,000.00 <br>
-                                                Available Limit:&nbsp;&nbsp;&nbsp;&nbsp;PKR 22,190.00</span></li>
-                                    </ul>
-                                </li>
-
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/visas.html">Visas</a>
+                                    <a class="nav-link" href="/supplier-registration.html">Supplier
+                                        Registration</a>
                                 </li>
-
-
-                                <!-- Dropdown 2: Reports -->
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="reportsDropdown" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Reports
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="reportsDropdown">
-                                        <li><a class="dropdown-item" href="#">Dashboard</a></li>
-                                        <li><a class="dropdown-item" href="/report-booking.html">Bookings</a></li>
-                                        <li><a class="dropdown-item" href="/report-ledger.html">Ledger</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="reportsDropdown" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Sub Agents
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="reportsDropdown">
-                                        <li><a class="dropdown-item" href="/sub-agents.html">Manage Sub Agents</a></li>
-                                        <li><a class="dropdown-item" href="/add-credit.html">Add Credit</a></li>
-                                        <li><a class="dropdown-item" href="/sub-agents-booking.html">Bookings</a></li>
-                                        <li><a class="dropdown-item" href="/sub-agent-visas.html">Visas</a></li>
-                                        <li><a class="dropdown-item" href="/sub-agent-ledger.html">Ledger</a></li>
-                                    </ul>
-                                </li>
-
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/user.html">User</a>
+                                    <a class="nav-link" href="tel:+923001234567">(+971) 4265-5264</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="mailto:support@aantorism.com">support@aantorism.com</a>
                                 </li>
 
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle active" href="#" id="reportsDropdown"
-                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        ATE-167000316
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="reportsDropdown">
-                                        <li><a class="dropdown-item" href="/markups.html">Markups</a></li>
-                                        <li><a class="dropdown-item" href="/my-profile.html">Profile</a></li>
-                                    </ul>
-                                </li>
+
 
                             </ul>
                         </div>
@@ -132,48 +87,87 @@
             </nav>
         </div>
     </section>
-    <!-- header section end -->
+    <!-- Header sec end -->
 
-    <!-- sub agents input section start -->
-    <section class="markups py-3">
+    <!-- contact-banner sec start -->
+    <section class="contact-banner py-5 d-flex align-items-center">
         <div class="container">
-            <div class="banner mb-3 d-flex justify-content-between align-items-center flex-wrap">
-                <h2 class="fs-4 m-0">Markup</h2>
-                <nav aria-label="breadcrumb fs-6">
-                    <ul class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="/home.html" class="text-decoration-none"><i
-                                    class="bi bi-house-door me-1"></i>Home</a></li>
-                        <li class="breadcrumb-item"><a href="#" class=" text-decoration-none">Markups</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <!-- add credit input -->
-            <div class="card-body markups-card p-3 mb-5">
-                <h5 class="mb-4">Markup Filters</h5>
-                <div class="mb-3">
-                    <div class="row g-3 d-flex align-items-end">
-                        <div class="col-md-4">
-                            <label for="" class="mb-1">Agent Markup %:</label>
-                            <input type="text" class="form-control py-2" placeholder="100,000.00"
-                                oninput="this.value = this.value.replace(/[^0-9.]/g, '')">
-                        </div>
-                        <div class="col-md-2">
-                            <a class="add-credit-btn btn text-decoration-none w-100 py-2"><i
-                                    class="bi bi-search me-1"></i>Search</a>
+            <div class="inputforms">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="contact-form bg-white p-4 rounded-4">
+                            <h3 class="contact-title text-center mb-4 fw-semibold">Send us a Message</h3>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control py-2" placeholder="Full Name">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="email" class="form-control py-2" placeholder="Email">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control py-2" placeholder="Phone">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control py-2" placeholder="Subject">
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea class="form-control py-2" rows="5" placeholder="Message"></textarea>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button type="submit" class=" submit-btn mt-3">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
-
     </section>
+    <!-- contact-banner sec end -->
+
+    <!-- our services start -->
+    <section class="contact-info py-5">
+        <div class="container">
+            <div class="row text-center g-3">
+                <div class="col-lg-4 col-md-6">
+                    <div class="contact-info-card">
+                        <h5 class="fw-bold">Pakistan</h5>
+                        <p class="mb-1 text-muted">21-Q, Gulberg II, Lahore</p>
+                        <p class="mb-1">+92 330 050 0008</p>
+                        <a href="mailto:support@aantourism.com"
+                            class="text-decoration-none text-primary">support@aantourism.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="contact-info-card">
+                        <h5 class="fw-bold">U.A.E</h5>
+                        <p class="mb-1 text-muted">49, Al Shraifi-1 Building, Dubai</p>
+                        <p class="mb-1">+971 426 55264</p>
+                        <a href="mailto:support@aantourism.com"
+                            class="text-decoration-none text-primary">support@aantourism.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="contact-info-card">
+                        <h5 class="fw-bold">United Kingdom</h5>
+                        <p class="mb-1 text-muted">B114JZ 373-A Stafford Road, Birmingham</p>
+                        <p class="mb-1">+44 793 2067 575</p>
+                        <a href="mailto:support@aantourism.com"
+                            class="text-decoration-none text-primary">support@aantourism.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- our services end -->
 
 
-    <!-- sub agents input section end -->
 
-    <!-- footer section start -->
+
+
+    <!-- Footer sec start -->
     <footer class="footer-sec pt-5 mt-auto">
         <div class="container py-3">
             <div class="row gy-4">
@@ -241,6 +235,8 @@
                                 <button id="orangeModeBtn"></button>
                                 <button id="lightModeBtn"></button>
                                 <button id="pinkModeBtn"></button>
+                                <button id="hotPurpleModeBtn"></button>
+
                                 <!-- <button id="darkModeBtn"></button> -->
                             </div>
                         </ul>
@@ -254,13 +250,14 @@
             <small class="text-white">© Copyright 2024 Tourism. All rights reserved</small>
         </div>
     </footer>
-    <!-- footer section end -->
+
+
+
     <!-- Bootstrap JS Bundle (with Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Flatpickr JS -->
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <script src="js/markups.js"></script>
-    <script src="js/theme-change.js"></script>
+    <!-- <script src="/js/home-login.js"></script> -->
+    <script src="/js/theme-change.js"></script>
+
 </body>
 
 </html>

@@ -1,4 +1,3 @@
-
 .header-login {
     background-color: var(--primary-colors);
     height: 72px;
@@ -104,7 +103,7 @@
     transform: rotate(-90deg);
 }
 
-.activity-filter-card-custom .img-cart img{
+.activity-filter-card-custom .img-cart img {
     width: 60px;
     height: 60px;
 }
@@ -114,7 +113,7 @@
     border-radius: 15px;
 }
 
-.activity-filter-card-custom .price{
+.activity-filter-card-custom .price {
     color: var(--secondary-colors);
 }
 
@@ -286,35 +285,38 @@
     }
 }
 
+.activity-booking-slidebar .offcanvas-body {
+    background-color: var(--primary-lights);
+}
 
-.activity-booking-slidebar .offcanvas-body .package-box{
+.activity-booking-slidebar .offcanvas-body .package-box {
     padding: 20px;
     background-color: var(--color-white);
     border: 1px solid var(--all-border);
     border-radius: var(--border-radius-boxes)
-    
 }
 
-.activity-booking-slidebar .offcanvas-body  .form-check-input:checked{
+.activity-booking-slidebar .offcanvas-body .form-check-input:checked {
     border-color: var(--secondary-colors);
     background-color: var(--secondary-colors);
 }
 
-.activity-booking-slidebar .proceed-check-btn{
+.activity-booking-slidebar .proceed-check-btn {
     background-color: var(--secondary-colors);
     border: 1px solid var(--secondary-colors);
     color: var(--color-white);
 }
 
-.activity-booking-slidebar .proceed-check-btn:hover{
+.activity-booking-slidebar .proceed-check-btn:hover {
     background-color: transparent;
     color: var(--primary-colors);
     border: 1px solid var(--secondary-colors);
 }
 
-.activity-booking-slidebar .price{
+.activity-booking-slidebar .price {
     color: var(--primary-colors);
 }
+
 /* activities list card style end */
 
 
