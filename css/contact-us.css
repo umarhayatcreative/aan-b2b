@@ -68,12 +68,12 @@
 
 
 .contact-form .submit-btn:hover {
-    background-color: var(--primary-colors);
+    background-color: var(--btn-hover-color);
     color: var(--color-white);
 }
 
 .contact-form .submit-btn:focus {
-    background-color: var(--primary-colors);
+    background-color: var(--btn-hover-color);
     color: var(--color-white);
 }
 
@@ -141,10 +141,6 @@
 .home-service-card h5 {
     color: var(--primary-colors);
 }
-
-
-
-
 
 
 /* footer sec start */
