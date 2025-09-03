@@ -372,7 +372,7 @@
 }
 
 .hotel-list-card .card-travel .rating-green {
-    color: var(--secondary-colors);
+    color: var(--rating-star-color);
 }
 
 .hotel-list-card .card-travel .value-badge {

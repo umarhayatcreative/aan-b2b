@@ -232,7 +232,7 @@
 
 .activity-list-detail .activity-card .rating-stars {
     font-size: 14px;
-    color: var(--secondary-colors);
+    color: var(--rating-star-color);
 }
 
 .activity-list-detail .activity-card .activity-book-btn {
