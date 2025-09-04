@@ -24,3 +24,4 @@
     document.getElementById('pinkModeBtn').addEventListener('click', () => setTheme('pink'));
     document.getElementById('orangeModeBtn').addEventListener('click', () => setTheme('orange'));
     document.getElementById('hotPurpleModeBtn').addEventListener('click', () => setTheme('hot-purple'));
+    document.getElementById('greenCyanModeBtn').addEventListener('click', () => setTheme('green-cyan'));

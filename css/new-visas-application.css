@@ -1,5 +1,3 @@
-
-
 .header-login {
     background-color: var(--primary-colors);
     height: 72px;
@@ -118,6 +116,7 @@
     background-color: var(--btn-hover-color);
     color: var(--color-white);
 }
+
 .new-visas .new-visas-card .form-check-input:checked {
     background-color: var(--secondary-colors);
     border-color: var(--secondary-colors);
@@ -127,6 +126,26 @@
     box-shadow: none;
 }
 
+.new-visas .new-visas-card .upload-doc-btn {
+    color: var(--primary-colors);
+    background-color: var(--secondary-lights);
+}
+
+.upload-doc-btn i {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+/* Default (collapsed) */
+.upload-doc-btn.collapsed i {
+  transform: rotate(0deg);
+}
+
+/* Jab collapse open ho (Bootstrap .show lagata hai collapse div pe)
+   aur button pe .collapsed remove ho jata hai */
+.upload-doc-btn[aria-expanded="true"] i {
+  transform: rotate(180deg);
+}
 /* footer sec start */
 .footer-sec {
     background-color: var(--primary-colors);

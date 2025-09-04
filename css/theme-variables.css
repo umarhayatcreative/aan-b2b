@@ -171,6 +171,36 @@ body {
     color-scheme: dark;
 }
 
+
+[data-theme="green-cyan"] {
+    --all-overlay-bg: rgba(0, 0, 0, 0.55);
+    /* --primary-colors: #2e064e; */
+    --primary-colors: #262626;
+    --secondary-colors: #06d56c;
+    --btn-hover-color: #04b65d;
+    --primary-lights: #F9F9FF;
+    --secondary-lights: #e7fff3;
+    --color-white: #fff;
+    --primary-colors-low-opacity: rgba(59, 59, 90, 0.5);
+    --all-border: #E6E6E6;
+    --font-family-primary: "Rubik", sans-serif;
+    --font-size-paragraph: 16px;
+    --font-size-small: 14px;
+    --font-size-heading: clamp(20px, 2.5vw, 25px);
+    --font-size-card-heading: clamp(16px, 1vw, 17px);
+    --font-size-banner-heading: clamp(30px, 2.5vw, 45px);
+    --btn-font-size: clamp(14px, 2vw, 16px);
+    --border-radius-boxes: 15px;
+    --btn-border-radius: 5px;
+    --btn-font-weight: 500;
+    --font-size-banner-heading-weight: 700;
+    --font-size-heading-weight: 600;
+    --rating-star-color: rgb(255, 136, 0);
+    --dark-input-bg: #793774;
+    color-scheme: dark;
+}
+
+
 #lightModeBtn {
     background-color: #44b50c;
     border-radius: 5px;
@@ -216,6 +246,17 @@ body {
     background-color: #a915ff;
     border-radius: 5px;
     border: 1px solid #a915ff;
+    /* padding: 3px 20px; */
+    width: 15px;
+    height: 15px;
+    color: white;
+    border-radius: 50%;
+}
+
+#greenCyanModeBtn{
+    background-color: #06d56c;
+    border-radius: 5px;
+    border: 1px solid #06d56c;
     /* padding: 3px 20px; */
     width: 15px;
     height: 15px;
