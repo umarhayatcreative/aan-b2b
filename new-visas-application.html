@@ -19,7 +19,6 @@
     <!-- Bootstrap Icons CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
-
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -72,9 +71,16 @@
                                         Credit Limit
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="visasDropdown">
-                                        <li class="p-3 text-nowrap"><span>Credit Limit:&nbsp;&nbsp;&nbsp;&nbsp;PKR
-                                                75,000.00 <br>
-                                                Available Limit:&nbsp;&nbsp;&nbsp;&nbsp;PKR 22,190.00</span></li>
+                                        <li class="p-3">
+                                            <div class="d-flex">
+                                                <span class="w-50 text-start">Credit Limit:</span>
+                                                <span class="w-50 text-end">PKR 75,000.00</span>
+                                            </div>
+                                            <div class="d-flex">
+                                                <span class="w-50 text-start">Available Limit:</span>
+                                                <span class="w-50 text-end">PKR 22,190.00</span>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </li>
 
@@ -152,371 +158,376 @@
                     <!-- Guest 1 -->
                     <div class="">
                         <div class="row g-4">
-                            <!-- <div class="col-md-3">
-                                <label for="" class="mb-1">Title</label>
-                                <select class="form-select py-2">
-                                    <option>Mr</option>
-                                    <option>Mrs</option>
-                                    <option>Ms</option>
-                                </select>
-                            </div> -->
-                            <div class="col-lg-3 col-md-6">
-                                <label for="" class="mb-1">Date Range:</label>
-                                <input type="text" class="form-control p-2 date-visass" placeholder="dd-mm-yyyy">
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <label for="" class="mb-1">Entry Type *</label>
-                                <select class="form-select py-2">
-                                    <option>30 Days Single</option>
-                                    <option>30 Days Double</option>
-                                    <option>15 Days Double</option>
+                            <form autocomplete="off">
+                                <div class="row g-3">
 
-                                </select>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <label for="" class="mb-1">Adult/Child *</label>
-                                <select class="form-select py-2">
-                                    <option>Adult</option>
-                                    <option>Child</option>
-
-                                </select>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <label for="" class="mb-1">Reference Number:*</label>
-                                <input class="form-control py-2" placeholder="Reference Number">
-                            </div>
-
-                            <div class="col-lg-3 col-md-6">
-                                <label for="" class="mb-1">Passport Number:*</label>
-                                <input class="form-control py-2" placeholder="Passport Number">
-                            </div>
-
-                            <div class="col-lg-3 col-md-6">
-                                <label for="" class="mb-1">Expiry Date:</label>
-                                <input type="text" class="form-control p-2 date-visass" placeholder="dd-mm-yyyy">
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <label for="" class="mb-1">Group Application Relation *</label>
-                                <select class="form-select py-2">
-                                    <option>None</option>
-                                    <option>Alone</option>
-                                    <option>Family</option>
-
-                                </select>
-                            </div>
-                            <div class="col-lg-3 col-md-6"></div>
-
-
-                            <div class="col-lg-3 col-md-6">
-                                <label class="mb-1">First Name:*</label>
-                                <input class="form-control py-2 mb-1" placeholder="First Name">
-                                <input class="form-control py-2 urdufield" placeholder="پہلا نام" dir="rtl">
-                            </div>
-
-                            <div class="col-lg-3 col-md-6">
-                                <label class="mb-1">Middle Name:*</label>
-                                <input class="form-control py-2 mb-1" placeholder="Middle Name">
-                                <input class="form-control py-2 urdufield" placeholder="درمیانی نام" dir="rtl">
-                            </div>
-
-                            <div class="col-lg-3 col-md-6">
-                                <label class="mb-1">Last Name:*</label>
-                                <input class="form-control py-2 mb-1" placeholder="Last Name">
-                                <input class="form-control py-2 urdufield" placeholder="آخری نام" dir="rtl">
-                            </div>
-
-                            <div class="col-lg-3 col-md-6">
-                                <label class="mb-1">Birth Place:*</label>
-                                <input class="form-control py-2 mb-1" placeholder="Birth Place">
-                                <input class="form-control py-2 urdufield" placeholder="پیدائش کی جگہ" dir="rtl">
-                            </div>
-
-
-
-
-
-                            <div class="col-lg-3 col-md-6">
-                                <label for="" class="mb-1">Gender:*</label>
-                                <select class="form-select py-2">
-                                    <option>Male</option>
-                                    <option>Female</option>
-                                    <option>Other</option>
-                                </select>
-                            </div>
-
-                            <div class="col-lg-3 col-md-6">
-                                <label for="" class="mb-1">Marital Status *</label>
-                                <select class="form-select py-2">
-                                    <option>Single</option>
-                                    <option>Married</option>
-                                    <option>Divorced</option>
-                                    <option>Widowed</option>
-                                </select>
-                            </div>
-
-                            <div class="col-lg-3 col-md-6">
-                                <label for="" class="mb-1">Birth Date:*</label>
-                                <input type="text" class="form-control p-2 date-visass" placeholder="dd-mm-yyyy">
-                            </div>
-
-                            <div class="col-lg-3 col-md-6">
-                                <label for="" class="mb-1">Birth Country:*</label>
-                                <select class="form-select py-2">
-                                    <option>Pakistan</option>
-                                    <option>India</option>
-                                    <option>Bangladesh</option>
-                                    <option>Iran</option>
-                                    <option>Turkey</option>
-                                    <option>Australia</option>
-                                    <option>Japan</option>
-                                    <option>Dubai</option>
-                                </select>
-                            </div>
-
-                            <div class="col-lg-3 col-md-6">
-                                <label for="" class="mb-1">Passport Issue Country:</label>
-                                <select class="form-select py-2">
-                                    <option>Pakistan</option>
-                                    <option>India</option>
-                                    <option>Bangladesh</option>
-                                    <option>Iran</option>
-                                    <option>Turkey</option>
-                                    <option>Australia</option>
-                                    <option>Japan</option>
-                                    <option>Dubai</option>
-                                </select>
-                            </div>
-
-                            <div class="col-lg-3 col-md-6">
-                                <label for="" class="mb-1">Issue Date:*</label>
-                                <input type="text" class="form-control p-2 date-visass" placeholder="dd-mm-yyyy">
-                            </div>
-
-
-                            <div class="col-lg-3 col-md-6">
-                                <label for="" class="mb-1">Present Nationality:*</label>
-                                <select class="form-select py-2">
-                                    <option>Pakistan</option>
-                                    <option>India</option>
-                                    <option>Bangladesh</option>
-                                    <option>Iran</option>
-                                    <option>Turkey</option>
-                                    <option>Australia</option>
-                                    <option>Japan</option>
-                                    <option>Dubai</option>
-                                </select>
-                            </div>
-
-                            <div class="col-lg-3 col-md-6">
-                                <label for="" class="mb-1">Coming From:*</label>
-                                <select class="form-select py-2">
-                                    <option>Pakistan</option>
-                                    <option>India</option>
-                                    <option>Bangladesh</option>
-                                    <option>Iran</option>
-                                    <option>Turkey</option>
-                                    <option>Australia</option>
-                                    <option>Japan</option>
-                                    <option>Dubai</option>
-                                </select>
-                            </div>
-
-
-
-                            <div class="col-lg-3 col-md-6">
-                                <label class="mb-1">Passport Issue Place:</label>
-                                <input class="form-control py-2 mb-1" placeholder="Passport Issue Place">
-                                <input class="form-control py-2 urdufield" placeholder="پاسپورٹ جاری کرنے کی جگہ"
-                                    dir="rtl">
-                            </div>
-
-                            <div class="col-lg-3 col-md-6">
-                                <label class="mb-1">Father Name:</label>
-                                <input class="form-control py-2 mb-1" placeholder="Father Name">
-                                <input class="form-control py-2 urdufield" placeholder="والد کا نام" dir="rtl">
-                            </div>
-
-                            <div class="col-lg-3 col-md-6">
-                                <label class="mb-1">Mother Name:</label>
-                                <input class="form-control py-2 mb-1" placeholder="Mother Name">
-                                <input class="form-control py-2 urdufield" placeholder="والدہ کا نام" dir="rtl">
-                            </div>
-
-                            <div class="col-lg-3 col-md-6">
-                                <label class="mb-1">Husband Name:</label>
-                                <input class="form-control py-2 mb-1" placeholder="Husband Name">
-                                <input class="form-control py-2 urdufield" placeholder="شوہر کا نام" dir="rtl">
-                            </div>
-
-
-                            <div class="col-lg-3 col-md-6">
-                                <label for="" class="mb-1">Visit Reason:</label>
-                                <select class="form-select py-2">
-                                    <option>Tourism</option>
-                                    <option>Business</option>
-                                    <option>Study</option>
-                                    <option>Family Visit</option>
-                                    <option>Other</option>
-                                </select>
-                            </div>
-
-                            <div class="col-lg-3 col-md-6">
-                                <label for="" class="mb-1">
-                                    Profession:</label>
-                                <select class="form-select py-2">
-                                    <option>Tourism</option>
-                                    <option>Business</option>
-                                    <option>Study</option>
-                                    <option>Family Visit</option>
-                                    <option>Other</option>
-                                </select>
-                            </div>
-
-
-                            <div class="col-lg-3 col-md-6">
-                                <label for="" class="mb-1">
-                                    Language:</label>
-                                <select class="form-select py-2">
-                                    <option>English</option>
-                                    <option>Urdu</option>
-                                    <option>Arabic</option>
-                                    <option>Chinese</option>
-                                    <option>Other</option>
-                                </select>
-                            </div>
-
-                            <div class="col-lg-3 col-md-6">
-                                <label for="" class="mb-1">
-                                    Education:</label>
-                                <select class="form-select py-2">
-                                    <option>Primary</option>
-                                    <option>Secondary</option>
-                                    <option>Higher Secondary</option>
-                                    <option>Bachelor's</option>
-                                    <option>Other</option>
-                                </select>
-                            </div>
-
-                            <div class="col-lg-3 col-md-6">
-                                <label for="" class="mb-1">
-                                    Religion:</label>
-                                <select class="form-select py-2">
-                                    <option>Islam</option>
-                                    <option>Christianity</option>
-                                    <option>Hinduism</option>
-                                    <option>Buddhism</option>
-                                    <option>Other</option>
-                                </select>
-                            </div>
-
-                            <div class="col-lg-3 col-md-6">
-                                <label for="" class="mb-1">Applicant Mobile:*</label>
-                                <input class="form-control py-2" placeholder="Applicant Mobile">
-                            </div>
-
-                            <div class="col-lg-6 col-md-6 mb-3">
-                                <label for="comments" class="form-label">Comments:</label>
-                                <textarea class="form-control" id="comments" name="comments" rows="1"
-                                    placeholder="Enter your comments here..."></textarea>
-                            </div>
-                            <!-- <div class="row">
-                                <div class="mt-2">
-                                    <h4>Upload Documents:</h4>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <label for="idCard" class="form-label">Passport Main Page*</label>
-                                    <input class="form-control" type="file" id="idCard1" accept=".jpg,.jpeg,.png,.pdf">
-                                    <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size: 2MB)</small>
-                                </div>
-
-
-                                <div class="col-lg-4 col-md-6">
-                                    <label for="idCard" class="form-label">Passport Page 2*</label>
-                                    <input class="form-control" type="file" id="idCard2" accept=".jpg,.jpeg,.png,.pdf">
-                                    <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size: 2MB)</small>
-                                </div>
-
-
-                                <div class="col-lg-4 col-md-6">
-                                    <label for="idCard" class="form-label">Applicant Photo*</label>
-                                    <input class="form-control" type="file" id="idCard3" accept=".jpg,.jpeg,.png,.pdf">
-                                    <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size: 2MB)</small>
-                                </div>
-
-                                <div class="col-lg-4 col-md-6">
-                                    <label for="idCard" class="form-label">Air Ticket*</label>
-                                    <input class="form-control" type="file" id="idCard4" accept=".jpg,.jpeg,.png,.pdf">
-                                    <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size: 2MB)</small>
-                                </div>
-
-                                <div class="col-lg-4 col-md-6">
-                                    <label for="idCard" class="form-label">Applicant Id Front*</label>
-                                    <input class="form-control" type="file" id="idCard5" accept=".jpg,.jpeg,.png,.pdf">
-                                    <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size: 2MB)</small>
-                                </div>
-
-                                <div class="col-lg-4 col-md-6">
-                                    <label for="idCard" class="form-label">Applicant Id Back*</label>
-                                    <input class="form-control" type="file" id="idCard6" accept=".jpg,.jpeg,.png,.pdf">
-                                    <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size: 2MB)</small>
-                                </div>
-
-                                <div class="col-lg-4 col-md-6">
-                                    <label for="idCard" class="form-label">Bank Statement 1*</label>
-                                    <input class="form-control" type="file" id="idCard7" accept=".jpg,.jpeg,.png,.pdf">
-                                    <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size: 2MB)</small>
-                                </div>
-
-                                <div class="col-lg-4 col-md-6">
-                                    <label for="idCard" class="form-label">Bank Statement 2*</label>
-                                    <input class="form-control" type="file" id="idCard8" accept=".jpg,.jpeg,.png,.pdf">
-                                    <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size: 2MB)</small>
-                                </div>
-
-
-                                <div class="col-lg-4 col-md-6">
-                                    <label for="idCard" class="form-label">Parent Passport Main Page*</label>
-                                    <input class="form-control" type="file" id="idCard9" accept=".jpg,.jpeg,.png,.pdf">
-                                    <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size: 2MB)</small>
-                                </div>
-
-                                <div class="col-lg-4 col-md-6">
-                                    <label for="idCard" class="form-label">Parent Passport 2*</label>
-                                    <input class="form-control" type="file" id="idCard10" accept=".jpg,.jpeg,.png,.pdf">
-                                    <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size: 2MB)</small>
-                                </div>
-
-                                <div class="col-lg-4 col-md-6 mb-3">
-                                    <label for="idCard" class="form-label">Hotel Reservation*</label>
-                                    <input class="form-control" type="file" id="idCard11" accept=".jpg,.jpeg,.png,.pdf">
-                                    <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size: 2MB)</small>
-                                </div>
-
-                                <div class="border border-1 my-2"></div>
-
-                                <div class="col-lg-6 col-md-6 mb-3">
-                                    <label class="form-label d-block fs-4 fw-semibold">Application Status:</label>
-
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="applicationStatus" id="draft"
-                                            value="draft" checked>
-                                        <label class="form-check-label" for="draft">Save as Draft</label>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control date-visass"
+                                                placeholder="dd-mm-yyyy">
+                                            <label>Date Range</label>
+                                        </div>
                                     </div>
 
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="applicationStatus" id="apply"
-                                            value="apply">
-                                        <label class="form-check-label" for="apply">Direct Apply</label>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="form-floating">
+                                            <select class="form-select">
+                                                <option>30 Days Single</option>
+                                                <option>30 Days Double</option>
+                                                <option>15 Days Double</option>
+                                            </select>
+                                            <label>Entry Type *</label>
+                                        </div>
                                     </div>
-                                </div>
+
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="form-floating">
+                                            <select class="form-select">
+                                                <option>Adult</option>
+                                                <option>Child</option>
+                                            </select>
+                                            <label>Adult/Child *</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" placeholder="Reference Number">
+                                            <label>Reference Number *</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" placeholder="Passport Number">
+                                            <label>Passport Number *</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control date-visass"
+                                                placeholder="dd-mm-yyyy">
+                                            <label>Expiry Date</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="form-floating">
+                                            <select class="form-select">
+                                                <option>None</option>
+                                                <option>Alone</option>
+                                                <option>Family</option>
+                                            </select>
+                                            <label>Group Application Relation *</label>
+                                        </div>
+                                    </div>
+                                    <!-- Gender -->
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="form-floating">
+                                            <select class="form-select">
+                                                <option>Male</option>
+                                                <option>Female</option>
+                                                <option>Other</option>
+                                            </select>
+                                            <label>Gender *</label>
+                                        </div>
+                                    </div>
+                                    <!-- First Name -->
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="form-floating mb-2">
+                                            <input type="text" class="form-control" placeholder="First Name">
+                                            <label>First Name *</label>
+                                        </div>
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control urdufield" dir="rtl"
+                                                placeholder="پہلا نام">
+                                            <label>پہلا نام</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Middle Name -->
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="form-floating mb-2">
+                                            <input type="text" class="form-control" placeholder="Middle Name">
+                                            <label>Middle Name *</label>
+                                        </div>
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control urdufield" dir="rtl"
+                                                placeholder="درمیانی نام">
+                                            <label>درمیانی نام</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Last Name -->
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="form-floating mb-2">
+                                            <input type="text" class="form-control" placeholder="Last Name">
+                                            <label>Last Name *</label>
+                                        </div>
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control urdufield" dir="rtl"
+                                                placeholder="آخری نام">
+                                            <label>آخری نام</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Birth Place -->
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="form-floating mb-2">
+                                            <input type="text" class="form-control" placeholder="Birth Place">
+                                            <label>Birth Place *</label>
+                                        </div>
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control urdufield" dir="rtl"
+                                                placeholder="پیدائش کی جگہ">
+                                            <label>پیدائش کی جگہ</label>
+                                        </div>
+                                    </div>
 
 
-                                <div class="col-lg-6 d-flex align-items-end justify-content-end">
-                                    <button type="button" class="btn submit-btn py-2">
-                                        <i class="fa-solid fa-user-check me-2"></i>Submit
-                                    </button>
+
+                                    <!-- Marital Status -->
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="form-floating">
+                                            <select class="form-select">
+                                                <option>Single</option>
+                                                <option>Married</option>
+                                                <option>Divorced</option>
+                                                <option>Widowed</option>
+                                            </select>
+                                            <label>Marital Status *</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Birth Date -->
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control date-visass"
+                                                placeholder="dd-mm-yyyy">
+                                            <label>Birth Date *</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Birth Country -->
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="form-floating">
+                                            <select class="form-select">
+                                                <option>Pakistan</option>
+                                                <option>India</option>
+                                                <option>Bangladesh</option>
+                                                <option>Iran</option>
+                                                <option>Turkey</option>
+                                                <option>Australia</option>
+                                                <option>Japan</option>
+                                                <option>Dubai</option>
+                                            </select>
+                                            <label>Birth Country *</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Passport Issue Country -->
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="form-floating">
+                                            <select class="form-select">
+                                                <option>Pakistan</option>
+                                                <option>India</option>
+                                                <option>Bangladesh</option>
+                                                <option>Iran</option>
+                                                <option>Turkey</option>
+                                                <option>Australia</option>
+                                                <option>Japan</option>
+                                                <option>Dubai</option>
+                                            </select>
+                                            <label>Passport Issue Country</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Issue Date -->
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control date-visass"
+                                                placeholder="dd-mm-yyyy">
+                                            <label>Issue Date *</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Present Nationality -->
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="form-floating">
+                                            <select class="form-select">
+                                                <option>Pakistan</option>
+                                                <option>India</option>
+                                                <option>Bangladesh</option>
+                                                <option>Iran</option>
+                                                <option>Turkey</option>
+                                                <option>Australia</option>
+                                                <option>Japan</option>
+                                                <option>Dubai</option>
+                                            </select>
+                                            <label>Present Nationality *</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Coming From -->
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="form-floating">
+                                            <select class="form-select">
+                                                <option>Pakistan</option>
+                                                <option>India</option>
+                                                <option>Bangladesh</option>
+                                                <option>Iran</option>
+                                                <option>Turkey</option>
+                                                <option>Australia</option>
+                                                <option>Japan</option>
+                                                <option>Dubai</option>
+                                            </select>
+                                            <label>Coming From *</label>
+                                        </div>
+                                    </div>
+                                    <!-- Visit Reason -->
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="form-floating">
+                                            <select class="form-select">
+                                                <option>Tourism</option>
+                                                <option>Business</option>
+                                                <option>Study</option>
+                                                <option>Family Visit</option>
+                                                <option>Other</option>
+                                            </select>
+                                            <label>Visit Reason</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Passport Issue Place -->
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="form-floating mb-2">
+                                            <input type="text" class="form-control" placeholder="Passport Issue Place">
+                                            <label>Passport Issue Place</label>
+                                        </div>
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control urdufield" dir="rtl"
+                                                placeholder="پاسپورٹ جاری کرنے کی جگہ">
+                                            <label>پاسپورٹ جاری کرنے کی جگہ</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Father Name -->
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="form-floating mb-2">
+                                            <input type="text" class="form-control" placeholder="Father Name">
+                                            <label>Father Name</label>
+                                        </div>
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control urdufield" dir="rtl"
+                                                placeholder="والد کا نام">
+                                            <label>والد کا نام</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Mother Name -->
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="form-floating mb-2">
+                                            <input type="text" class="form-control" placeholder="Mother Name">
+                                            <label>Mother Name</label>
+                                        </div>
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control urdufield" dir="rtl"
+                                                placeholder="والدہ کا نام">
+                                            <label>والدہ کا نام</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Husband Name -->
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="form-floating mb-2">
+                                            <input type="text" class="form-control" placeholder="Husband Name">
+                                            <label>Husband Name</label>
+                                        </div>
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control urdufield" dir="rtl"
+                                                placeholder="شوہر کا نام">
+                                            <label>شوہر کا نام</label>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Profession -->
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="form-floating">
+                                            <select class="form-select">
+                                                <option>Tourism</option>
+                                                <option>Business</option>
+                                                <option>Study</option>
+                                                <option>Family Visit</option>
+                                                <option>Other</option>
+                                            </select>
+                                            <label>Profession</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Language -->
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="form-floating">
+                                            <select class="form-select">
+                                                <option>English</option>
+                                                <option>Urdu</option>
+                                                <option>Arabic</option>
+                                                <option>Chinese</option>
+                                                <option>Other</option>
+                                            </select>
+                                            <label>Language</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Education -->
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="form-floating">
+                                            <select class="form-select">
+                                                <option>Primary</option>
+                                                <option>Secondary</option>
+                                                <option>Higher Secondary</option>
+                                                <option>Bachelor's</option>
+                                                <option>Other</option>
+                                            </select>
+                                            <label>Education</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Religion -->
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="form-floating">
+                                            <select class="form-select">
+                                                <option>Islam</option>
+                                                <option>Christianity</option>
+                                                <option>Hinduism</option>
+                                                <option>Buddhism</option>
+                                                <option>Other</option>
+                                            </select>
+                                            <label>Religion</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Applicant Mobile -->
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" placeholder="Applicant Mobile">
+                                            <label>Applicant Mobile *</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Comments -->
+                                    <div class="col-lg-9 col-md-6 mb-3">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" id="comments"
+                                                placeholder="Enter your comments here..."></textarea>
+                                            <label for="comments">Comments</label>
+                                        </div>
+                                    </div>
+
                                 </div>
-                            </div> -->
+                            </form>
+
                             <div class="row p-0 ps-4">
                                 <!-- Heading with Collapse Toggle -->
                                 <div class="mt-2 p-0">
@@ -524,125 +535,140 @@
                                         <a class="text-decoration-none d-flex align-items-center upload-doc-btn p-3 rounded-2"
                                             data-bs-toggle="collapse" href="#uploadDocs" role="button"
                                             aria-expanded="false" aria-controls="uploadDocs">
-                                            Upload Documents: <span class="ms-auto"><i class="bi bi-caret-down-fill"></i></span>
+                                            Upload Documents: <span class="ms-auto"><i
+                                                    class="bi bi-caret-down-fill"></i></span>
                                         </a>
                                     </h5>
                                 </div>
 
                                 <!-- Collapse Start -->
-                                <div class="collapse" id="uploadDocs">
+                                <div class="collapse documents-upload" id="uploadDocs">
                                     <div class="row">
-                                        <div class="col-lg-4 col-md-6">
-                                            <label for="idCard" class="form-label">Passport Main Page*</label>
-                                            <input class="form-control" type="file" id="idCard1"
-                                                accept=".jpg,.jpeg,.png,.pdf">
-                                            <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size:
-                                                2MB)</small>
-                                        </div>
+                                        <div class="col-lg-4 col-md-6 mb-3">
+                                            <div class="documents-upload-card">
+                                                <div class="preview-box" data-input="idCard1">PASSPORT MAIN PAGE</div>
+                                                <label class="form-label">Passport Main Page*</label>
+                                                <input class="form-control file-input d-none" type="file" id="idCard1"
+                                                    accept=".jpg,.jpeg,.png,.pdf">
+                                                <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size:
+                                                    2MB)</small>
 
-                                        <div class="col-lg-4 col-md-6">
-                                            <label for="idCard" class="form-label">Passport Page 2*</label>
-                                            <input class="form-control" type="file" id="idCard2"
-                                                accept=".jpg,.jpeg,.png,.pdf">
-                                            <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size:
-                                                2MB)</small>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-6">
-                                            <label for="idCard" class="form-label">Applicant Photo*</label>
-                                            <input class="form-control" type="file" id="idCard3"
-                                                accept=".jpg,.jpeg,.png,.pdf">
-                                            <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size:
-                                                2MB)</small>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-6">
-                                            <label for="idCard" class="form-label">Air Ticket*</label>
-                                            <input class="form-control" type="file" id="idCard4"
-                                                accept=".jpg,.jpeg,.png,.pdf">
-                                            <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size:
-                                                2MB)</small>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-6">
-                                            <label for="idCard" class="form-label">Applicant Id Front*</label>
-                                            <input class="form-control" type="file" id="idCard5"
-                                                accept=".jpg,.jpeg,.png,.pdf">
-                                            <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size:
-                                                2MB)</small>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-6">
-                                            <label for="idCard" class="form-label">Applicant Id Back*</label>
-                                            <input class="form-control" type="file" id="idCard6"
-                                                accept=".jpg,.jpeg,.png,.pdf">
-                                            <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size:
-                                                2MB)</small>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-6">
-                                            <label for="idCard" class="form-label">Bank Statement 1*</label>
-                                            <input class="form-control" type="file" id="idCard7"
-                                                accept=".jpg,.jpeg,.png,.pdf">
-                                            <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size:
-                                                2MB)</small>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-6">
-                                            <label for="idCard" class="form-label">Bank Statement 2*</label>
-                                            <input class="form-control" type="file" id="idCard8"
-                                                accept=".jpg,.jpeg,.png,.pdf">
-                                            <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size:
-                                                2MB)</small>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-6">
-                                            <label for="idCard" class="form-label">Parent Passport Main Page*</label>
-                                            <input class="form-control" type="file" id="idCard9"
-                                                accept=".jpg,.jpeg,.png,.pdf">
-                                            <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size:
-                                                2MB)</small>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-6">
-                                            <label for="idCard" class="form-label">Parent Passport 2*</label>
-                                            <input class="form-control" type="file" id="idCard10"
-                                                accept=".jpg,.jpeg,.png,.pdf">
-                                            <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size:
-                                                2MB)</small>
+                                            </div>
                                         </div>
 
                                         <div class="col-lg-4 col-md-6 mb-3">
-                                            <label for="idCard" class="form-label">Hotel Reservation*</label>
-                                            <input class="form-control" type="file" id="idCard11"
-                                                accept=".jpg,.jpeg,.png,.pdf">
-                                            <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size:
-                                                2MB)</small>
-                                        </div>
-
-                                        <div class="border border-1 my-2"></div>
-
-                                        <div class="col-lg-6 col-md-6 mb-3">
-                                            <label class="form-label d-block fs-4 fw-semibold">Application
-                                                Status:</label>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="applicationStatus"
-                                                    id="draft" value="draft" checked>
-                                                <label class="form-check-label" for="draft">Save as Draft</label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="applicationStatus"
-                                                    id="apply" value="apply">
-                                                <label class="form-check-label" for="apply">Direct Apply</label>
+                                            <div class="documents-upload-card">
+                                                <div class="preview-box" data-input="idCard2">PASSPORT PAGE 2</div>
+                                                <label class="form-label">Passport Page 2*</label>
+                                                <input class="form-control file-input d-none" type="file" id="idCard2"
+                                                    accept=".jpg,.jpeg,.png,.pdf">
+                                                <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size:
+                                                    2MB)</small>
                                             </div>
                                         </div>
 
-                                        <div class="col-lg-6 d-flex align-items-end justify-content-end">
-                                            <button type="button" class="btn submit-btn py-2">
-                                                <i class="fa-solid fa-user-check me-2"></i>Submit
-                                            </button>
+                                        <div class="col-lg-4 col-md-6 mb-3">
+                                            <div class="documents-upload-card">
+                                                <div class="preview-box" data-input="idCard3">APPLICANT PHOTO</div>
+                                                <label class="form-label">Applicant Photo*</label>
+                                                <input class="form-control file-input d-none" type="file" id="idCard3"
+                                                    accept=".jpg,.jpeg,.png,.pdf">
+                                                <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size:
+                                                    2MB)</small>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-3">
+                                            <div class="documents-upload-card">
+                                                <div class="preview-box" data-input="idCard4">AIR TICKET</div>
+                                                <label class="form-label">Air Ticket*</label>
+                                                <input class="form-control file-input d-none" type="file" id="idCard4"
+                                                    accept=".jpg,.jpeg,.png,.pdf">
+                                                <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size:
+                                                    2MB)</small>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-3">
+                                            <div class="documents-upload-card">
+                                                <div class="preview-box" data-input="idCard5">APPLICANT ID FRONT</div>
+                                                <label class="form-label">Applicant Id Front*</label>
+                                                <input class="form-control file-input d-none" type="file" id="idCard5"
+                                                    accept=".jpg,.jpeg,.png,.pdf">
+                                                <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size:
+                                                    2MB)</small>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-3">
+                                            <div class="documents-upload-card">
+                                                <div class="preview-box" data-input="idCard6">APPLICANT ID BACK</div>
+                                                <label class="form-label">Applicant Id Back*</label>
+                                                <input class="form-control file-input d-none" type="file" id="idCard6"
+                                                    accept=".jpg,.jpeg,.png,.pdf">
+                                                <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size:
+                                                    2MB)</small>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-3">
+                                            <div class="documents-upload-card">
+                                                <div class="preview-box" data-input="idCard7">BANK STATEMENT 1</div>
+                                                <label class="form-label">Bank Statement 1*</label>
+                                                <input class="form-control file-input d-none" type="file" id="idCard7"
+                                                    accept=".jpg,.jpeg,.png,.pdf">
+                                                <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size:
+                                                    2MB)</small>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-3">
+                                            <div class="documents-upload-card">
+                                                <div class="preview-box" data-input="idCard8">BANK STATEMENT 2</div>
+                                                <label class="form-label">Bank Statement 2*</label>
+                                                <input class="form-control file-input d-none" type="file" id="idCard8"
+                                                    accept=".jpg,.jpeg,.png,.pdf">
+                                                <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size:
+                                                    2MB)</small>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-3">
+                                            <div class="documents-upload-card">
+                                                <div class="preview-box" data-input="idCard9">PARENT PASSPORT MAIN PAGE
+                                                </div>
+                                                <label class="form-label">Parent Passport Main Page*</label>
+                                                <input class="form-control file-input d-none" type="file" id="idCard9"
+                                                    accept=".jpg,.jpeg,.png,.pdf">
+                                                <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size:
+                                                    2MB)</small>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-3">
+                                            <div class="documents-upload-card">
+                                                <div class="preview-box" data-input="idCard10">PARENT PASSPORT 2</div>
+                                                <label class="form-label">Parent Passport 2*</label>
+                                                <input class="form-control file-input d-none" type="file" id="idCard10"
+                                                    accept=".jpg,.jpeg,.png,.pdf">
+                                                <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size:
+                                                    2MB)</small>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-3">
+                                            <div class="documents-upload-card">
+                                                <div class="preview-box" data-input="idCard11">HOTEL RESERVATION</div>
+                                                <label class="form-label">Hotel Reservation*</label>
+                                                <input class="form-control file-input d-none" type="file" id="idCard11"
+                                                    accept=".jpg,.jpeg,.png,.pdf">
+                                                <small class="text-muted">Allowed formats: JPG, PNG, PDF (Max size:
+                                                    2MB)</small>
+                                            </div>
                                         </div>
                                     </div>
+
+
                                 </div>
                                 <!-- Collapse End -->
                             </div>

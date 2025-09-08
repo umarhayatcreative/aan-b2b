@@ -72,9 +72,16 @@
                                         Credit Limit
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="visasDropdown">
-                                        <li class="p-3 text-nowrap"><span>Credit Limit:&nbsp;&nbsp;&nbsp;&nbsp;PKR
-                                                75,000.00 <br>
-                                                Available Limit:&nbsp;&nbsp;&nbsp;&nbsp;PKR 22,190.00</span></li>
+                                        <li class="p-3">
+                                            <div class="d-flex">
+                                                <span class="w-50 text-start">Credit Limit:</span>
+                                                <span class="w-50 text-end">PKR 75,000.00</span>
+                                            </div>
+                                            <div class="d-flex">
+                                                <span class="w-50 text-start">Available Limit:</span>
+                                                <span class="w-50 text-end">PKR 22,190.00</span>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </li>
 
@@ -154,16 +161,20 @@
                 <div class="mb-3">
                     <div class="row g-3 d-flex align-items-end">
                         <div class="col-md-4">
-                            <label for="" class="mb-1">Agent Markup %:</label>
-                            <input type="text" class="form-control py-2" placeholder="100,000.00"
-                                oninput="this.value = this.value.replace(/[^0-9.]/g, '')">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" autocomplete="off" id="agentMarkup" placeholder="100,000.00"
+                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '')">
+                                <label for="agentMarkup">Agent Markup %</label>
+                            </div>
                         </div>
                         <div class="col-md-2">
-                            <a class="add-credit-btn btn text-decoration-none w-100 py-2"><i
-                                    class="bi bi-search me-1"></i>Search</a>
+                            <a class="add-credit-btn btn btn-outline-primary text-decoration-none w-100 py-3">
+                                <i class="bi bi-search me-1"></i>Search
+                            </a>
                         </div>
                     </div>
                 </div>
+
             </div>
 
         </div>
@@ -200,7 +211,8 @@
                         <ul class="list-unstyled small">
                             <li><a href="/about-us.html" class="text-white text-decoration-none">About Us</a></li>
                             <li><a href="/contact-us.html" class="text-white text-decoration-none">Contact Us</a></li>
-                            <li><a href="/privacy-policy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+                            <li><a href="/privacy-policy.html" class="text-white text-decoration-none">Privacy
+                                    Policy</a></li>
                             <li><a href="#" class="text-white text-decoration-none">Term & Conditions</a></li>
                         </ul>
                     </div>
@@ -237,7 +249,7 @@
                                     </li>
                                 </ul>
                             </li>
-                        <div>
+                            <div>
                                 <h6 class="my-2 fw-medium border-top border-dark pt-2">Theme Colors</h6>
                                 <button id="orangeModeBtn"></button>
                                 <button id="lightModeBtn"></button>

@@ -73,9 +73,16 @@
                                         Credit Limit
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="visasDropdown">
-                                        <li class="p-3 text-nowrap"><span>Credit Limit:&nbsp;&nbsp;&nbsp;&nbsp;PKR
-                                                75,000.00 <br>
-                                                Available Limit:&nbsp;&nbsp;&nbsp;&nbsp;PKR 22,190.00</span></li>
+                                        <li class="p-3">
+                                            <div class="d-flex">
+                                                <span class="w-50 text-start">Credit Limit:</span>
+                                                <span class="w-50 text-end">PKR 75,000.00</span>
+                                            </div>
+                                            <div class="d-flex">
+                                                <span class="w-50 text-start">Available Limit:</span>
+                                                <span class="w-50 text-end">PKR 22,190.00</span>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </li>
 
@@ -165,13 +172,13 @@
                                                 Downtown Location
                                             </p>
                                         </div>
-                                        <span class="badge bg-success status-badge px-3 py-2">
+                                        <!-- <span class="badge bg-success status-badge px-3 py-2">
                                             <i class="bi bi-check-circle me-1"></i>Vouchered
-                                        </span>
+                                        </span> -->
                                     </div>
 
                                     <!-- Room Information -->
-                                    <div class="row mb-3">
+                                    <div class="row mb-4">
                                         <div class="col-sm-6">
                                             <div class="d-flex mb-2 card-info flex-column ">
                                                 <span class=""><i class="bi bi-house-door me-2"></i> Twin Rooms</span>
@@ -187,17 +194,19 @@
                                     </div>
 
                                     <!-- Price -->
-                                    <div class="rounded py-2 px-3 mb-3 price-section">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span class="fw-medium">Total Amount</span>
-                                            <span class="fs-5 mb-0 fw-bold">PKR 46,540.00</span>
+                                    <div class="price-booking-details d-flex align-items-end">
+                                        <div class="price-section">
+                                            <div class="d-flex flex-column">
+                                                <span class="text-muted">Total Amount</span>
+                                                <span class="fs-5 mb-0 fw-semibold">PKR 46,540.00</span>
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <!-- Download Button -->
-                                    <a class="btn btn-lg w-100 download-ticket-btn" type="button">
-                                        <i class="bi bi-download me-2"></i>Download Ticket
-                                    </a>
+                                        <!-- Download Button -->
+                                        <button class="btn download-ticket-btn ms-auto h-100" type="button">
+                                            <i class="bi bi-download me-2"></i>Download Ticket
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -253,13 +262,13 @@
 
                     <!-- Guest Information -->
                     <div class="card border-0 guest-info-card mb-4">
-                        <div class="card-header border-bottom-0 py-3 rounded-2">
-                            <h5 class="mb-0 fw-semibold">
+                        <div class="card-header border-bottom-0 bg-transparent ps-0">
+                            <h5 class="mb-0 fw-medium">
                                 <i class="bi bi-person-circle me-2"></i>
                                 Guest Information
                             </h5>
                         </div>
-                        <div class="card-body p-4">
+                        <div class="card-body p-4 ps-0">
                             <div class="d-flex align-items-center">
                                 <div
                                     class="rounded-circle user-icon d-flex align-items-center justify-content-center me-3">
@@ -461,7 +470,8 @@
                         <ul class="list-unstyled small">
                             <li><a href="/about-us.html" class="text-white text-decoration-none">About Us</a></li>
                             <li><a href="/contact-us.html" class="text-white text-decoration-none">Contact Us</a></li>
-                            <li><a href="/privacy-policy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+                            <li><a href="/privacy-policy.html" class="text-white text-decoration-none">Privacy
+                                    Policy</a></li>
                             <li><a href="#" class="text-white text-decoration-none">Term & Conditions</a></li>
                         </ul>
                     </div>
@@ -498,7 +508,7 @@
                                     </li>
                                 </ul>
                             </li>
-                        <div>
+                            <div>
                                 <h6 class="my-2 fw-medium border-top border-dark pt-2">Theme Colors</h6>
                                 <button id="orangeModeBtn"></button>
                                 <button id="lightModeBtn"></button>

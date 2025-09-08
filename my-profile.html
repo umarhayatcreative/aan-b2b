@@ -72,9 +72,16 @@
                                         Credit Limit
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="visasDropdown">
-                                        <li class="p-3 text-nowrap"><span>Credit Limit:&nbsp;&nbsp;&nbsp;&nbsp;PKR
-                                                75,000.00 <br>
-                                                Available Limit:&nbsp;&nbsp;&nbsp;&nbsp;PKR 22,190.00</span></li>
+                                        <li class="p-3">
+                                            <div class="d-flex">
+                                                <span class="w-50 text-start">Credit Limit:</span>
+                                                <span class="w-50 text-end">PKR 75,000.00</span>
+                                            </div>
+                                            <div class="d-flex">
+                                                <span class="w-50 text-start">Available Limit:</span>
+                                                <span class="w-50 text-end">PKR 22,190.00</span>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </li>
 
@@ -153,71 +160,113 @@
                     <!-- Guest 1 -->
                     <div class="mb-3">
                         <div class="row g-4">
-                            <div class="col-md-3">
-                                <label for="" class="mb-1">Title</label>
-                                <select class="form-select py-2">
-                                    <option>Mr</option>
-                                    <option>Mrs</option>
-                                    <option>Ms</option>
-                                </select>
-                            </div>
-                            <div class="col-md-5">
-                                <label for="" class="mb-1">First Name</label>
-                                <input class="form-control py-2" placeholder="First Name">
-                            </div>
-                            <div class="col-md-4">
-                                <label for="" class="mb-1">Last Name</label>
-                                <input class="form-control py-2" placeholder="Last Name">
+                            <div class="col-lg-2 col-md-6">
+                                <div class="form-floating">
+                                    <select class="form-select" id="title" autocomplete="off">
+                                        <option selected disabled></option>
+                                        <option>Mr</option>
+                                        <option>Mrs</option>
+                                        <option>Ms</option>
+                                    </select>
+                                    <label for="title">Title</label>
+                                </div>
                             </div>
 
-                            <div class="col-md-6">
-                                <label for="" class="mb-1">Email</label>
-                                <input class="form-control py-2" placeholder="Email">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="" class="mb-1">Phone Number</label>
-                                <input class="form-control py-2" placeholder="Phone">
+                            <div class="col-lg-5 col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="firstName" placeholder="First Name"
+                                        autocomplete="off">
+                                    <label for="firstName">First Name</label>
+                                </div>
                             </div>
 
+                            <div class="col-lg-5 col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="lastName" placeholder="Last Name"
+                                        autocomplete="off">
+                                    <label for="lastName">Last Name</label>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Email"
+                                        autocomplete="off">
+                                    <label for="email">Email</label>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control" id="phone" placeholder="Phone"
+                                        autocomplete="off">
+                                    <label for="phone">Phone Number</label>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="city" placeholder="City"
+                                        autocomplete="off">
+                                    <label for="city">City</label>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="state" placeholder="State/Province"
+                                        autocomplete="off">
+                                    <label for="state">State/Province</label>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="zip" placeholder="Zip/PostCode"
+                                        autocomplete="off">
+                                    <label for="zip">Zip/PostCode</label>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="form-floating">
+                                    <select class="form-select" id="country" autocomplete="off">
+                                        <option selected disabled></option>
+                                        <option>Pakistan</option>
+                                        <option>India</option>
+                                        <option>Bangladesh</option>
+                                        <option>Iran</option>
+                                        <option>Turkey</option>
+                                        <option>Australia</option>
+                                        <option>Japan</option>
+                                        <option>Dubai</option>
+                                    </select>
+                                    <label for="country">Country</label>
+                                </div>
+                            </div>
                             <div class="col-md-12">
-                                <label for="" class="mb-1">Address</label>
-                                <input class="form-control py-2" placeholder="Address">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="address" placeholder="Address"
+                                        autocomplete="off">
+                                    <label for="address">Address</label>
+                                </div>
                             </div>
 
                             <div class="col-md-6">
-                                <label for="" class="mb-1">City</label>
-                                <input class="form-control py-2" placeholder="City">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="" class="mb-1">State/Province</label>
-                                <input class="form-control py-2" placeholder="State/Province">
-                            </div>
-
-                            <div class="col-md-6">
-                                <label for="" class="mb-1">Zip/PostCode</label>
-                                <input class="form-control py-2" placeholder="Zip/PostCode">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="" class="mb-1">Country</label>
-                                <select class="form-select py-2">
-                                    <option>Pakistan</option>
-                                    <option>India</option>
-                                    <option>Bangladesh</option>
-                                    <option>Iran</option>
-                                    <option>Turkey</option>
-                                    <option>Australia</option>
-                                    <option>Japan</option>
-                                    <option>Dubai</option>
-                                </select>
+                                <div class="form-floating">
+                                    <input type="password" class="form-control" id="password" placeholder="Password"
+                                        autocomplete="off">
+                                    <label for="password">Password</label>
+                                </div>
                             </div>
 
                             <div class="col-md-6">
-                                <label for="" class="mb-1">Password</label>
-                                <input class="form-control py-2" placeholder="Password">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="" class="mb-1">Confirm Password</label>
-                                <input class="form-control py-2" placeholder="Confirm Password">
+                                <div class="form-floating">
+                                    <input type="password" class="form-control" id="confirmPassword"
+                                        placeholder="Confirm Password" autocomplete="off">
+                                    <label for="confirmPassword">Confirm Password</label>
+                                </div>
                             </div>
 
                             <div class="col-lg-12 d-flex align-items-end justify-content-end">
@@ -226,6 +275,7 @@
                                 </button>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -262,7 +312,8 @@
                         <ul class="list-unstyled small">
                             <li><a href="/about-us.html" class="text-white text-decoration-none">About Us</a></li>
                             <li><a href="/contact-us.html" class="text-white text-decoration-none">Contact Us</a></li>
-                            <li><a href="/privacy-policy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+                            <li><a href="/privacy-policy.html" class="text-white text-decoration-none">Privacy
+                                    Policy</a></li>
                             <li><a href="#" class="text-white text-decoration-none">Term & Conditions</a></li>
                         </ul>
                     </div>
@@ -299,7 +350,7 @@
                                     </li>
                                 </ul>
                             </li>
-                        <div>
+                            <div>
                                 <h6 class="my-2 fw-medium border-top border-dark pt-2">Theme Colors</h6>
                                 <button id="orangeModeBtn"></button>
                                 <button id="lightModeBtn"></button>

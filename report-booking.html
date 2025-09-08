@@ -71,9 +71,16 @@
                                         Credit Limit
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="visasDropdown">
-                                        <li class="p-3 text-nowrap"><span>Credit Limit:&nbsp;&nbsp;&nbsp;&nbsp;PKR
-                                                75,000.00 <br>
-                                                Available Limit:&nbsp;&nbsp;&nbsp;&nbsp;PKR 22,190.00</span></li>
+                                        <li class="p-3">
+                                            <div class="d-flex">
+                                                <span class="w-50 text-start">Credit Limit:</span>
+                                                <span class="w-50 text-end">PKR 75,000.00</span>
+                                            </div>
+                                            <div class="d-flex">
+                                                <span class="w-50 text-start">Available Limit:</span>
+                                                <span class="w-50 text-end">PKR 22,190.00</span>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </li>
 
@@ -153,52 +160,56 @@
                     <h5 class="mb-0 fs-5">Booking Filters</h5>
                 </div>
                 <div class="card-body">
-                    <form class="row g-3 align-items-end">
+                    <form class="row g-3 align-items-end" autocomplete="off">
                         <div class="col-lg-4 col-md-6">
-                            <label class="form-label">Search by Date</label>
-                            <select class="form-select p-2">
-                                <option>Booking Date</option>
-                                <option>Travel Date</option>
-                            </select>
+                            <div class="form-floating">
+                                <select class="form-select p-2" id="searchByDate" autocomplete="off">
+                                    <option selected disabled></option>
+                                    <option>Booking Date</option>
+                                    <option>Travel Date</option>
+                                </select>
+                                <label for="searchByDate">Search by Date</label>
+                            </div>
                         </div>
 
                         <div class="col-lg-4 col-md-6">
-                            <label class="form-label">Date Range</label>
-                            <input type="text" class="form-control p-2 date-range"
-                                placeholder="dd-mm-yyyy - dd-mm-yyyy">
-                        </div>
-
-                        <!-- <div class="col-lg-4 col-md-6">
-                            <label class="form-label">Sub Agent</label>
-                            <select class="form-select p-2">
-                                <option>Ummon Hayat</option>
-                                <option>John Doe</option>
-                            </select>
-                        </div> -->
-
-                        <div class="col-lg-4 col-md-6">
-                            <label class="form-label">Order Number</label>
-                            <input type="text" class="form-control p-2" placeholder="Enter order number">
+                            <div class="form-floating">
+                                <input type="text" class="form-control p-2 date-range" id="dateRange"
+                                    placeholder="dd-mm-yyyy - dd-mm-yyyy" autocomplete="off">
+                                <label for="dateRange">Date Range</label>
+                            </div>
                         </div>
 
                         <div class="col-lg-4 col-md-6">
-                            <label class="form-label">Booking Status</label>
-                            <select class="form-select p-2">
-                                <option>Pending</option>
-                                <option>Confirmed</option>
-                                <option selected>Cancelled</option>
-                            </select>
+                            <div class="form-floating">
+                                <input type="text" class="form-control p-2" id="orderNumber"
+                                    placeholder="Enter order number" autocomplete="off">
+                                <label for="orderNumber">Order Number</label>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="form-floating">
+                                <select class="form-select p-2" id="bookingStatus" autocomplete="off">
+                                    <option selected disabled></option>
+                                    <option>Pending</option>
+                                    <option>Confirmed</option>
+                                    <option>Cancelled</option>
+                                </select>
+                                <label for="bookingStatus">Booking Status</label>
+                            </div>
                         </div>
 
                         <div class="col-lg-4 col-md-6 d-flex gap-2">
-                            <button type="button" class="btn search-btn py-2 px-3">
+                            <button type="button" class="btn search-btn py-3 px-4">
                                 <i class="bi bi-search me-1"></i> Search
                             </button>
-                            <button type="reset" class="btn reset-btn py-2 px-3">
+                            <button type="reset" class="btn reset-btn py-3 px-4">
                                 <i class="bi bi-arrow-repeat me-1"></i> Reset
                             </button>
                         </div>
                     </form>
+
                 </div>
             </div>
 
@@ -301,7 +312,8 @@
                         <ul class="list-unstyled small">
                             <li><a href="/about-us.html" class="text-white text-decoration-none">About Us</a></li>
                             <li><a href="/contact-us.html" class="text-white text-decoration-none">Contact Us</a></li>
-                            <li><a href="/privacy-policy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+                            <li><a href="/privacy-policy.html" class="text-white text-decoration-none">Privacy
+                                    Policy</a></li>
                             <li><a href="#" class="text-white text-decoration-none">Term & Conditions</a></li>
                         </ul>
                     </div>
@@ -338,7 +350,7 @@
                                     </li>
                                 </ul>
                             </li>
-                        <div>
+                            <div>
                                 <h6 class="my-2 fw-medium border-top border-dark pt-2">Theme Colors</h6>
                                 <button id="orangeModeBtn"></button>
                                 <button id="lightModeBtn"></button>

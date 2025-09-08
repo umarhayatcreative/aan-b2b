@@ -72,9 +72,16 @@
                                         Credit Limit
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="visasDropdown">
-                                        <li class="p-3 text-nowrap"><span>Credit Limit:&nbsp;&nbsp;&nbsp;&nbsp;PKR
-                                                75,000.00 <br>
-                                                Available Limit:&nbsp;&nbsp;&nbsp;&nbsp;PKR 22,190.00</span></li>
+                                        <li class="p-3">
+                                            <div class="d-flex">
+                                                <span class="w-50 text-start">Credit Limit:</span>
+                                                <span class="w-50 text-end">PKR 75,000.00</span>
+                                            </div>
+                                            <div class="d-flex">
+                                                <span class="w-50 text-start">Available Limit:</span>
+                                                <span class="w-50 text-end">PKR 22,190.00</span>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </li>
 
@@ -156,65 +163,82 @@
                 <form>
                     <div class="mb-3">
                         <div class="row g-3 d-flex align-items-end">
+
                             <div class="col-lg-4 col-md-6">
-                                <label class="form-label">Search by Date:</label>
-                                <select class="form-select p-2">
-                                    <option>Booking Date</option>
-                                    <option>Travel Date</option>
-                                </select>
+                                <div class="form-floating">
+                                    <select class="form-select" autocomplete="off" id="searchByDate">
+                                        <option selected>Booking Date</option>
+                                        <option>Travel Date</option>
+                                    </select>
+                                    <label for="searchByDate">Search by Date</label>
+                                </div>
                             </div>
 
                             <div class="col-lg-4 col-md-6">
-                                <label class="form-label">Date Range:</label>
-                                <input type="text" class="form-control p-2 date-range"
-                                    placeholder="dd-mm-yyyy - dd-mm-yyyy">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control date-range" autocomplete="off" id="dateRange"
+                                        placeholder="dd-mm-yyyy - dd-mm-yyyy">
+                                    <label for="dateRange">Date Range</label>
+                                </div>
                             </div>
 
                             <div class="col-lg-4 col-md-6">
-                                <label class="form-label">Sub Agents:</label>
-                                <select class="form-select p-2">
-                                    <option>All</option>
-                                    <option>Sub Agent 1</option>
-                                    <option>Sub Agent 2</option>
-                                </select>
+                                <div class="form-floating">
+                                    <select class="form-select" autocomplete="off" id="subAgents">
+                                        <option selected>All</option>
+                                        <option>Sub Agent 1</option>
+                                        <option>Sub Agent 2</option>
+                                    </select>
+                                    <label for="subAgents">Sub Agents</label>
+                                </div>
                             </div>
 
                             <div class="col-lg-4 col-md-6">
-                                <label class="form-label">Search By Field:</label>
-                                <select class="form-select p-2">
-                                    <option>All</option>
-                                    <option>Sub Agent 1</option>
-                                    <option>Sub Agent 2</option>
-                                </select>
+                                <div class="form-floating">
+                                    <select class="form-select" autocomplete="off" id="searchByFieldSelect">
+                                        <option selected>All</option>
+                                        <option>Sub Agent 1</option>
+                                        <option>Sub Agent 2</option>
+                                    </select>
+                                    <label for="searchByFieldSelect">Search By Field</label>
+                                </div>
                             </div>
 
                             <div class="col-lg-4 col-md-6">
-                                <label class="form-label">Search By Field:</label>
-                                <input type="text" class="form-control p-2">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" autocomplete="off" id="searchByFieldInput"
+                                        placeholder="Enter value">
+                                    <label for="searchByFieldInput">Search By Field</label>
+                                </div>
                             </div>
 
                             <div class="col-lg-4 col-md-6">
-                                <label class="form-label">Application Status:</label>
-                                <select class="form-select p-2">
-                                    <option>All</option>
-                                    <option>Pending</option>
-                                    <option>Approved</option>
-                                    <option>Rejected</option>
-                                </select>
+                                <div class="form-floating">
+                                    <select class="form-select" autocomplete="off" id="applicationStatus">
+                                        <option selected>All</option>
+                                        <option>Pending</option>
+                                        <option>Approved</option>
+                                        <option>Rejected</option>
+                                    </select>
+                                    <label for="applicationStatus">Application Status</label>
+                                </div>
                             </div>
 
                             <div class="col-lg-4 col-md-6 d-flex gap-2">
-                                <div class="search-btn"><button type="submit" class="btn py-2 px-3 text-white">
+                                <div class="search-btn">
+                                    <button type="submit" class="btn px-5 py-3 text-white">
                                         <i class="bi bi-search me-1"></i> Search
-                                    </button></div>
-
-                                <button type="reset" class="btn reset-btn py-2 px-3">
+                                    </button>
+                                </div>
+                                <button type="reset" class="btn reset-btn px-5 py-3">
                                     <i class="bi bi-arrow-repeat me-1"></i> Reset
                                 </button>
                             </div>
+
                         </div>
                     </div>
                 </form>
+
                 <!-- FORM END -->
             </div>
 
@@ -300,7 +324,8 @@
                         <ul class="list-unstyled small">
                             <li><a href="/about-us.html" class="text-white text-decoration-none">About Us</a></li>
                             <li><a href="/contact-us.html" class="text-white text-decoration-none">Contact Us</a></li>
-                            <li><a href="/privacy-policy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+                            <li><a href="/privacy-policy.html" class="text-white text-decoration-none">Privacy
+                                    Policy</a></li>
                             <li><a href="#" class="text-white text-decoration-none">Term & Conditions</a></li>
                         </ul>
                     </div>
@@ -337,7 +362,7 @@
                                     </li>
                                 </ul>
                             </li>
-                        <div>
+                            <div>
                                 <h6 class="my-2 fw-medium border-top border-dark pt-2">Theme Colors</h6>
                                 <button id="orangeModeBtn"></button>
                                 <button id="lightModeBtn"></button>

@@ -59,12 +59,9 @@
 
 
 .header-login .dropdown-menu {
-    min-width: 250px;
-    /* box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075); */
+    min-width: 275px;
     border-bottom: 2px solid var(--secondary-colors);
-    /* border: none; */
     border-radius: 10px;
-
 }
 
 .header-login .dropdown-item {
@@ -132,20 +129,46 @@
 }
 
 .upload-doc-btn i {
-  display: inline-block;
-  transition: transform 0.3s ease;
+    display: inline-block;
+    transition: transform 0.3s ease;
 }
 
 /* Default (collapsed) */
 .upload-doc-btn.collapsed i {
-  transform: rotate(0deg);
+    transform: rotate(0deg);
 }
 
-/* Jab collapse open ho (Bootstrap .show lagata hai collapse div pe)
-   aur button pe .collapsed remove ho jata hai */
+
 .upload-doc-btn[aria-expanded="true"] i {
-  transform: rotate(180deg);
+    transform: rotate(180deg);
 }
+
+.documents-upload .preview-box {
+    width: 100%;
+    height: 200px;
+    border: 2px dashed var(--all-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 12px;
+    color: var(--secondary-colors);
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.documents-upload .documents-upload-card .form-label {
+    margin: 0;
+}
+
+.documents-upload .preview-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
 /* footer sec start */
 .footer-sec {
     background-color: var(--primary-colors);

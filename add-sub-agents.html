@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/theme-variables.css">
-    <link rel="stylesheet" href="css/visas.css">
+    <link rel="stylesheet" href="css/add-sub-agents.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Flatpickr CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
@@ -89,6 +89,7 @@
                                     <a class="nav-link" href="/visas.html">Visas</a>
                                 </li>
 
+
                                 <!-- Dropdown 2: Reports -->
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="reportsDropdown" role="button"
@@ -103,12 +104,11 @@
                                 </li>
 
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="reportsDropdown" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle active" href="#" id="reportsDropdown"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Sub Agents
                                     </a>
-                                    <ul class="dropdown-menu custom-subagent-dropdown"
-                                        aria-labelledby="reportsDropdown">
+                                    <ul class="dropdown-menu" aria-labelledby="reportsDropdown">
                                         <li><a class="dropdown-item" href="/sub-agents.html">Manage Sub Agents</a></li>
                                         <li><a class="dropdown-item" href="/add-credit.html">Add Credit</a></li>
                                         <li><a class="dropdown-item" href="/sub-agents-booking.html">Bookings</a></li>
@@ -131,7 +131,6 @@
                                         <li><a class="dropdown-item" href="/my-profile.html">Profile</a></li>
                                     </ul>
                                 </li>
-
                             </ul>
                         </div>
                     </div>
@@ -141,160 +140,176 @@
     </section>
     <!-- header section end -->
 
-    <!-- input section start -->
-    <section class="visas py-3">
+    <!-- add sub agents input section start -->
+
+    <section class="add-sub-agents py-2">
         <div class="container">
             <div class="banner mb-3 d-flex justify-content-between align-items-center flex-wrap">
-                <h2 class="fs-4 m-0">Visa</h2>
+                <h2 class="fs-4 m-0 fw-semibold">Add Sub Agents</h2>
                 <nav aria-label="breadcrumb fs-6">
                     <ul class="breadcrumb mb-0">
                         <li class="breadcrumb-item"><a href="/home.html" class="text-decoration-none"><i
                                     class="bi bi-house-door me-1"></i>Home</a></li>
-                        <li class="breadcrumb-item"><a href="#" class=" text-decoration-none">Visa</a>
+                        <li class="breadcrumb-item"><a href="#" class=" text-decoration-none">Sub Agents</a>
                         </li>
                     </ul>
                 </nav>
             </div>
-            <!-- add credit input -->
-            <div class="card-body visas-card p-3 mb-5">
-                <h5 class="mb-4">Visa Filters</h5>
 
-                <!-- FORM START -->
-                <form autocomplete="off">
-                    <div class="mb-3">
-                        <div class="row g-3 d-flex align-items-end">
-
-                            <!-- Search by Date -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="form-floating">
-                                    <select class="form-select" id="searchByDate" autocomplete="off">
-                                        <option selected>Booking Date</option>
-                                        <option>Travel Date</option>
-                                    </select>
-                                    <label for="searchByDate">Search by Date</label>
-                                </div>
+            <div class="card-body">
+                <!-- Guest 1 -->
+                <div class="mb-3">
+                    <div class="row g-4 mb-3">
+                        <!-- Agent Name -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" autocomplete="off" id="agentName" placeholder="Agent Name">
+                                <label for="agentName">Agent Name*</label>
                             </div>
-
-                            <!-- Date Range -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control date-range" id="dateRange"
-                                        placeholder="dd-mm-yyyy - dd-mm-yyyy" autocomplete="off">
-                                    <label for="dateRange">Date Range</label>
-                                </div>
-                            </div>
-
-                            <!-- Search By Field -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="form-floating">
-                                    <select class="form-select" id="searchByField" autocomplete="off">
-                                        <option>All</option>
-                                        <option>Sub Agent 1</option>
-                                        <option>Sub Agent 2</option>
-                                    </select>
-                                    <label for="searchByField">Search By Field</label>
-                                </div>
-                            </div>
-
-                            <!-- Field Value -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="fieldValue" placeholder="Enter value"
-                                        autocomplete="off">
-                                    <label for="fieldValue">Field Value</label>
-                                </div>
-                            </div>
-
-                            <!-- Application Status -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="form-floating">
-                                    <select class="form-select" id="applicationStatus" autocomplete="off">
-                                        <option>All</option>
-                                        <option>Pending</option>
-                                        <option>Approved</option>
-                                        <option>Rejected</option>
-                                    </select>
-                                    <label for="applicationStatus">Application Status</label>
-                                </div>
-                            </div>
-
-                            <!-- Buttons -->
-
-                            <div class="col-lg-4 col-md-6 d-flex gap-2">
-                                <div class="search-btn">
-                                    <button type="submit" class="btn px-5 py-3 text-white">
-                                        <i class="bi bi-search me-1"></i> Search
-                                    </button>
-                                </div>
-                                <button type="reset" class="btn reset-btn px-5 py-3">
-                                    <i class="bi bi-arrow-repeat me-1"></i> Reset
-                                </button>
-                            </div>
-
                         </div>
+
+                        <!-- Credit Limit -->
+                        <div class="col-md-4">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" autocomplete="off" id="creditLimit" value="100,000.00"
+                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '')">
+                                <label for="creditLimit">Credit Limit*</label>
+                            </div>
+                        </div>
+
+                        <!-- Markup -->
+                        <div class="col-md-4">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" autocomplete="off" id="creditLimit" value="2.00%"
+                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '')">
+                                <label for="creditLimit">Markup*</label>
+                            </div>
+                        </div>
+
+                        <!-- Title -->
+                        <div class="col-md-4">
+                            <div class="form-floating">
+                                <select class="form-select" id="title" autocomplete="off" aria-label="Title">
+                                    <option selected>Mr</option>
+                                    <option>Mrs</option>
+                                    <option>Ms</option>
+                                </select>
+                                <label for="title">Title*</label>
+                            </div>
+                        </div>
+
+                        <!-- First Name -->
+                        <div class="col-md-4">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" autocomplete="off" id="firstName" placeholder="First Name">
+                                <label for="firstName">First Name*</label>
+                            </div>
+                        </div>
+
+                        <!-- Last Name -->
+                        <div class="col-md-4">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" autocomplete="off" id="lastName" placeholder="Last Name">
+                                <label for="lastName">Last Name*</label>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="col-md-4">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" autocomplete="off" id="email" placeholder="Email">
+                                <label for="email">Email*</label>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="col-md-4">
+                            <div class="form-floating">
+                                <input type="tel" class="form-control" autocomplete="off" id="phone" placeholder="Phone">
+                                <label for="phone">Phone Number*</label>
+                            </div>
+                        </div>
+
+                        <!-- Password -->
+                        <div class="col-md-4">
+                            <div class="form-floating">
+                                <input type="password" class="form-control" autocomplete="off" id="password" placeholder="Password">
+                                <label for="password">Password*</label>
+                            </div>
+                        </div>
+
+                        <!-- Confirm Password -->
+                        <div class="col-md-4">
+                            <div class="form-floating">
+                                <input type="password" class="form-control" autocomplete="off" id="cpassword"
+                                    placeholder="Confirm Password">
+                                <label for="cpassword">Confirm Password*</label>
+                            </div>
+                        </div>
+
+                      
+                        <!-- City -->
+                        <div class="col-md-4">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" autocomplete="off"  id="city" placeholder="City">
+                                <label for="city">City*</label>
+                            </div>
+                        </div>
+
+                        <!-- State/Province -->
+                        <div class="col-md-4">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" autocomplete="off"  id="state" placeholder="State/Province">
+                                <label for="state">State/Province*</label>
+                            </div>
+                        </div>
+
+                        <!-- Zip/PostCode -->
+                        <div class="col-md-4">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" autocomplete="off"  id="zipcode" placeholder="Zip/PostCode">
+                                <label for="zipcode">Zip/PostCode*</label>
+                            </div>
+                        </div>
+
+                        <!-- Country -->
+                        <div class="col-md-4">
+                            <div class="form-floating">
+                                <select class="form-select" autocomplete="off"  id="country" aria-label="Country">
+                                    <option selected>Pakistan</option>
+                                    <option>India</option>
+                                    <option>Bangladesh</option>
+                                    <option>Iran</option>
+                                    <option>Turkey</option>
+                                    <option>Australia</option>
+                                    <option>Japan</option>
+                                    <option>Dubai</option>
+                                </select>
+                                <label for="country">Country*</label>
+                            </div>
+                        </div>
+                          <!-- Address -->
+                        <div class="col-md-4">
+                            <div class="form-floating">
+                                <textarea class="form-control" rows="4" autocomplete="off" id="address" placeholder="Address"></textarea>
+                                <label for="address">Address*</label>
+                            </div>
+                        </div>
+
                     </div>
-                </form>
 
-                <!-- FORM END -->
-            </div>
-
-
-            <div class="card visa-results-card p-2 px-3">
-                <div class="d-flex justify-content-between align-items-center mb-2 flex-wrap py-1">
-                    <h6 class="mb-0 fs-6">
-                        Visa Detail</h6>
-                    <a class="btn fs-6 p-0 pt-sm-5 pt-lg-0 pt-lg-0 border-0" href="/new-visas-application.html">
-                        <i class="bi bi-plus-circle me-2"></i>New UAE Visa
-                    </a>
+                    
+                    <div class="d-flex">
+                        <button type="button" class="add-agents-btn px-5 py-3 ms-auto rounded-2">
+                            <i class="fa-solid fa-user-check me-2"></i>Add Sub Agent
+                        </button>
+                    </div>
                 </div>
-
-                <div class="table-responsive">
-                    <table class="table table-hover mb-0">
-                        <thead class="table-primary">
-                            <tr>
-                                <th>Date</th>
-                                <th>Transaction</th>
-                                <th>Method</th>
-                                <th>Detail</th>
-                                <th>Debit</th>
-                                <th>Credit</th>
-                                <th>Balance</th>
-
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>01/08/2025</td>
-                                <td></td>
-                                <td></td>
-                                <td>Balance B/F</td>
-                                <td></td>
-                                <td>0.00</td>
-                                <td>0.00</td>
-
-                            <tr>
-                                <td>27/08/2025</td>
-                                <td>Credit Limit</td>
-                                <td></td>
-                                <td> Temporary Credit Limit</td>
-                                <td></td>
-                                <td>500:00</td>
-                                <td>0.00</td>
-
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
             </div>
-
-
         </div>
 
     </section>
-
-
-    <!--  input section end -->
+    <!-- add sub agents input section end -->
 
     <!-- footer section start -->
     <footer class="footer-sec pt-5 mt-auto">
@@ -384,7 +399,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Flatpickr JS -->
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <script src="js/visas.js"></script>
+    <script src="js/sub-agents.js"></script>
     <script src="js/theme-change.js"></script>
 </body>
 

@@ -1,4 +1,3 @@
-
 .header-login {
     background-color: var(--primary-colors);
     height: 72px;
@@ -80,104 +79,57 @@
 /* header sec end */
 
 
-/* hotel checkout input style start */
-.activity-booking .activity-booking-header {
-    background-color: var(--primary-lights);
-}
-
-.activity-booking .activity-booking-header h5 {
-    color: var(--primary-colors);
-}
-
-.activity-booking .activity-booking-card {
-    border: 1px solid var(--all-border);
-    border-radius: 15px;
-    overflow: hidden;
-}
-
-.activity-booking .lead-guest {
-    border: 1px solid var(--all-border);
-    border-radius: 15px;
-}
-
-.activity-booking .room-guests {
-    border: 1px solid var(--all-border);
-    border-radius: 15px;
-}
-
-.activity-booking .user-icons {
-    color: var(--secondary-colors);
-    font-size: 13px;
-}
-
-.activity-booking .room-header small {
-    color: var(--primary-colors);
-}
-
-.activity-booking .form-control:focus {
-    box-shadow: none;
-    border-color: var(--secondary-colors);
-}
-
-.activity-booking .form-select:focus {
-    box-shadow: none;
-    border-color: var(--secondary-colors);
-}
-
-.activity-booking .form-control::placeholder {
-    color: var(--primary-colors-low-opacity);
-    font-weight: 400;
-
-}
-
-.activity-booking .booking-summary-card {
-    border: 1px solid var(--all-border);
-    border-radius: 15px;
-    overflow: hidden;
-}
-
-.activity-booking .payment-method-card {
-    border: 1px solid var(--all-border);
-    border-radius: 15px;
-    overflow: hidden;
-}
-
-.activity-booking .payment-method-card h5 {
-    color: var(--primary-colors);
-}
-
-.payment-method-card .btn-check:checked+.card {
-    border: 1px solid var(--secondary-colors);
-    /* theme variable ya bootstrap blue */
-    background-color: var(--secondary-lights);
-    /* halka sa bg highlight */
-
-}
-
-.activity-booking .payment-method-card h6 {
-    color: var(--primary-colors);
-}
-
-.activity-booking .payment-method-card .confirm-btn a {
+/* add sub agents input section start */
+.add-sub-agents .add-agents-btn {
     background-color: var(--secondary-colors);
     color: var(--color-white);
-    padding: 12px 20px;
-    border-radius: 5px;
-    text-decoration: none;
+    border: none;
 }
 
-.activity-booking .payment-method-card .confirm-btn a:hover {
-    background-color: var(--secondary-colors);
+.add-sub-agents .add-agents-btn:hover {
+    background-color: var(--btn-hover-color);
+    color: var(--color-white);
 }
 
-/* hotel checkout input style end */
+.add-sub-agents .add-agents-btn:focus {
+    background-color: var(--btn-hover-color);
+    color: var(--color-white);
+}
+
+.add-sub-agents .form-control:focus {
+    box-shadow: none;
+    border-color: var(--secondary-colors);
+}
+
+.add-sub-agents .form-control:active {
+    box-shadow: none;
+    background:transparent;
+}
 
 
+.add-sub-agents .form-select:focus {
+    box-shadow: none;
+    border-color: var(--secondary-colors);
+}
 
 
+.add-sub-agents .banner {
+    /* background: linear-gradient(90deg, #0d6efd, #0a58ca); */
+    padding: 10px 0px;
+}
+
+.add-sub-agents .banner h2 {
+    font-weight: 500;
+    color: var(--primary-colors);
+}
 
 
+.add-sub-agents ul li a {
+    color: var(--primary-colors);
+}
 
+
+/* add sub agents input style end */
 
 /* footer sec start */
 .footer-sec {

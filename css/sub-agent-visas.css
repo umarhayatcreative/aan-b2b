@@ -60,12 +60,9 @@
 
 
 .header-login .dropdown-menu {
-    min-width: 250px;
-    /* box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075); */
+    min-width: 275px;
     border-bottom: 2px solid var(--secondary-colors);
-    /* border: none; */
     border-radius: 10px;
-
 }
 
 .header-login .dropdown-item {
@@ -150,6 +147,7 @@
     text-wrap: nowrap;
     font-size: 14px;
 }
+
 
 .visa-results-card .table th {
     background-color: var(--secondary-colors);

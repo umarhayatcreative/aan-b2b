@@ -61,3 +61,42 @@ document.querySelectorAll(".urdufield").forEach(input => {
     }
   });
 });
+
+
+
+
+
+// Preview show
+document.querySelectorAll(".file-input").forEach(input => {
+  input.addEventListener("change", function () {
+    let previewBox = this.parentElement.querySelector(".preview-box");
+    previewBox.innerHTML = "";
+
+    if (this.files && this.files[0]) {
+      let file = this.files[0];
+      let fileType = file.type;
+
+      if (fileType.startsWith("image/")) {
+        let reader = new FileReader();
+        reader.onload = function (e) {
+          let img = document.createElement("img");
+          img.src = e.target.result;
+          previewBox.appendChild(img);
+        }
+        reader.readAsDataURL(file);
+      } else if (fileType === "application/pdf") {
+        previewBox.innerHTML = "📄 PDF File Selected";
+      } else {
+        previewBox.innerHTML = "❌ Unsupported file";
+      }
+    }
+  });
+});
+
+// Click on preview box = open file dialog
+document.querySelectorAll(".preview-box").forEach(box => {
+  box.addEventListener("click", function () {
+    let inputId = this.getAttribute("data-input");
+    document.getElementById(inputId).click();
+  });
+});
