@@ -87,6 +87,241 @@
 
 
 
+
+
+
+
+
+
+.activity-gallary .gallery-main-img {
+    aspect-ratio: 16/7;
+    object-fit: cover;
+    height: 100%;
+    min-height: 220px;
+    max-height: 340px;
+}
+
+.activity-gallary .gallery-side-img {
+    aspect-ratio: 16/7;
+    object-fit: cover;
+    width: 100%;
+    min-height: 105px;
+    max-height: 165px;
+}
+
+.activity-gallary .gallery-badge {
+    position: absolute;
+    bottom: 12px;
+    right: 16px;
+    background: rgba(0, 0, 0, 0.7);
+    color: var(--color-white);
+    padding: 6px 14px;
+    border-radius: var(--btn-border-radius);
+    font-size: 15px;
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.img-aspect-2-1 {
+    aspect-ratio: 2/1;
+    object-fit: cover;
+}
+
+.img-aspect-1-1 {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+/* Mobile Gallery Carousel Styles */
+.activity-mobile-gallary {
+    display: none;
+}
+
+.activity-mobile-gallary .mobile-carousel-img {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+}
+
+.activity-mobile-gallary .carousel-indicators [data-bs-target] {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 0 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+}
+
+.activity-mobile-gallary .carousel-indicators .active {
+    background-color: var(--secondary-colors);
+}
+
+.activity-mobile-gallary .carousel-control-prev,
+.carousel-control-prev {
+    width: 40px;
+    height: 40px;
+    background: var(--primary-colors-low-opacity);
+    border-radius: 50%;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+}
+
+.activity-mobile-gallary .carousel-control-next,
+.carousel-control-next {
+    width: 40px;
+    height: 40px;
+    background: var(--primary-colors-low-opacity);
+    border-radius: 50%;
+    top: 48%;
+    right: 1%;
+    transform: translateX(-50%);
+}
+
+/* Desktop Gallery (default) */
+.avtivity-desktop-gallery {
+    display: flex;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 991.98px) {
+    .avtivity-desktop-gallery {
+        display: none;
+    }
+
+    .activity-mobile-gallary {
+        display: block;
+    }
+
+    .gallery-main-img {
+        min-height: 200px;
+        max-height: 280px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .activity-mobile-gallary .mobile-carousel-img {
+        height: 220px;
+    }
+
+
+    * .activity-mobile-gallary .carousel-control-prev,
+    .carousel-control-next {
+        width: 35px;
+        height: 35px;
+    }
+
+    */ .activity-mobile-gallary .carousel-control-prev {
+        left: 10px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .activity-mobile-gallary .carousel-control-next {
+        right: -9px;
+        width: 35px;
+        height: 35px;
+        top: 42%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .activity-mobile-gallary .mobile-carousel-img {
+        height: 200px;
+    }
+
+    .activity-mobile-gallary .gallery-badge {
+        bottom: 8px;
+        right: 12px;
+        padding: 4px 10px;
+        font-size: var(--font-size-small);
+    }
+}
+
+
+.activity-gallary-modal .gallery-modal-img {
+    height: 600px;
+}
+
+.activitie-list-custom .activitie-list-heading h3 {
+    color: var(--primary-colors);
+    font-size: var(--font-size-heading);
+}
+
+.activitie-list-custom .activitie-list-heading .star-rating-act-list {
+    color: var(--rating-star-color);
+}
+
+
+.activitie-list-options .accordion-button {
+    background: var(--secondary-lights);
+    border: none;
+    color: var(--primary-colors);
+    font-weight: 600;
+    padding: 1.25rem;
+    position: relative;
+}
+
+.activitie-list-options .accordion-button:focus {
+    box-shadow: none;
+}
+
+.activitie-list-options .accordion-button:not(.collapsed) {
+    background: var(--secondary-lights);
+    color: var(--primary-colors);
+}
+
+.activitie-list-options .accordion-button:focus {
+    box-shadow: none;
+}
+
+.activitie-list-options .accordion-icon {
+    font-weight: bold;
+    margin-right: 0.75rem;
+    font-size: 1.1rem;
+    transition: transform 0.2s;
+}
+
+.activitie-list-options .accordion-icon.expanded {
+    display: none;
+}
+
+.activitie-list-options .accordion-button:not(.collapsed) .accordion-icon.collapsed {
+    display: none;
+}
+
+.activitie-list-options .accordion-button:not(.collapsed) .accordion-icon.expanded {
+    display: inline;
+}
+
+.activitie-list-options .accordion-body {
+    padding: 1.5rem;
+    line-height: 1.6;
+
+}
+
+.activitie-list-custom .book-now-btn {
+    background-color: var(--secondary-colors);
+    color: var(--color-white);
+}
+
+.activitie-list-custom .book-now-btn:hover,
+.activitie-list-custom .book-now-btn:focus,
+.activitie-list-custom .book-now-btn:active {
+    background-color: var(--primary-colors);
+    color: var(--color-white);
+}
+
+.activitie-list-heading h3 {
+    font-size: 1.75rem;
+    color: var(--primary-colors);
+}
+
 /* footer sec start */
 .footer-sec {
     background-color: var(--primary-colors);

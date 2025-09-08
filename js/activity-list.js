@@ -4,7 +4,7 @@ flatpickr(".checkInDateInput", {
     defaultDate: new Date()
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     flatpickr(".checkInDateInput", {
         dateFormat: "d-M-Y",
         defaultDate: new Date()
@@ -332,37 +332,53 @@ document.addEventListener('DOMContentLoaded', function() {
         activityListContainer.innerHTML = slice.map((a, idx) => {
             const globalIndex = start + idx;
             return `
-            <div class="card activity-card overflow-hidden mb-4">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <div class="activity-image-box">
-                            <img src="${a.image}" class="card-image" alt="${a.title}">
-                        </div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body p-4 h-100 d-flex flex-column">
-                            <h5 class="card-title fw-bold mb-2">${a.title}</h5>
-                            <div class="d-flex align-items-center mb-2 flex-wrap">
-                                <div class="rating-stars me-2">${createRatingStars(a.rating)}</div>
-                                <span class="text-muted small">(${a.rating}.0/5 • ${a.reviews.toLocaleString()} reviews)</span>
-                            </div>
-                            <div class="d-flex align-items-center gap-3 flex-wrap mb-2 small">${createFeatures(a.features)}</div>
-                            <p class="card-text text-muted mb-3 flex-grow-1">${a.description}</p>
-                            <div class="d-flex justify-content-between align-items-end mt-auto flex-wrap">
-                                <div>
-                                    <p class="text-muted small activity-price-start">From</p>
-                                    <div class="fw-bold fs-5 activity-price">${a.price}</div>
-                                    <span class="text-muted small">per person</span>
-                                </div>
-                                <a class="btn activity-book-btn px-4 py-2 text-white" data-bs-toggle="offcanvas" data-bs-target="#cartSidebar-${globalIndex}"><i class="fas fa-calendar-check me-2"></i>Book Now</a>
-                        
-                            </div>
-                           <!-- Offcanvas Sidebar -->
-                           ${renderOffcanvas(a, globalIndex)}
-                        </div>
-                    </div>
-                </div>
+
+           
+  
+<div class="card activity-card overflow-hidden mb-4" 
+     onclick="openActivityPage(event)" 
+     style="cursor:pointer;">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <div class="activity-image-box">
+                <img src="${a.image}" class="card-image" alt="${a.title}">
             </div>
+        </div>
+        <div class="col-md-8">
+            <div class="card-body p-4 h-100 d-flex flex-column">
+                <h5 class="card-title fw-bold mb-2">${a.title}</h5>
+                <div class="d-flex align-items-center mb-2 flex-wrap">
+                    <div class="rating-stars me-2">${createRatingStars(a.rating)}</div>
+                    <span class="text-muted small">
+                        (${a.rating}.0/5 • ${a.reviews.toLocaleString()} reviews)
+                    </span>
+                </div>
+                <div class="d-flex align-items-center gap-3 flex-wrap mb-2 small">
+                    ${createFeatures(a.features)}
+                </div>
+                <p class="card-text text-muted mb-3 flex-grow-1">${a.description}</p>
+                <div class="d-flex justify-content-between align-items-end mt-auto flex-wrap">
+                    <div>
+                        <p class="text-muted small activity-price-start">From</p>
+                        <div class="fw-bold fs-5 activity-price">${a.price}</div>
+                        <span class="text-muted small">per person</span>
+                    </div>
+                    <a href="javascript:void(0)" 
+                       class="btn activity-book-btn px-4 py-2 text-white position-relative"
+                       data-bs-toggle="offcanvas"
+                       data-bs-target="#cartSidebar-${globalIndex}"
+                       onclick="event.stopPropagation();">
+                        <i class="fas fa-calendar-check me-2"></i>Book Now
+                    </a>
+                </div>
+                <!-- Offcanvas Sidebar -->
+                ${renderOffcanvas(a, globalIndex)}
+            </div>
+        </div>
+    </div>
+</div>
+
+        
         `;
         }).join('');
     }
@@ -416,3 +432,24 @@ document.addEventListener('DOMContentLoaded', function() {
     renderCards(currentPage);
     renderPagination(currentPage);
 })();
+
+
+
+// activity list card book now button offcanvas
+ let offcanvasOpen = false;
+
+  // Jab offcanvas open ho
+  document.addEventListener('show.bs.offcanvas', function () {
+    offcanvasOpen = true;
+  });
+
+  // Jab offcanvas close ho
+  document.addEventListener('hidden.bs.offcanvas', function () {
+    offcanvasOpen = false;
+  });
+
+  function openActivityPage(e) {
+    if (!offcanvasOpen) {
+      window.location.href = "/activity-detail.html";
+    }
+  }
