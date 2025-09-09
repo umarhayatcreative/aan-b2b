@@ -97,34 +97,50 @@
                     <div class="col-lg-8">
                         <div class="contact-form bg-white p-4 rounded-4">
                             <h3 class="contact-title text-center mb-4 fw-semibold">Send us a Message</h3>
-                            <form>
+                            <form autocomplete="off">
                                 <div class="row g-3">
                                     <div class="col-md-6">
-                                        <label for="fullName" class="form-label text-muted fw-semibold">Full
-                                            Name:</label>
-                                        <input type="text" class="form-control py-2" placeholder="Full Name">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="fullName"
+                                                placeholder="Full Name" required>
+                                            <label for="fullName">Full Name</label>
+                                        </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="email" class="form-label text-muted fw-semibold">Email:</label>
-                                        <input type="email" class="form-control py-2" placeholder="Email">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email" placeholder="Email"
+                                                required>
+                                            <label for="email">Email</label>
+                                        </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="phone" class="form-label text-muted fw-semibold">Phone:</label>
-                                        <input type="text" class="form-control py-2" placeholder="Phone">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="phone" placeholder="Phone"
+                                                required>
+                                            <label for="phone">Phone</label>
+                                        </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="subject" class="form-label text-muted fw-semibold">Subject:</label>
-                                        <input type="text" class="form-control py-2" placeholder="Subject">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="subject" placeholder="Subject"
+                                                required>
+                                            <label for="subject">Subject</label>
+                                        </div>
                                     </div>
                                     <div class="col-12">
-                                        <label for="subject" class="form-label text-muted fw-semibold">Message:</label>
-                                        <textarea class="form-control py-2" rows="5" placeholder="Message"></textarea>
+                                        <div class="form-floating">
+                                            <textarea class="form-control" id="message" placeholder="Message"
+                                                style="height: 150px" required></textarea>
+                                            <label for="message">Message</label>
+                                        </div>
                                     </div>
                                     <div class="col-12 text-center">
-                                        <button type="submit" class=" submit-btn mt-3">Send Message</button>
+                                        <button type="submit" class="btn submit-btn mt-3 px-4 py-2">Send
+                                            Message</button>
                                     </div>
                                 </div>
                             </form>
+
                         </div>
                     </div>
                 </div>
@@ -141,7 +157,8 @@
                     <div class="contact-info-card">
                         <h5 class="fw-bold">Pakistan</h5>
                         <p class="mb-1 text-muted">21-Q, Gulberg II, Lahore</p>
-                        <p class="mb-1 fw-semibold"><i class="bi bi-telephone-outbound-fill me-2"></i>+92 330 050 0008</p>
+                        <p class="mb-1 fw-semibold"><i class="bi bi-telephone-outbound-fill me-2"></i>+92 330 050 0008
+                        </p>
                         <a href="mailto:support@aantourism.com" class="text-decoration-none">support@aantourism.com</a>
                     </div>
                 </div>
