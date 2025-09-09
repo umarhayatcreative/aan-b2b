@@ -94,146 +94,146 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10 col-xl-8">
-                    <div class="card shadow-lg border-0 rounded-4">
-                        <div class="card-body signup-form-card p-4 p-md-5">
-                            <h2 class="card-title text-center mb-2 fw-bold mb-3">Supplier Registration</h2>
-                            <p class="text-center text-muted mb-4">Register as a supplier in minutes.</p>
-                            <form id="registerForm">
-                                <div class="company-details-section mb-5">
-                                    <h4 class="section-heading fw-semibold mb-3 border-bottom pb-2">
-                                        <i class="fas fa-building me-2 fs-5"></i>Company Details:
-                                    </h4>
+               <div class="card shadow-lg border-0 rounded-4">
+                    <div class="card-body signup-form-card p-4 p-md-5">
+                        <h2 class="card-title text-center mb-2 fw-bold mb-3">Supplier Registration</h2>
+                        <p class="text-center text-muted mb-4">Register as a supplier in minutes.</p>
+                        <form id="registerForm">
+                            <div class="company-details-section mb-4">
+                                <h5 class="section-heading fw-semibold mb-3 p-2 px-3 rounded-3">
+                                    <i class="fas fa-building me-2 py-2 fs-6"></i>Company Details:
+                                </h5>
 
-                                    <div class="row g-3">
-                                        <div class="col-md-6 mb-3">
-                                            <label for="companyName" class="form-label text-muted">Company Name</label>
+                                <div class="row g-3">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-floating">
                                             <input type="text" id="companyName" class="form-control"
                                                 placeholder="Enter company name" required>
-                                        </div>
-                                        <div class="col-md-6 mb-3">
-                                            <label for="website" class="form-label text-muted">Website</label>
-                                            <div class="input-group">
-                                                <span class="input-group-text"><i class="bi bi-globe2"></i></span>
-                                                <input type="url" id="website" class="form-control"
-                                                    placeholder="https://example.com">
-                                            </div>
+                                            <label for="companyName" class="text-muted">Company Name</label>
                                         </div>
                                     </div>
-
-                                    <div class="mb-3">
-                                        <label for="companyAddress" class="form-label text-muted">Contact Name</label>
-                                        <div class="input-group">
-                                            <span class="input-group-text"><i class="bi bi-person"></i></span>
-                                            <input type="text" id="companyAddress" class="form-control"
-                                                placeholder="Enter contact name" required>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-floating">
+                                            <input type="url" id="website" class="form-control"
+                                                placeholder="https://example.com">
+                                            <label for="website" class="text-muted">Website</label>
                                         </div>
                                     </div>
-
-                                    <div class="row g-3">
-                                        <div class="col-md-6 mb-3">
-                                            <label for="city" class="form-label text-muted">Email Address</label>
-                                            <div class="input-group">
-                                                <span class="input-group-text"><i class="bi bi-envelope"></i></span>
-                                                <input type="email" id="city" class="form-control"
-                                                    placeholder="Enter email address" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 mb-3">
-                                            <label for="state" class="form-label text-muted">Mobile/WhatsApp
-                                                Number:</label>
-                                            <div class="input-group">
-                                                <span class="input-group-text"><i class="bi bi-telephone"></i></span>
-                                                <input type="tel" id="state" class="form-control"
-                                                    placeholder="Enter mobile or WhatsApp number" required>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="companyAddress" class="form-label text-muted">Address</label>
-                                        <div class="input-group">
-                                            <span class="input-group-text"><i class="bi bi-geo-alt"></i></span>
-                                            <input type="text" id="companyAddress" class="form-control"
-                                                placeholder="Enter complete address" required>
-                                        </div>
-                                    </div>
-
                                 </div>
 
+                                <div class="mb-3">
+                                    <div class="form-floating">
+                                        <input type="text" id="contactName" class="form-control"
+                                            placeholder="Enter contact name" required>
+                                        <label for="contactName" class="text-muted">Contact Name</label>
+                                    </div>
+                                </div>
 
-                                <div class="personal-details-section mb-4">
-                                    <h4 class="section-heading fw-semibold mb-3 border-bottom pb-2">
-                                        <i class="fas fa-user me-2 fs-5"></i>Services Details:
-                                    </h4>
-
-                                    <div class="row g-3">
-                                        <div class="col-md-6 mb-3">
-                                            <label for="designation" class="form-label text-muted">Services
-                                                Type:</label>
-                                            <select id="designation" class="form-select" required>
-                                                <option value="">Select Designation</option>
-                                                <option value="CEO">CEO</option>
-                                                <option value="CTO">CTO</option>
-                                                <option value="Manager">Manager</option>
-                                                <option value="Developer">Developer</option>
-                                                <option value="Designer">Designer</option>
-                                                <option value="Marketing">Marketing</option>
-                                                <option value="Sales">Sales</option>
-                                                <option value="HR">HR</option>
-                                                <option value="Other">Other</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-md-6 mb-3">
-                                            <label for="designation" class="form-label text-muted">Services
-                                                Type:</label>
-                                            <select id="designation" class="form-select" required>
-                                                <option value="">Select Designation</option>
-                                                <option value="CEO">CEO</option>
-                                                <option value="CTO">CTO</option>
-                                                <option value="Manager">Manager</option>
-                                                <option value="Developer">Developer</option>
-                                                <option value="Designer">Designer</option>
-                                                <option value="Marketing">Marketing</option>
-                                                <option value="Sales">Sales</option>
-                                                <option value="HR">HR</option>
-                                                <option value="Other">Other</option>
-                                            </select>
+                                <div class="row g-3">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-floating">
+                                            <input type="email" id="emailAddress" class="form-control"
+                                                placeholder="Enter email address" required>
+                                            <label for="emailAddress" class="text-muted">Email Address</label>
                                         </div>
                                     </div>
-                                    <div class="mb-3">
-                                        <label for="companyAddress" class="form-label text-muted">Tell us more about the
-                                            services you offer:</label>
-                                        <textarea id="companyAddress" class="form-control" placeholder="Message"
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-floating">
+                                            <input type="tel" id="mobileNumber" class="form-control"
+                                                placeholder="Enter mobile or WhatsApp number" required>
+                                            <label for="mobileNumber" class="text-muted">Mobile/WhatsApp Number:</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <div class="form-floating">
+                                        <input type="text" id="companyAddress" class="form-control"
+                                            placeholder="Enter complete address" required>
+                                        <label for="companyAddress" class="text-muted">Address</label>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="personal-details-section mb-4">
+                                <h5 class="section-heading fw-semibold mb-3 p-2 px-3 rounded-3">
+                                    <i class="fas fa-user me-2 py-2 fs-6"></i>Services Details:
+                                </h5>
+
+                                <div class="row g-3">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-floating">
+                                            <select id="serviceType1" class="form-select pt-4" required>
+                                                <option value="">Select Designation</option>
+                                                <option value="CEO">CEO</option>
+                                                <option value="CTO">CTO</option>
+                                                <option value="Manager">Manager</option>
+                                                <option value="Developer">Developer</option>
+                                                <option value="Designer">Designer</option>
+                                                <option value="Marketing">Marketing</option>
+                                                <option value="Sales">Sales</option>
+                                                <option value="HR">HR</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                            <label for="serviceType1" class="text-muted">Services Type:</label>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-floating">
+                                            <select id="serviceType2" class="form-select pt-4" required>
+                                                <option value="">Select Designation</option>
+                                                <option value="CEO">CEO</option>
+                                                <option value="CTO">CTO</option>
+                                                <option value="Manager">Manager</option>
+                                                <option value="Developer">Developer</option>
+                                                <option value="Designer">Designer</option>
+                                                <option value="Marketing">Marketing</option>
+                                                <option value="Sales">Sales</option>
+                                                <option value="HR">HR</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                            <label for="serviceType2" class="text-muted">Services Type:</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <div class="form-floating">
+                                        <textarea id="serviceDescription" class="form-control" placeholder="Message"
                                             rows="3" required></textarea>
-                                    </div>
-
-                                </div>
-
-                                <div class="terms-section mb-4 terms-condition">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="termsCheck" required>
-                                        <label class="form-check-label text-muted" for="termsCheck">
-                                            By continuing to register, you are agreeing to our
-                                            <a href="#" class="text-decoration-none">Terms and Conditions</a>
-                                            and
-                                            <a href="#" class="text-decoration-none">Privacy Policy</a>.
-                                        </label>
+                                        <label for="serviceDescription" class="text-muted">Tell us more about the services you offer:</label>
                                     </div>
                                 </div>
 
+                            </div>
 
-                                <div class="d-grid mb-3">
-                                    <button type="submit" class="btn text-white register-now-btn btn-lg fs-6">
-                                        <i class="fas fa-user-plus me-2"></i>Register Now
-                                    </button>
+                            <div class="terms-section mb-4 terms-condition">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="termsCheck" required>
+                                    <label class="form-check-label text-muted" for="termsCheck">
+                                        By continuing to register, you are agreeing to our
+                                        <a href="#" class="text-decoration-none">Terms and Conditions</a>
+                                        and
+                                        <a href="#" class="text-decoration-none">Privacy Policy</a>.
+                                    </label>
                                 </div>
+                            </div>
 
-                                <p class="text-center mb-0 terms-condition">
-                                    Already have an account?
-                                    <a href="home-login.html" class="text-decoration-none fw-semibold">Log In</a>
-                                </p>
-                            </form>
-                        </div>
+                            <div class="d-grid mb-3">
+                                <button type="submit" class="btn text-white register-now-btn btn-lg fs-6">
+                                    <i class="fas fa-user-plus me-2"></i>Register Now
+                                </button>
+                            </div>
+
+                            <p class="text-center mb-0 terms-condition">
+                                Already have an account?
+                                <a href="home-login.html" class="text-decoration-none fw-semibold">Log In</a>
+                            </p>
+                        </form>
                     </div>
+                </div>
                 </div>
             </div>
         </div>

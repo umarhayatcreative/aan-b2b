@@ -59,6 +59,7 @@
 
 .sign-up-form .signup-form-card .section-heading {
     color: var(--primary-colors);
+    background-color: var(--secondary-lights);
 }
 
 .sign-up-form .signup-form-card .form-control {
