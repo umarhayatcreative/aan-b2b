@@ -95,6 +95,7 @@
     color: var(--color-white);
     font-weight: 400;
     border: 0;
+
 }
 
 .sub-agents-management .table th,
@@ -102,6 +103,7 @@
     border-top: none;
     vertical-align: middle;
     padding: 12px;
+    font-size: 14px;
 }
 
 .sub-agents-management .table-hover tbody tr:hover {
