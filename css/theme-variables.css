@@ -268,3 +268,21 @@ body {
     color: var(--bs-text-muted) !important;
     
 }
+
+
+.flatpickr-day.selected,
+.flatpickr-day.startRange,
+.flatpickr-day.endRange,
+.flatpickr-day.selected.inRange,
+.flatpickr-day.startRange.inRange,
+.flatpickr-day.endRange.inRange {
+    background: var(--secondary-colors) !important;  /* apna custom color */
+    color: #fff !important;          /* text color */
+    border-color: var(--secondary-colors) !important;
+}
+
+/* Range ke beech wali dates */
+/* .flatpickr-day.inRange {
+    background: #ffb3a7 !important; 
+    color: #000 !important;
+} */

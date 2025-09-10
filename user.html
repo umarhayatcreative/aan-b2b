@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Navbar Right Side Toggle</title>
-        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
@@ -65,14 +65,15 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="/home.html">Home</a>
                                 </li>
-                               
+
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="visasDropdown" role="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         Credit Limit
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="visasDropdown">
-                                        <li class="p-3 text-nowrap"><span>Credit Limit:&nbsp;&nbsp;&nbsp;&nbsp;PKR 75,000.00 <br>
+                                        <li class="p-3 text-nowrap"><span>Credit Limit:&nbsp;&nbsp;&nbsp;&nbsp;PKR
+                                                75,000.00 <br>
                                                 Available Limit:&nbsp;&nbsp;&nbsp;&nbsp;PKR 22,190.00</span></li>
                                     </ul>
                                 </li>
@@ -84,11 +85,11 @@
 
                                 <!-- Dropdown 2: Reports -->
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="reportsDropdown"
-                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle" href="#" id="reportsDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
                                         Reports
                                     </a>
-                                  <ul class="dropdown-menu" aria-labelledby="reportsDropdown">
+                                    <ul class="dropdown-menu" aria-labelledby="reportsDropdown">
                                         <li><a class="dropdown-item" href="#">Dashboard</a></li>
                                         <li><a class="dropdown-item" href="/report-booking.html">Bookings</a></li>
                                         <li><a class="dropdown-item" href="/report-ledger.html">Ledger</a></li>
@@ -96,8 +97,8 @@
                                 </li>
 
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="reportsDropdown"
-                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle" href="#" id="reportsDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
                                         Sub Agents
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="reportsDropdown">
@@ -114,16 +115,16 @@
                                 </li>
 
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="reportsDropdown"
-                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                       ATE-167000316
+                                    <a class="nav-link dropdown-toggle" href="#" id="reportsDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        ATE-167000316
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="reportsDropdown">
                                         <li><a class="dropdown-item" href="/markups.html">Markups</a></li>
                                         <li><a class="dropdown-item" href="/my-profile.html">Profile</a></li>
                                     </ul>
                                 </li>
-                                
+
                             </ul>
                         </div>
                     </div>
@@ -150,8 +151,7 @@
             <div class="card user-card p-2 px-3">
                 <div class="d-flex justify-content-between align-items-center mb-2 flex-wrap py-1">
                     <h5 class="fw-medium mb-2">User Management</h5>
-                    <a class="btn fs-6 p-0  border-0" href="#" data-bs-toggle="modal"
-                        data-bs-target="#addAgentModal">
+                    <a class="btn fs-6 p-0  border-0" href="/add-user.html">
                         <i class="bi bi-plus-circle me-2"></i>Add New User
                     </a>
                 </div>
@@ -229,88 +229,140 @@
                                     <!-- Guest 1 -->
                                     <div class="mb-3">
                                         <div class="row g-4">
+
                                             <div class="col-lg-2 col-md-6">
-                                                <label for="" class="mb-1">Title</label>
-                                                <select class="form-select py-2">
-                                                    <option>Mr</option>
-                                                    <option>Mrs</option>
-                                                    <option>Ms</option>
-                                                </select>
+                                                <div class="form-floating">
+                                                    <select class="form-select" id="title" autocomplete="off">
+                                                        <option value="Mr">Mr</option>
+                                                        <option value="Mrs">Mrs</option>
+                                                        <option value="Ms">Ms</option>
+                                                    </select>
+                                                    <label for="title">Title</label>
+                                                </div>
                                             </div>
 
                                             <div class="col-md-5">
-                                                <label for="" class="mb-1">First Name</label>
-                                                <input class="form-control py-2" placeholder="First Name">
+                                                <div class="form-floating">
+                                                    <input class="form-control" id="firstName"
+                                                        placeholder="First Name" autocomplete="off">
+                                                    <label for="firstName">First Name</label>
+                                                </div>
                                             </div>
+
                                             <div class="col-md-5">
-                                                <label for="" class="mb-1">Last Name</label>
-                                                <input class="form-control py-2" placeholder="Last Name">
+                                                <div class="form-floating">
+                                                    <input class="form-control" id="lastName"
+                                                        placeholder="Last Name" autocomplete="off">
+                                                    <label for="lastName">Last Name</label>
+                                                </div>
                                             </div>
 
                                             <div class="col-md-6">
-                                                <label for="" class="mb-1">Email</label>
-                                                <input class="form-control py-2" placeholder="Email">
+                                                <div class="form-floating">
+                                                    <input class="form-control" id="email" type="email"
+                                                        placeholder="Email" autocomplete="off">
+                                                    <label for="email">Email</label>
+                                                </div>
                                             </div>
+
                                             <div class="col-md-6">
-                                                <label for="" class="mb-1">Phone Number</label>
-                                                <input class="form-control py-2" placeholder="Phone">
+                                                <div class="form-floating">
+                                                    <input class="form-control" id="phone" placeholder="Phone"
+                                                        autocomplete="off">
+                                                    <label for="phone">Phone Number</label>
+                                                </div>
                                             </div>
+
                                             <div class="col-md-6">
-                                                <label for="" class="mb-1">Credit Limit</label>
-                                                <input type="text" class="form-control py-2" placeholder="100,000.00"
-                                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '')">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" id="creditLimit"
+                                                        placeholder="100,000.00"
+                                                        oninput="this.value = this.value.replace(/[^0-9.]/g, '')"
+                                                        autocomplete="off">
+                                                    <label for="creditLimit">Credit Limit</label>
+                                                </div>
                                             </div>
+
                                             <div class="col-md-6">
-                                                <label for="" class="mb-1">Status</label>
-                                                <select class="form-select py-2">
-                                                    <option>Active</option>
-                                                    <option>Inactive</option>
-                                                    <option>Pending</option>
-                                                </select>
+                                                <div class="form-floating">
+                                                    <select class="form-select" id="status" autocomplete="off">
+                                                        <option value="Active">Active</option>
+                                                        <option value="Inactive">Inactive</option>
+                                                        <option value="Pending">Pending</option>
+                                                    </select>
+                                                    <label for="status">Status</label>
+                                                </div>
                                             </div>
+
                                             <div class="col-md-6">
-                                                <label for="" class="mb-1">Password</label>
-                                                <input class="form-control py-2" placeholder="Password">
+                                                <div class="form-floating">
+                                                    <input class="form-control" id="password" type="password"
+                                                        placeholder="Password" autocomplete="off">
+                                                    <label for="password">Password</label>
+                                                </div>
                                             </div>
+
                                             <div class="col-md-6">
-                                                <label for="" class="mb-1">Confirm Password</label>
-                                                <input class="form-control py-2" placeholder="Confirm Password">
+                                                <div class="form-floating">
+                                                    <input class="form-control" id="confirmPassword"
+                                                        type="password" placeholder="Confirm Password"
+                                                        autocomplete="off">
+                                                    <label for="confirmPassword">Confirm Password</label>
+                                                </div>
                                             </div>
 
                                             <div class="col-md-12">
-                                                <label for="" class="mb-1">Address</label>
-                                                <input class="form-control py-2" placeholder="Address">
+                                                <div class="form-floating">
+                                                    <input class="form-control" id="address" placeholder="Address"
+                                                        autocomplete="off">
+                                                    <label for="address">Address</label>
+                                                </div>
                                             </div>
 
                                             <div class="col-md-6">
-                                                <label for="" class="mb-1">City</label>
-                                                <input class="form-control py-2" placeholder="City">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="" class="mb-1">State/Province</label>
-                                                <input class="form-control py-2" placeholder="State/Province">
+                                                <div class="form-floating">
+                                                    <input class="form-control" id="city" placeholder="City"
+                                                        autocomplete="off">
+                                                    <label for="city">City</label>
+                                                </div>
                                             </div>
 
                                             <div class="col-md-6">
-                                                <label for="" class="mb-1">Zip/PostCode</label>
-                                                <input class="form-control py-2" placeholder="Zip/PostCode">
+                                                <div class="form-floating">
+                                                    <input class="form-control" id="state"
+                                                        placeholder="State/Province" autocomplete="off">
+                                                    <label for="state">State/Province</label>
+                                                </div>
                                             </div>
+
                                             <div class="col-md-6">
-                                                <label for="" class="mb-1">Country</label>
-                                                <select class="form-select py-2">
-                                                    <option>Pakistan</option>
-                                                    <option>India</option>
-                                                    <option>Bangladesh</option>
-                                                    <option>Iran</option>
-                                                    <option>Turkey</option>
-                                                    <option>Australia</option>
-                                                    <option>Japan</option>
-                                                    <option>Dubai</option>
-                                                </select>
+                                                <div class="form-floating">
+                                                    <input class="form-control" id="zip" placeholder="Zip/PostCode"
+                                                        autocomplete="off">
+                                                    <label for="zip">Zip/PostCode</label>
+                                                </div>
                                             </div>
+
+                                            <div class="col-md-6">
+                                                <div class="form-floating">
+                                                    <select class="form-select" id="country" autocomplete="off">
+                                                        <option value="Pakistan">Pakistan</option>
+                                                        <option value="India">India</option>
+                                                        <option value="Bangladesh">Bangladesh</option>
+                                                        <option value="Iran">Iran</option>
+                                                        <option value="Turkey">Turkey</option>
+                                                        <option value="Australia">Australia</option>
+                                                        <option value="Japan">Japan</option>
+                                                        <option value="Dubai">Dubai</option>
+                                                    </select>
+                                                    <label for="country">Country</label>
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
+
 
                             </div>
                             <div class="modal-footer">
@@ -322,105 +374,6 @@
                     </div>
                 </div>
 
-                <div class="modal fade add-user-modal" id="addAgentModal" tabindex="-1" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content rounded-3 shadow">
-                            <div class="modal-header">
-                                <h5 class="modal-title"><i class="fa-solid fa-user-pen me-2"></i>Add New User</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <!-- Guest Form Section -->
-                                <div class="card-body">
-                                    <!-- Guest 1 -->
-                                    <div class="mb-3">
-                                        <div class="row g-4">
-                                            <div class="col-lg-2 col-md-6">
-                                                <label for="" class="mb-1">Title</label>
-                                                <select class="form-select py-2">
-                                                    <option>Mr</option>
-                                                    <option>Mrs</option>
-                                                    <option>Ms</option>
-                                                </select>
-                                            </div>
-
-                                            <div class="col-md-5">
-                                                <label for="" class="mb-1">First Name</label>
-                                                <input class="form-control py-2" placeholder="First Name">
-                                            </div>
-                                            <div class="col-md-5">
-                                                <label for="" class="mb-1">Last Name</label>
-                                                <input class="form-control py-2" placeholder="Last Name">
-                                            </div>
-
-                                            <div class="col-md-6">
-                                                <label for="" class="mb-1">Email</label>
-                                                <input class="form-control py-2" placeholder="Email">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="" class="mb-1">Phone Number</label>
-                                                <input class="form-control py-2" placeholder="Phone">
-                                            </div>
-                                            <div class="col-lg-2 col-md-6">
-                                                <label for="" class="mb-1">Credit Limit</label>
-                                                <input type="text" class="form-control py-2" placeholder="100,000.00"
-                                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '')">
-                                            </div>
-
-                                            <div class="col-lg-5 col-md-6">
-                                                <label for="" class="mb-1">Password</label>
-                                                <input class="form-control py-2" placeholder="Password">
-                                            </div>
-                                            <div class="col-lg-5 col-md-6">
-                                                <label for="" class="mb-1">Confirm Password</label>
-                                                <input class="form-control py-2" placeholder="Confirm Password">
-                                            </div>
-
-                                            <div class="col-md-12">
-                                                <label for="" class="mb-1">Address</label>
-                                                <input class="form-control py-2" placeholder="Address">
-                                            </div>
-
-                                            <div class="col-md-6">
-                                                <label for="" class="mb-1">City</label>
-                                                <input class="form-control py-2" placeholder="City">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="" class="mb-1">State/Province</label>
-                                                <input class="form-control py-2" placeholder="State/Province">
-                                            </div>
-
-                                            <div class="col-md-6">
-                                                <label for="" class="mb-1">Zip/PostCode</label>
-                                                <input class="form-control py-2" placeholder="Zip/PostCode">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="" class="mb-1">Country</label>
-                                                <select class="form-select py-2">
-                                                    <option>Pakistan</option>
-                                                    <option>India</option>
-                                                    <option>Bangladesh</option>
-                                                    <option>Iran</option>
-                                                    <option>Turkey</option>
-                                                    <option>Australia</option>
-                                                    <option>Japan</option>
-                                                    <option>Dubai</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn add-agents-btn py-2" data-bs-dismiss="modal">
-                                    <i class="fa-solid fa-user-check me-2"></i>Add New User
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -455,7 +408,8 @@
                         <ul class="list-unstyled small">
                             <li><a href="/about-us.html" class="text-white text-decoration-none">About Us</a></li>
                             <li><a href="/contact-us.html" class="text-white text-decoration-none">Contact Us</a></li>
-                            <li><a href="/privacy-policy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+                            <li><a href="/privacy-policy.html" class="text-white text-decoration-none">Privacy
+                                    Policy</a></li>
                             <li><a href="#" class="text-white text-decoration-none">Term & Conditions</a></li>
                         </ul>
                     </div>
@@ -472,9 +426,10 @@
                                     5264</a>
                             </li>
                             <li class="d-flex align-items-center mb-2">
-                                <i class="bi bi-envelope-fill me-2"></i> <a href="mailto:support@aantorism.com" class="text-decoration-none text-white">
-    support@aantorism.com
-</a>
+                                <i class="bi bi-envelope-fill me-2"></i> <a href="mailto:support@aantorism.com"
+                                    class="text-decoration-none text-white">
+                                    support@aantorism.com
+                                </a>
                             </li>
                             <li class="d-flex align-items-center social-icons">
                                 <ul class="list-unstyled d-inline-flex">
@@ -491,7 +446,7 @@
                                     </li>
                                 </ul>
                             </li>
-                          <div>
+                            <div>
                                 <h6 class="my-2 fw-medium border-top border-dark pt-2">Theme Colors</h6>
                                 <button id="orangeModeBtn"></button>
                                 <button id="lightModeBtn"></button>

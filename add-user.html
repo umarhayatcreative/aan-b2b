@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/theme-variables.css">
-    <link rel="stylesheet" href="css/my-profile.css">
+    <link rel="stylesheet" href="css/add-user.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Flatpickr CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
@@ -65,7 +65,7 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="/home.html">Home</a>
                                 </li>
-                                <!-- Dropdown 1: Visas -->
+
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="visasDropdown" role="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
@@ -89,6 +89,7 @@
                                     <a class="nav-link" href="/visas.html">Visas</a>
                                 </li>
 
+
                                 <!-- Dropdown 2: Reports -->
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="reportsDropdown" role="button"
@@ -103,8 +104,8 @@
                                 </li>
 
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="reportsDropdown" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle" href="#" id="reportsDropdown"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Sub Agents
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="reportsDropdown">
@@ -117,12 +118,12 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/user.html">User</a>
+                                    <a class="nav-link active" href="/user.html">User</a>
                                 </li>
 
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle active" href="#" id="reportsDropdown"
-                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle" href="#" id="reportsDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
                                         ATE-167000316
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="reportsDropdown">
@@ -130,7 +131,6 @@
                                         <li><a class="dropdown-item" href="/my-profile.html">Profile</a></li>
                                     </ul>
                                 </li>
-
                             </ul>
                         </div>
                     </div>
@@ -140,151 +140,146 @@
     </section>
     <!-- header section end -->
 
-    <!-- my profile section start -->
-    <section class="my-profile py-3">
+    <!-- add sub agents input section start -->
+
+    <section class="add-users py-2">
         <div class="container">
             <div class="banner mb-3 d-flex justify-content-between align-items-center flex-wrap">
-                <h2 class="fs-4 m-0">Profile</h2>
+                <h2 class="fs-4 m-0 fw-semibold">Add User</h2>
                 <nav aria-label="breadcrumb fs-6">
                     <ul class="breadcrumb mb-0">
                         <li class="breadcrumb-item"><a href="/home.html" class="text-decoration-none"><i
                                     class="bi bi-house-door me-1"></i>Home</a></li>
-                        <li class="breadcrumb-item"><a href="#" class=" text-decoration-none">Profile</a>
+                        <li class="breadcrumb-item"><a href="#" class=" text-decoration-none">User</a>
                         </li>
                     </ul>
                 </nav>
             </div>
-
-            <div class="my-profile-card">
-                <div class="card-body">
-                    <!-- Guest 1 -->
-                    <div class="mb-3">
-                        <div class="row g-4">
-                            <div class="col-lg-2 col-md-6">
-                                <div class="form-floating">
-                                    <select class="form-select" id="title" autocomplete="off">
-                                        <option value="" selected disabled></option>
-                                        <option>Mr</option>
-                                        <option>Mrs</option>
-                                        <option>Ms</option>
-                                    </select>
-                                    <label for="title">Title</label>
-                                </div>
-                            </div>
-
-
-                            <div class="col-lg-5 col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="firstName" placeholder="First Name"
-                                        autocomplete="off">
-                                    <label for="firstName">First Name</label>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-5 col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="lastName" placeholder="Last Name"
-                                        autocomplete="off">
-                                    <label for="lastName">Last Name</label>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Email"
-                                        autocomplete="off">
-                                    <label for="email">Email</label>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6">
-                                <div class="form-floating">
-                                    <input type="tel" class="form-control" id="phone" placeholder="Phone"
-                                        autocomplete="off">
-                                    <label for="phone">Phone Number</label>
-                                </div>
-                            </div>
-
-
-                            <div class="col-lg-4 col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="city" placeholder="City"
-                                        autocomplete="off">
-                                    <label for="city">City</label>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="state" placeholder="State/Province"
-                                        autocomplete="off">
-                                    <label for="state">State/Province</label>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="zip" placeholder="Zip/PostCode"
-                                        autocomplete="off">
-                                    <label for="zip">Zip/PostCode</label>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6">
-                                <div class="form-floating">
-                                    <select class="form-select" id="country" autocomplete="off">
-                                        <option selected disabled></option>
-                                        <option>Pakistan</option>
-                                        <option>India</option>
-                                        <option>Bangladesh</option>
-                                        <option>Iran</option>
-                                        <option>Turkey</option>
-                                        <option>Australia</option>
-                                        <option>Japan</option>
-                                        <option>Dubai</option>
-                                    </select>
-                                    <label for="country">Country</label>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="address" placeholder="Address"
-                                        autocomplete="off">
-                                    <label for="address">Address</label>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="password" class="form-control" id="password" placeholder="Password"
-                                        autocomplete="off">
-                                    <label for="password">Password</label>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="password" class="form-control" id="confirmPassword"
-                                        placeholder="Confirm Password" autocomplete="off">
-                                    <label for="confirmPassword">Confirm Password</label>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-12 d-flex align-items-end justify-content-end">
-                                <button type="button" class="btn save-update-btn px-5 py-3" data-bs-dismiss="modal">
-                                    <i class="fa-solid fa-user-check me-2"></i>Save and update
-                                </button>
+            <div class="card-body">
+                <!-- Guest 1 -->
+                <div class="mb-3">
+                    <div class="row g-4">
+                        <div class="col-lg-2 col-md-6">
+                            <div class="form-floating">
+                                <select class="form-select" id="title" autocomplete="off">
+                                    <option value="Mr">Mr</option>
+                                    <option value="Mrs">Mrs</option>
+                                    <option value="Ms">Ms</option>
+                                </select>
+                                <label for="title">Title</label>
                             </div>
                         </div>
 
+                        <div class="col-md-5">
+                            <div class="form-floating">
+                                <input class="form-control" id="firstName" placeholder="First Name"
+                                    autocomplete="off">
+                                <label for="firstName">First Name</label>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="form-floating">
+                                <input class="form-control" id="lastName" placeholder="Last Name"
+                                    autocomplete="off">
+                                <label for="lastName">Last Name</label>
+                            </div>
+                        </div>
+    <div class="col-lg-2 col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="creditLimit" placeholder="100,000.00"
+                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '')" autocomplete="off">
+                                <label for="creditLimit">Credit Limit</label>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="form-floating">
+                                <input class="form-control " id="email" placeholder="Email" autocomplete="off">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="form-floating">
+                                <input class="form-control" id="phone" placeholder="Phone" autocomplete="off">
+                                <label for="phone">Phone Number</label>
+                            </div>
+                        </div>
+
+                    
+
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-floating">
+                                <input class="form-control" id="password" type="password" placeholder="Password"
+                                    autocomplete="off">
+                                <label for="password">Password</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-floating">
+                                <input class="form-control" id="confirmPassword" type="password"
+                                    placeholder="Confirm Password" autocomplete="off">
+                                <label for="confirmPassword">Confirm Password</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-floating">
+                                <input class="form-control" id="address" placeholder="Address" autocomplete="off">
+                                <label for="address">Address</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input class="form-control" id="city" placeholder="City" autocomplete="off">
+                                <label for="city">City</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input class="form-control" id="state" placeholder="State/Province"
+                                    autocomplete="off">
+                                <label for="state">State/Province</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input class="form-control" id="zip" placeholder="Zip/PostCode" autocomplete="off">
+                                <label for="zip">Zip/PostCode</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <select class="form-select" id="country" autocomplete="off">
+                                    <option value="Pakistan">Pakistan</option>
+                                    <option value="India">India</option>
+                                    <option value="Bangladesh">Bangladesh</option>
+                                    <option value="Iran">Iran</option>
+                                    <option value="Turkey">Turkey</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="Japan">Japan</option>
+                                    <option value="Dubai">Dubai</option>
+                                </select>
+                                <label for="country">Country</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="d-flex">
+                                <button type="button" class="btn add-agents-btn py-3 px-5 ms-auto">
+                                    <i class="fa-solid fa-user-check me-2"></i>Add New User
+                                </button>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
+
+
             </div>
         </div>
+
     </section>
-
-
-    <!-- my profile section end -->
+    <!-- add sub agents input section end -->
 
     <!-- footer section start -->
     <footer class="footer-sec pt-5 mt-auto">
@@ -374,7 +369,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Flatpickr JS -->
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <script src="js/markups.js"></script>
+    <!-- <script src="js/sub-agents.js"></script> -->
     <script src="js/theme-change.js"></script>
 </body>
 
