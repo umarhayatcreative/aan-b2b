@@ -92,6 +92,10 @@
    
 }
 
+.booking-detail-card .room-info{
+    /* background-color: var(--primary-lights); */
+}
+
 .booking-detail-card .price-section span {
     color: var(--primary-colors);
 }

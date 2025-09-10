@@ -183,7 +183,7 @@ body {
     --color-white: #fff;
     --primary-colors-low-opacity: rgba(59, 59, 90, 0.5);
     --all-border: #E6E6E6;
-    --font-family-primary: "Rubik", sans-serif;
+    --font-family-primary: "Jost", sans-serif;
     --font-size-paragraph: 16px;
     --font-size-small: 14px;
     --font-size-heading: clamp(20px, 2.5vw, 25px);

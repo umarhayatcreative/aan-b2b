@@ -163,8 +163,8 @@
                     <form class="row g-3 align-items-end" autocomplete="off">
                         <div class="col-lg-4 col-md-6">
                             <div class="form-floating">
-                                <select class="form-select p-2" id="searchByDate" autocomplete="off">
-                                    <option selected disabled></option>
+                                <select class="form-select" id="searchByDate" autocomplete="off">
+                                    <option>Select Option</option>
                                     <option>Booking Date</option>
                                     <option>Travel Date</option>
                                 </select>
@@ -174,15 +174,15 @@
 
                         <div class="col-lg-4 col-md-6">
                             <div class="form-floating">
-                                <input type="text" class="form-control p-2 date-range" id="dateRange"
-                                    placeholder="dd-mm-yyyy - dd-mm-yyyy" autocomplete="off">
+                                <input type="text" id="dateRange" class="form-control date-range"
+                                    autocomplete="off">
                                 <label for="dateRange">Date Range</label>
                             </div>
                         </div>
 
                         <div class="col-lg-4 col-md-6">
                             <div class="form-floating">
-                                <input type="text" class="form-control p-2" id="orderNumber"
+                                <input type="text" class="form-control" id="orderNumber"
                                     placeholder="Enter order number" autocomplete="off">
                                 <label for="orderNumber">Order Number</label>
                             </div>
@@ -190,8 +190,8 @@
 
                         <div class="col-lg-4 col-md-6">
                             <div class="form-floating">
-                                <select class="form-select p-2" id="bookingStatus" autocomplete="off">
-                                    <option selected disabled></option>
+                                <select class="form-select" id="bookingStatus" autocomplete="off">
+                                    <option>Select Option</option>
                                     <option>Pending</option>
                                     <option>Confirmed</option>
                                     <option>Cancelled</option>
@@ -374,7 +374,7 @@
     <!-- Flatpickr JS -->
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="js/theme-change.js"></script>
-    <!-- <script src="js/report-agents-booking.js"></script> -->
+    <script src="js/report-booking.js"></script>
 </body>
 
 </html>
