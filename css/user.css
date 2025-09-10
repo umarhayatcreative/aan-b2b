@@ -102,6 +102,7 @@
     border-top: none;
     vertical-align: middle;
     padding: 12px;
+    font-size: 14px;
 }
 
 .user-management .table-hover tbody tr:hover {
